@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Streamlance</string>
+    <!-- onBoarding text-->
+    <string name="heading1">How It Works</string>
+    <string name="heading2">How It Works</string>
+
+    <string name="board_description1">Looking for a garage you can trust for a auto service or car repair? Using the Streamlane, you can find a garage near you.</string>
 </resources>
