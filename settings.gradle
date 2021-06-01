@@ -1,0 +1,2 @@
+rootProject.name = "Streamlance"
+include ':app'
