@@ -2,6 +2,7 @@ package com.example.streamlance;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,18 +25,22 @@ public class SliderAdapter extends PagerAdapter {
     public int[]slide_Images = {
             R.drawable.gradient_overlay,
             R.drawable.isometric_garage_vector,
-            R.drawable.vector_free_towing_car_illustration
+            R.drawable.vector_free_towing_car_illustration,
+            R.drawable.gradient_man
     };
 
-    public String[] slide_heading={
-            "How It Works",
-            "How It Will Be Helpful For You",
-            "Our Customers And Garages"
+    public int slide_heading[]={
+            R.string.slide_heading1,
+            R.string.slide_heading2,
+            R.string.slide_heading3,
+            R.string.slide_heading4
+
     };
-    public String[] slide_description={
-            "Looking for a garage you can trust for a auto service or car repair? Using the Streamlane, you can find a garage near you.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit iaculis ullamcorper. Morbi ac mauris eleifend, pretium turpis ut, orci.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit iaculis ullamcorper. Morbi ac mauris eleifend, pretium turpis ut, orci."
+    public int[] slide_description={
+            R.string.slide_description1,
+            R.string.slide_description2,
+            R.string.slide_description3,
+            R.string.slide_description4
     };
 
     @Override
@@ -45,7 +50,7 @@ public class SliderAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(@NonNull @org.jetbrains.annotations.NotNull View view, @NonNull @org.jetbrains.annotations.NotNull Object o) {
-        return view==(RelativeLayout) o;
+        return view==(ConstraintLayout) o;
     }
 
     @NonNull
@@ -58,7 +63,7 @@ public class SliderAdapter extends PagerAdapter {
 
         ImageView slideImageView = (ImageView)view.findViewById(R.id.slide_Images);
         TextView slideHeading = (TextView) view.findViewById(R.id.slide_heading);
-        TextView slideDescription = (TextView) view.findViewById(R.id.slide_descrption);
+        TextView slideDescription = (TextView) view.findViewById(R.id.slide_description);
 
         slideImageView.setImageResource(slide_Images[position]);
         slideHeading.setText(slide_heading[position]);
@@ -71,6 +76,6 @@ public class SliderAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(@NonNull @NotNull ViewGroup container, int position, @NonNull @NotNull Object object) {
-        container.removeView((RelativeLayout)object);
+        container.removeView((ConstraintLayout)object);
     }
 }

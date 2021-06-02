@@ -1,8 +1,20 @@
 <resources>
     <string name="app_name">Streamlance</string>
     <!-- onBoarding text-->
-    <string name="heading1">How It Works</string>
-    <string name="heading2">How It Works</string>
+    <string name="slide_heading1">How It Works</string>
+    <string name="slide_heading2">How It Will Be Helpful For You</string>
+    <string name="slide_heading3">Our Customers And Garages</string>
+    <string name="slide_heading4">Discover Mechanic Nearby You</string>
 
-    <string name="board_description1">Looking for a garage you can trust for a auto service or car repair? Using the Streamlane, you can find a garage near you.</string>
+    <string name="slide_Button">Get Started</string>
+
+    <string name="slide_description1">Looking for a garage you can trust for a auto service or car repair? Using the Streamlane, you can find a garage near you.</string>
+    <string name="slide_description4">Looking for a garage you can trust for a auto service or car repair? Using the Streamlane, you can find a garage near you.</string>
+    <string name="slide_description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit iaculis ullamcorper. Morbi ac mauris eleifend, pretium turpis ut, orci.</string>
+    <string name="slide_description3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit iaculis ullamcorper. Morbi ac mauris eleifend, pretium turpis ut, orci.</string>
+
+    <string name="otp_heading">Enter your phone number</string>
+    <string name="otp_desc">Please enter your mobile number.You will receive a code to verify mobile number.</string>
+
+
 </resources>

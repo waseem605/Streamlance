@@ -7,7 +7,7 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class Splash_Screen extends AppCompatActivity {
     private Intent intent;
     private final static int SPLASH_TIME = 3000;
 
@@ -15,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
 
        new Handler().postDelayed(() -> {
-           intent=new Intent(MainActivity.this,Onboarding.class);
+           intent=new Intent(Splash_Screen.this,Onboarding.class);
            startActivity(intent);
            finish();
        },SPLASH_TIME);
