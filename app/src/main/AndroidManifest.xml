@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Streamlance">
-        <activity android:name=".OTP_Screen"></activity>
-        <activity android:name=".Onboarding" />
-        <activity android:name=".Splash_Screen">
+        <activity android:name=".Login.RegisterUser"></activity>
+        <activity android:name=".Login.VerifyOtp" />
+        <activity android:name=".common.OTP_Screen" />
+        <activity android:name=".common.Onboarding" />
+        <activity android:name=".common.Splash_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,14 +1,17 @@
-package com.example.streamlance;
+package com.example.streamlance.common;
 
 import android.content.Intent;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
+import com.example.streamlance.R;
 
 public class Onboarding extends AppCompatActivity {
     private ViewPager mSlideViewPager;
@@ -41,7 +44,7 @@ public class Onboarding extends AppCompatActivity {
         mGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Onboarding.this,OTP_Screen.class);
+                Intent intent = new Intent(Onboarding.this, OTP_Screen.class);
                 startActivity(intent);
                 finish();
             }

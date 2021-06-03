@@ -1,15 +1,21 @@
-package com.example.streamlance;
+package com.example.streamlance.common;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
-import android.support.v4.view.PagerAdapter;
+import android.support.*;
+import android.support.*;
+import android.support.v4.*;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewpager.widget.PagerAdapter;
+
+import com.example.streamlance.R;
 
 import org.jetbrains.annotations.NotNull;
 
