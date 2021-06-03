@@ -40,5 +40,15 @@
     <string name="Log_in_btn">Log-in</string>
     <string name="password">Password</string>
     <string name="forget_password">Forgot password?</string>
+    <string name="notification">Notification</string>
+    <string name="user">User</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+
+    <!--password verification-->
+    <string name="choose_verification">Choose verification type</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="send_email">Send Email</string>
+    <string name="go_back">Go back</string>
 
 </resources>
