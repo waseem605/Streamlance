@@ -81,13 +81,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/add_Image"
         android:layout_alignParentStart="true"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidthFocused="2dp"
         android:layout_alignParentEnd="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="20dp"
-        android:hint="First name">
+        android:hint="@string/firstname">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -105,7 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textField"
-        android:hint="Last name">
+        android:hint="@string/lastname">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -124,7 +126,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textField1"
-        android:hint="Email Address">
+        android:hint="@string/email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -142,7 +144,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textField2"
-        android:hint="Address">
+        android:hint="@string/address">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -163,14 +165,15 @@
         android:text="@string/terms" />
 
     <Button
+        android:id="@+id/lets_start_btn"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/terms"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="7dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/rounded"
         android:text="@string/start_button"
         android:textSize="24sp"
