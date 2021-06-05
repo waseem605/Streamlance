@@ -11,10 +11,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:layout_marginTop="350dp"
+        android:id="@+id/linear_otp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="0dp"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -36,7 +43,7 @@
             android:text="@string/otp_desc"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,33 +53,35 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:background="@drawable/round_border"
-            android:layout_margin="0dp"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textSize="18sp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:padding="0dp"
+                android:text="Phone Number"
                 android:textColor="@color/black"
-                android:text="Phone Number"></TextView>
+                android:textSize="18sp"></TextView>
 
             <LinearLayout
+                android:id="@+id/linear1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/linear1"
-                android:padding="5dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="5dp">
 
                 <com.hbb20.CountryCodePicker
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
                     android:id="@+id/country_code_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
                     app:ccp_autoDetectCountry="true"
                     app:ccp_showFlag="true"
                     app:ccp_showFullName="false"
-                    android:layout_marginTop="0dp"
                     app:ccp_showNameCode="false" />
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -82,21 +91,21 @@
             </LinearLayout>
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/get_otp_btn"
-            android:layout_width="313dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/get_otp"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-        </Button>
     </LinearLayout>
+    <Button
+        android:id="@+id/get_otp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_otp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded"
+        android:text="@string/get_otp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
 
 
 

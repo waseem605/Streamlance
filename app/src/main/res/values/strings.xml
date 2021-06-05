@@ -50,5 +50,7 @@
     <string name="send_sms">Send SMS</string>
     <string name="send_email">Send Email</string>
     <string name="go_back">Go back</string>
+    <string name="username">John Doe</string>
+    <string name="userprofile_email">johndoe@example.com</string>
 
 </resources>

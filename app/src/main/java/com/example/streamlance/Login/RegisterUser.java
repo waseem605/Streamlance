@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.streamlance.MainPage.MainActivity;
 import com.example.streamlance.R;
 
 public class RegisterUser extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class RegisterUser extends AppCompatActivity {
         mStartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegisterUser.this,Login.class));
+                startActivity(new Intent(RegisterUser.this, MainActivity.class));
                 finish();
             }
         });

@@ -4,4 +4,6 @@
     <string name="user">User</string>
     <string name="search">Search</string>
     <string name="home">Home</string>
+    <string name="username">John Doe</string>
+    <string name="userprofile_email">johndoe@example.com</string>
 </resources>

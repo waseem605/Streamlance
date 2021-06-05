@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.content.ClipData;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -27,14 +26,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_main_navigation);
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Home()).commit();
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull @NotNull MenuItem item) {
 
                 Fragment fragment = null;
-                switch (item.getItemId())
-                {
+                switch (item.getItemId()) {
                     case R.id.home_nav:
                         fragment = new Home();
                         break;
@@ -48,10 +48,11 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.user_nav:
-                        fragment =new Profile();
+                        fragment = new Profile();
                         break;
                 }
-                return false;
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
+                return true;
             }
         });
 
