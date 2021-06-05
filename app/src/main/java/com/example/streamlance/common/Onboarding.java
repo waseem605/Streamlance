@@ -93,10 +93,9 @@ public class Onboarding extends AppCompatActivity {
             }
             else
             {
+                mDotLinearLayout.setVisibility(View.INVISIBLE);
                 mGetStarted.setVisibility(View.VISIBLE);
             }
-
-
         }
 
         @Override
