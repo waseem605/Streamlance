@@ -6,6 +6,7 @@ import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +19,7 @@ public class Onboarding extends AppCompatActivity {
     private LinearLayout mDotLinearLayout;
     private TextView[] mDots;
     private Button mGetStarted;
+    RelativeLayout relativeLayout;
 
     private SliderAdapter sliderAdapter;
 
@@ -28,7 +30,7 @@ public class Onboarding extends AppCompatActivity {
 
         mSlideViewPager=(ViewPager)findViewById(R.id.slide_viewpager);
         mDotLinearLayout=(LinearLayout)findViewById(R.id.dot_layout);
-        mGetStarted = (Button)findViewById(R.id.get_started_btn);
+        relativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
 
         sliderAdapter =new SliderAdapter(this);
 
@@ -36,11 +38,11 @@ public class Onboarding extends AppCompatActivity {
 
         addDotsIndicator(0);
         mDotLinearLayout.setVisibility(View.VISIBLE);
-        mGetStarted.setVisibility(View.INVISIBLE);
+        //mGetStarted.setVisibility(View.INVISIBLE);
 
         mSlideViewPager.addOnPageChangeListener(onPageChangeListener);
 
-
+/*
         mGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,12 +50,13 @@ public class Onboarding extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        });
+        });*/
     }
+
 
     public void addDotsIndicator(int position)
     {
-        mDots = new TextView[4];
+        mDots = new TextView[3];
         mDotLinearLayout.removeAllViews();
 
         for (int i = 0; i < mDots.length; i++) {
@@ -83,24 +86,38 @@ public class Onboarding extends AppCompatActivity {
 
             addDotsIndicator(i);
             if(i==0){
-                mGetStarted.setVisibility(View.INVISIBLE);
+                //next().setVisibility(View.INVISIBLE);
             }
             else if(i==1){
-                mGetStarted.setVisibility(View.INVISIBLE);
+                //mGetStarted.setVisibility(View.INVISIBLE);
             }
             else if(i==2){
-                mGetStarted.setVisibility(View.INVISIBLE);
-            }
-            else
+                next();
+                //mGetStarted.setVisibility(View.INVISIBLE);
+            }/*
+            else if(i==3)
             {
                 mDotLinearLayout.setVisibility(View.INVISIBLE);
                 mGetStarted.setVisibility(View.VISIBLE);
-            }
+            }*/
         }
 
         @Override
         public void onPageScrollStateChanged(int i) {
 
         }
+
+
     };
+    public void next()
+    {
+        relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Onboarding.this,GetStarted.class));
+
+            }
+        });
+
+    }
 }

@@ -25,6 +25,9 @@ public class Splash_Screen extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
        new Handler().postDelayed(() -> {
+           intent = new Intent(Splash_Screen.this, Onboarding.class);
+           startActivity(intent);
+           finish();
 /*
            sharedPreferences = getSharedPreferences("sharedPreferences",MODE_PRIVATE);
            boolean isFirstTime = sharedPreferences.getBoolean("firstTime",true);
@@ -38,13 +41,14 @@ public class Splash_Screen extends AppCompatActivity {
                startActivity(intent);
                finish();
 
-           }else*/
-               {
+           }else
+           {
+
 
                intent = new Intent(Splash_Screen.this, MainActivity.class);
                startActivity(intent);
                finish();
-           }
+           }*/
        },SPLASH_TIME);
     }
 }

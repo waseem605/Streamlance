@@ -6,4 +6,9 @@
     <string name="home">Home</string>
     <string name="username">John Doe</string>
     <string name="userprofile_email">johndoe@example.com</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="profile">Profile</string>
+    <string name="about_streamlan">About Streamlan</string>
+    <string name="help_support"><![CDATA[Help & support]]></string>
+    <string name="privacy_policy"><![CDATA[Privacy & Policy]]></string>
 </resources>

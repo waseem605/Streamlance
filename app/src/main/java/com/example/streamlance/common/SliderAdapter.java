@@ -28,21 +28,18 @@ public class SliderAdapter extends PagerAdapter {
             R.drawable.gradient_overlay,
             R.drawable.isometric_garage_vector,
             R.drawable.vector_free_towing_car_illustration,
-            R.drawable.gradient_man
     };
 
     public int slide_heading[]={
             R.string.slide_heading1,
             R.string.slide_heading2,
-            R.string.slide_heading3,
-            R.string.slide_heading4
+            R.string.slide_heading3
 
     };
     public int[] slide_description={
             R.string.slide_description1,
             R.string.slide_description2,
-            R.string.slide_description3,
-            R.string.slide_description4
+            R.string.slide_description3
     };
 
     @Override
