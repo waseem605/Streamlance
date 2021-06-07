@@ -15,7 +15,7 @@
             android:text="Booked"
             android:textSize="20dp"
             android:textColor="#FFA500"></TextView>
-        <EditText
+        <TextClock
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,8 +25,8 @@
             android:inputType="date"
             android:focusable="false"
             android:textSize="10dp"
-            android:layout_marginLeft="130dp"></EditText>
-        <EditText
+            android:layout_marginLeft="130dp"></TextClock>
+        <TextClock
             android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

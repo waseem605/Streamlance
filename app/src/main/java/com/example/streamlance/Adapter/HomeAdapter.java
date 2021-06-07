@@ -20,9 +20,9 @@ import com.example.streamlance.Fragments.mygarage;
 
 import org.jetbrains.annotations.NotNull;
 
-public class FragementAdapter extends FragmentPagerAdapter {
+public class HomeAdapter extends FragmentPagerAdapter {
 
-    public FragementAdapter(@NonNull @NotNull FragmentManager fm) {
+    public HomeAdapter(@NonNull @NotNull FragmentManager fm) {
         super(fm);
     }
 

@@ -2,8 +2,10 @@ package com.example.streamlance.MainPage;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -24,8 +26,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_main_navigation);
 
+
+        bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_main_navigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Home()).commit();
 
 

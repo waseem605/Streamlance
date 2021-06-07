@@ -1,29 +1,28 @@
 package com.example.streamlance.Fragments;
 
+import android.annotation.SuppressLint;
+import android.os.Build;
 import android.os.Bundle;
+
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TableLayout;
 
-import com.example.streamlance.Adapter.FragementAdapter;
+import com.example.streamlance.Adapter.HomeAdapter;
 import com.example.streamlance.R;
 import com.google.android.material.tabs.TabLayout;
-
-import java.util.zip.Inflater;
 
 
 public class Home extends Fragment {
 
-    FragementAdapter fragementAdapter;
+    HomeAdapter homeAdapter;
     private TabLayout mtabLayout;
     private ViewPager mviewPager;
+    private Toolbar mToolbar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,17 +32,21 @@ public class Home extends Fragment {
 
 
 
+    @SuppressLint("NewApi")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        View v=inflater.inflate(R.layout.fragment_home, container, false);
          mtabLayout=(TabLayout) v.findViewById (R.id.tablayout);
          mviewPager=(ViewPager) v.findViewById(R.id.viewPage);
-         fragementAdapter=new FragementAdapter(getActivity().getSupportFragmentManager());
-         mviewPager.setAdapter(fragementAdapter);
+
+         homeAdapter =new HomeAdapter(getActivity().getSupportFragmentManager());
+         mviewPager.setAdapter(homeAdapter);
          mtabLayout.setupWithViewPager(mviewPager);
 
-       return v;
+
+
+         return v;
 
     }
 }

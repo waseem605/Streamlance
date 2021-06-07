@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.Notification">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Notification"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="478dp"
-        android:layout_marginTop="50dp"
-        android:text="hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/Back_color"
+        android:titleTextColor="@color/white"
+        app:title="Notification"
+        app:titleTextColor="@color/white"
+        android:gravity="center">
 
-</FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/Ntablayout"></com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/NviewPage"></androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
