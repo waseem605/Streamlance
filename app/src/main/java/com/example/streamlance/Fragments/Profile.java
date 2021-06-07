@@ -26,10 +26,12 @@ public class Profile extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_profile, container, false);
         mLinearLayout = (LinearLayout)view.findViewById(R.id.message_layout);
+
         mLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getActivity(), ChatActivity.class));
+                Intent intent = new Intent(getActivity(),ChatActivity.class);
+                startActivity(intent);
             }
         });
         return view;

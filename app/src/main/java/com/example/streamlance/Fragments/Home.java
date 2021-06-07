@@ -40,6 +40,7 @@ public class Home extends Fragment {
          mtabLayout=(TabLayout) v.findViewById (R.id.tablayout);
          mviewPager=(ViewPager) v.findViewById(R.id.viewPage);
 
+
          homeAdapter =new HomeAdapter(getActivity().getSupportFragmentManager());
          mviewPager.setAdapter(homeAdapter);
          mtabLayout.setupWithViewPager(mviewPager);

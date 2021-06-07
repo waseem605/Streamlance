@@ -3,6 +3,7 @@ package com.example.streamlance.Adapter;
 
 import android.renderscript.ScriptGroup;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
