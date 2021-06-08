@@ -10,4 +10,5 @@
 
     <color name="Back_color">#0c73ec</color>
     <color name="orange">#FE732E</color>
+    <color name="gray">#e3e3e3</color>
 </resources>

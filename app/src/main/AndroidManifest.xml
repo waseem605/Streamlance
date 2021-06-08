@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Streamlance">
-        <activity android:name=".MainPage.ChatActivity"></activity>
+        <activity android:name=".Services.SubcategoryServices"></activity>
+        <activity android:name=".Services.Choose_services" />
+        <activity android:name=".MainPage.ChatDetails" />
+        <activity android:name=".MainPage.ChatActivity" />
         <activity android:name=".common.GetStarted" />
         <activity android:name=".Login.PasswordVerification" />
         <activity android:name=".MainPage.MainActivity" />

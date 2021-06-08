@@ -63,5 +63,14 @@
     <string name="help_support"><![CDATA[Help & support]]></string>
     <string name="privacy_policy"><![CDATA[Privacy & Policy]]></string>
     <string name="searchbar">Search</string>
+    <string name="choose_service">Choose Service</string>
+    <string name="choose_type_service">Choose type of service you are looking for</string>
+    <string name="continue_btn">Continue</string>
+    <string name="brake_service_S">Brake Service</string>
+    <string name="engine_S">Engine</string>
+    <string name="maintenance_schedule_S">Maintenance Schedule</string>
+    <string name="oil_and_filter_S">Oil and Filter service</string>
+    <string name="brake_service_S">Brake Service</string>
+    <string name="others">Others</string>
 
 </resources>
