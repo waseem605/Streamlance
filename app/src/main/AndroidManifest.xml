@@ -14,6 +14,7 @@
         <activity android:name=".Services.Choose_services" />
         <activity android:name=".MainPage.ChatDetails" />
         <activity android:name=".MainPage.ChatActivity" />
+        <activity android:name=".MainPage.Garage" />
         <activity android:name=".common.GetStarted" />
         <activity android:name=".Login.PasswordVerification" />
         <activity android:name=".MainPage.MainActivity" />

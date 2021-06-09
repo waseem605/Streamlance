@@ -36,6 +36,12 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/synthetic_oil"></TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:button="@drawable/custom_checkbox"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,13 +52,19 @@
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="270dp"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:padding="7dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/synthetic_blend"></TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_checkbox"
+            android:layout_marginLeft="1dp"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -70,6 +82,12 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/electronics"></TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="165dp"
+            android:button="@drawable/custom_checkbox"
+            />
     </LinearLayout>
 
     <Button

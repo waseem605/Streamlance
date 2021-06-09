@@ -14,15 +14,15 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="190dp"
         android:src="@drawable/group_60057" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="65dp"
         android:gravity="center"
         android:text="No Vehicles added"
         android:textSize="30sp"
@@ -32,8 +32,8 @@
         android:id="@+id/textView3"
         android:layout_width="232dp"
         android:layout_height="36dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
         android:textSize="15sp"
         android:gravity="center"
         android:text="Please add a Vehicle to get Started"
@@ -42,13 +42,23 @@
     <Button
         android:id="@+id/add_vehicle"
         android:background="@drawable/rounded"
-        android:layout_width="130dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
         android:textColor="#FFFFFF"
-        android:layout_height="60dp"
-       android:layout_marginLeft="130dp"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="85dp"
         android:gravity="center"
         android:text="Add Vehicle" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_button"
+        android:backgroundTint="@color/Back_color"
+        android:text="+"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="80dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"></Button>
 
 
 </LinearLayout>

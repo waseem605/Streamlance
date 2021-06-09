@@ -1,5 +1,6 @@
 package com.example.streamlance.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
@@ -8,8 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.streamlance.MainPage.Garage;
 import com.example.streamlance.R;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+
+import java.util.function.IntToDoubleFunction;
 
 
 public class mygarage extends Fragment {
@@ -29,12 +33,9 @@ public class mygarage extends Fragment {
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-               Bottom_Sheet dialog=new Bottom_Sheet();
-               dialog.show(getFragmentManager(),dialog.getTag());
-
+                Intent intent = new Intent(mygarage.this.getActivity(), Garage.class);
+                startActivity(intent);
             }
-
         });
         return v;
     }
