@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -78,7 +78,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -92,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:padding="7dp"
+            android:padding="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/brake_service_S"></TextView>
@@ -101,7 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -124,7 +124,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -148,7 +148,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -171,7 +171,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="5dp"
+        android:padding="10dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">

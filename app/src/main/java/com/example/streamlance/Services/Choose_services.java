@@ -17,6 +17,6 @@ public class Choose_services extends AppCompatActivity {
     }
 
     public void callSubservience(View view) {
-        startActivity(new Intent(Choose_services.this,SubcategoryServices.class));
+        startActivity(new Intent(Choose_services.this, SubcategoryServices.class));
     }
 }

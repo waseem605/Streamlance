@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/white"></solid>
+                    <corners android:radius="10dp"></corners>
+                    <padding android:right="10dp"></padding>
+                </shape>
+            </item>
+            <item android:left="260dp"
+                android:top="20dp"
+                android:gravity="end"
+                android:right="10dp"
+                android:bottom="20dp">
+                <bitmap android:src="@drawable/icon_ionic_md_arrow_dropdown"
+                    />
+
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

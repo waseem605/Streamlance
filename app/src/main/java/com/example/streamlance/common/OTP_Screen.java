@@ -22,8 +22,11 @@ public class OTP_Screen extends AppCompatActivity {
         mGetOtpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(OTP_Screen.this, VerifyOtp.class));
+
+                Intent intent = new Intent(OTP_Screen.this, VerifyOtp.class);
+                startActivity(intent);
                 finish();
+
             }
         });
 

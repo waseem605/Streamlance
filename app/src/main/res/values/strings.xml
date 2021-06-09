@@ -62,6 +62,16 @@
     <string name="about_streamlan">About Streamlan</string>
     <string name="help_support"><![CDATA[Help & support]]></string>
     <string name="privacy_policy"><![CDATA[Privacy & Policy]]></string>
+
+    <!-- drop down menu -->
+
+    <string-array name="prefer_hours">
+        <item>Morning</item>
+        <item>Evening</item>
+        <item>Both</item>
+    </string-array>
+
+
     <string name="searchbar">Search</string>
     <string name="choose_service">Choose Service</string>
     <string name="choose_type_service">Choose type of service you are looking for</string>
@@ -80,5 +90,17 @@
     <string name="quota_submitted">Quota Submitted</string>
     <string name="quota_submitted_desc">Your service quote is submitted successfully! Veiw service quotes from providers</string>
     <string name="view_quotes">View Quotes</string>
+    <string name="services_requested">Services Requested</string>
+    <string name="oil_and_filter_servicess">Oil and Filter service - Synthetic Engine Oil</string>
+    <string name="add_additional_service">Add additional service</string>
+    <string name="location_ss">Location</string>
+    <string name="location_addres_tem">21, Alex Davidson Avenue, Opposite Omegatron, Vicent Smith Quarters, UAE</string>
+    <string name="change_location">Change Location</string>
+    <string name="note">Note</string>
+    <string name="preferred_date_range">Preferred date Range</string>
+    <string name="preferred_hours">Preferred Hours</string>
+    <string name="request_quote">Request Quote</string>
+    <string name="select_your_vehicle_s_make">Select your vehicle\'s make</string>
+    <string name="select_your_vehicle_s_trim">Select your vehicle\'s trim</string>
 
 </resources>
