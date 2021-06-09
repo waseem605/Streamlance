@@ -19,6 +19,14 @@
     <string name="engine_S">Engine</string>
     <string name="maintenance_schedule_S">Maintenance Schedule</string>
     <string name="oil_and_filter_S">Oil and Filter service</string>
-    <string name="brake_service_S">Brake Service</string>
     <string name="others">Others</string>
+    <string name="synthetic_oil">Synthetic Oil</string>
+    <string name="synthetic_blend">Synthetic Blend Oil/ High Mileage</string>
+    <string name="electronics">Electronics</string>
+    <string name="service_summary">Service Summary</string>
+    <string name="bmw_x5">BMW x5</string>
+    <string name="_625fedf66a80">625fedf66a80</string>
+    <string name="quota_submitted">Quota Submitted</string>
+    <string name="quota_submitted_desc">Your service quote is submitted successfully! Veiw service quotes from providers</string>
+    <string name="view_quotes">View Quotes</string>
 </resources>

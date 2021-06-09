@@ -193,6 +193,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/continue_Btn"
+        android:onClick="callSubservience"
         android:background="@drawable/rounded"
         android:layout_margin="10dp"
         android:text="@string/continue_btn"
