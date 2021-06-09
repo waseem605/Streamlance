@@ -40,7 +40,7 @@
         />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/add_vehicle"
         android:background="@drawable/rounded"
         android:layout_width="130dp"
         android:layout_marginTop="10dp"
