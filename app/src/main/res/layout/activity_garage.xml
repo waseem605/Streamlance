@@ -1,65 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainPage.Garage">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:orientation="vertical">
+
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             app:title="Garage"
-            app:titleMarginStart="160dp"
-            android:gravity="center"></androidx.appcompat.widget.Toolbar>
+            app:titleMarginStart="160dp"></androidx.appcompat.widget.Toolbar>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="My Vehicles"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
-            android:textSize="20sp"
-            android:fontFamily="@font/hkgbold"></TextView>
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/hkgbold"
+            android:text="My Vehicles"
+            android:textSize="20sp"></TextView>
+
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/chatrecyclerview"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:id="@+id/carrecyclerview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:id="@+id/addmorevehicle">
+
             <Button
                 android:layout_width="25dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
                 android:background="@drawable/ring"
                 android:backgroundTint="@color/Back_color"
                 android:text="+"
-                android:textColor="@color/Back_color"
-                android:layout_marginLeft="120dp"></Button>
+                android:textColor="@color/Back_color"></Button>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add new vehicle"
                 android:layout_marginLeft="10dp"
+                android:text="Add new vehicle"
                 android:textColor="@color/Back_color"></TextView>
         </LinearLayout>
     </LinearLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_main_navigation_garage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:layout_alignParentBottom="true"
-        app:itemIconSize="24sp"
-        android:layout_centerHorizontal="true"
-        app:menu="@menu/bottom_nav_menu" />
-
-
-</RelativeLayout>
+</LinearLayout>

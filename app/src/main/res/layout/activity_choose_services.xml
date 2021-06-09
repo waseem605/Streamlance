@@ -46,10 +46,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:padding="7dp"
+            android:padding="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="Maintenance Schedule"></TextView>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:button="@drawable/custom_checkbox"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,10 +76,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:padding="7dp"
+            android:padding="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="Oil and Filter service"></TextView>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:button="@drawable/custom_checkbox" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -96,6 +109,12 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/brake_service_S"></TextView>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:button="@drawable/custom_checkbox" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -115,10 +134,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:padding="7dp"
+            android:padding="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/engine_S"></TextView>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:button="@drawable/custom_checkbox" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -139,10 +164,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:padding="7dp"
+            android:padding="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/oil_and_filter_S" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:button="@drawable/custom_checkbox"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -162,10 +193,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:padding="7dp"
+            android:padding="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/brake_service_S"></TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:button="@drawable/custom_checkbox"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -185,10 +222,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:padding="7dp"
+            android:padding="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/others"></TextView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:button="@drawable/custom_checkbox"
+            />
     </LinearLayout>
     <Button
         android:layout_width="match_parent"
@@ -196,7 +239,9 @@
         android:id="@+id/continue_Btn"
         android:onClick="callSubservience"
         android:background="@drawable/rounded"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
         android:text="@string/continue_btn"
         android:textSize="20sp"
         android:textColor="@color/white"></Button>
