@@ -47,6 +47,7 @@
         android:textColor="#FFFFFF"
         android:layout_height="wrap_content"
        android:layout_marginLeft="85dp"
+        android:textSize="20sp"
         android:gravity="center"
         android:text="Add Vehicle" />
     <Button
