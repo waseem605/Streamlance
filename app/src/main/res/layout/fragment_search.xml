@@ -19,54 +19,39 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/Back_color">
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
-        android:background="@drawable/searchbar"
-        android:hint="@string/searchbar"
-        android:padding="10dp"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></EditText>
-    </LinearLayout>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/searchbar"
+            android:orientation="horizontal">
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/__import_image"></ImageView>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/search_icon"></ImageView>
+            <EditText
+                android:layout_width="230dp"
                 android:layout_height="wrap_content"
-                android:text="Gresasy Albo Auto Repair"
-                android:textSize="20sp"
-                android:fontFamily="@font/hkgbold"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="35dp"></TextView>
-                <Button
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/___color"></Button>
-            </LinearLayout>
+                android:hint="Search"
+                ></EditText>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/fiilter"></ImageView>
 
         </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_white">
+       <include layout="@layout/sample_garage"></include>
     </ScrollView>
 
 </LinearLayout>

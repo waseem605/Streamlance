@@ -2,10 +2,14 @@ package com.example.streamlance.MainPage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
+import com.example.streamlance.Fragments.mygarage;
 import com.example.streamlance.R;
 
 import java.util.ArrayList;
@@ -14,11 +18,20 @@ import java.util.Arrays;
 public class ByMake extends AppCompatActivity {
 
     private Spinner mNameSpinner,mYearSpinner,mModelSpinner,mTrimSpinner;
+    Button mbtn,mbtnadd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_by_make);
+        mbtn=(Button)findViewById(R.id.bymake_vehicle);
+        mbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ByMake.this, mygarage.class);
+                startActivity(intent);
+            }
+        });
 
 
 

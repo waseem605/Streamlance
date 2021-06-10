@@ -67,7 +67,6 @@
         android:backgroundTint="@color/Back_color"
         android:text="+"
         android:layout_marginLeft="280dp"
-        android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:textColor="@color/white"></Button>
 

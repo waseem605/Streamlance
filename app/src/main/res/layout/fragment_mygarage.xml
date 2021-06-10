@@ -53,6 +53,7 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:id="@+id/addvehicle"
         android:background="@drawable/circle_button"
         android:backgroundTint="@color/Back_color"
         android:text="+"

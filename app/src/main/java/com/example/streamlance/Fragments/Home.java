@@ -22,7 +22,6 @@ public class Home extends Fragment {
     HomeAdapter homeAdapter;
     private TabLayout mtabLayout;
     private ViewPager mviewPager;
-    private Toolbar mToolbar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
