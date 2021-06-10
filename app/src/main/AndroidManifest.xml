@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Streamlance">
-        <activity android:name=".GarageFragments.Garage_Info"></activity>
+        <activity android:name=".GarageFragments.Quote_Details"></activity>
+        <activity android:name=".GarageFragments.Garage_Info" />
         <activity android:name=".MainPage.ProvidersQuotes" />
         <activity android:name=".MainPage.ByMake" />
         <activity android:name=".Services.QuotaDetails" />

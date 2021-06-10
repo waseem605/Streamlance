@@ -235,6 +235,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded"
                 android:text="View Quotes"
+                android:id="@+id/viewquotes"
                 android:textColor="@color/white"
                 ></Button>
         </LinearLayout>
