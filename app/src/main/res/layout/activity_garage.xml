@@ -56,8 +56,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="Add new vehicle"
-                android:textColor="@color/Back_color"></TextView>
+                android:textColor="@color/Back_color"
+                android:textSize="16sp"></TextView>
         </LinearLayout>
     </LinearLayout>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_button"
+        android:backgroundTint="@color/Back_color"
+        android:text="+"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"></Button>
 
 </LinearLayout>
