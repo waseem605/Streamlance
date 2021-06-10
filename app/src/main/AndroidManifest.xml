@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.streamlance">
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +21,8 @@
         <activity android:name=".MainPage.Garage" />
         <activity android:name=".common.GetStarted" />
         <activity android:name=".Login.PasswordVerification" />
-        <activity android:name=".MainPage.MainActivity" />
+        <activity android:name=".MainPage.MainActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Login.Login" />
         <activity android:name=".Login.Password" />
         <activity android:name=".Login.RegisterUser" />

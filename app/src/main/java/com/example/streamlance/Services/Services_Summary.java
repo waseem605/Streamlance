@@ -47,6 +47,9 @@ public class Services_Summary extends Activity {
         dialog.setContentView(R.layout.quata_submited_dialog);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
 
+        dialog.show();
+
+/*
         mViewQuotaBtn = (Button)findViewById(R.id.view_quota_btn);
         mViewQuotaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,11 +58,7 @@ public class Services_Summary extends Activity {
                 Intent intent = new Intent(Services_Summary.this, QuotaDetails.class);
                 startActivity(intent);
             }
-        });
-
-
-        dialog.show();
-
+        });*/
     }
 // date selection method
     public void selectDate(View view) {
