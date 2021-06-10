@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.example.streamlance.Fragments.Home;
 import com.example.streamlance.Fragments.mygarage;
 import com.example.streamlance.R;
 
@@ -28,7 +29,7 @@ public class ByMake extends AppCompatActivity {
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ByMake.this, mygarage.class);
+                Intent intent = new Intent(ByMake.this, Garage.class);
                 startActivity(intent);
             }
         });
