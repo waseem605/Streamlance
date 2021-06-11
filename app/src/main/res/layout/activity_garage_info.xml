@@ -53,6 +53,7 @@
             android:layout_width="40dp"
             android:layout_height="30dp"
              android:layout_marginLeft="70dp"
+            android:scaleType="fitXY"
             android:src="@drawable/group_59682"></ImageView>
 
     </LinearLayout>
