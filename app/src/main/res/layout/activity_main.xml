@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,14 +8,14 @@
     tools:context=".MainPage.MainActivity"
     android:id="@+id/fragment_container">
 
-    <include layout="@layout/appbar"
-        ></include>
+
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_main_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/hk_grotesk_regular"
         android:background="@color/white"
         android:layout_alignParentBottom="true"
         app:itemIconSize="24sp"

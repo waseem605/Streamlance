@@ -24,7 +24,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/hkgbold"
+            android:fontFamily="@font/hk_grotesk_bold"
+            android:textColor="@color/black"
             android:text="My Vehicles"
             android:textSize="20sp"></TextView>
 

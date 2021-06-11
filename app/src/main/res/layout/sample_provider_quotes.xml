@@ -39,7 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="3dp"
-                android:fontFamily="@font/hkgbold"
+                android:fontFamily="@font/hk_grotesk_medium"
+                android:textColor="@color/black"
                 android:text="4.8"
                 android:textSize="20sp"></TextView>
         </LinearLayout>
@@ -62,7 +63,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/hkgbold"
+                    android:fontFamily="@font/hk_grotesk_medium"
+                    android:textColor="@color/black"
                     android:text="2.6km"
                     android:textSize="20sp"></TextView>
             </LinearLayout>
@@ -85,7 +87,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="3dp"
-                    android:fontFamily="@font/hkgbold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hk_grotesk_medium"
                     android:text="$776.61"
                     android:textSize="20sp"></TextView>
             </LinearLayout>
@@ -100,7 +103,8 @@
                 android:layout_height="wrap_content"
                 android:text="Gresasy Albo Auto Repair"
                 android:textSize="20sp"
-                android:fontFamily="@font/hkgbold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"></TextView>
             <Button
@@ -114,13 +118,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textSize="18sp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
             android:text="Monday, 10 Nov 2017 at 10:00 AM to 12:00 PM"
             ></TextView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:text="145 valencia st.san Fransisco 0.2km"
             android:layout_marginLeft="10dp"></TextView>
 
@@ -141,9 +149,10 @@
                 android:layout_height="wrap_content"
                 android:text="Loaner Car"
                 android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"
-                android:fontFamily="@font/hkgbold"></TextView>
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
@@ -155,9 +164,10 @@
                 android:layout_height="wrap_content"
                 android:text="Shuttle Service"
                 android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"
-                android:fontFamily="@font/hkgbold"></TextView>
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -176,9 +186,10 @@
                 android:layout_height="wrap_content"
                 android:text="Loaner Car"
                 android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"
-                android:fontFamily="@font/hkgbold"></TextView>
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
@@ -191,8 +202,9 @@
                 android:text="Shuttle Service"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:textColor="@color/black"
                 android:textSize="13sp"
-                android:fontFamily="@font/hkgbold"></TextView>
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -211,8 +223,9 @@
                 android:text="Loaner Car"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:textColor="@color/black"
                 android:textSize="13sp"
-                android:fontFamily="@font/hkgbold"></TextView>
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
 
         </LinearLayout>
         <LinearLayout

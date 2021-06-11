@@ -1,258 +1,264 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".GarageFragments.AboutGarage">
-
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_margin="10dp"
-      android:background="@drawable/white_round_background"
-      android:padding="10dp"
-      android:orientation="vertical">
-
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="@string/basic_informations"
-          android:textSize="18sp"
-          android:textColor="@color/black"
-          android:fontFamily="@font/hk_grotesk_medium"
-          android:layout_margin="5dp"></TextView>
-
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="@string/basic_info_desc"
-          android:textSize="14sp"
-          android:textColor="@color/black"
-          android:fontFamily="@font/hk_grotesk_medium"
-          android:layout_margin="10dp"></TextView>
-
-  </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:background="@drawable/white_round_background"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/aminities"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:fontFamily="@font/hk_grotesk_medium"></TextView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/white_round_background"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:padding="5dp"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/maintenance"
-                        ></ImageView>
+                android:text="@string/basic_informations"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_medium"
+                android:layout_margin="5dp"></TextView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Maintaince"
-                        android:textSize="16sp"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginStart="10dp"
-                        android:fontFamily="@font/hk_grotesk_medium"
-                        android:textColor="@color/black"></TextView>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:padding="5dp"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/cctv"
-                        ></ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="CCTV"
-                        android:textSize="16sp"
-                        android:layout_marginStart="10dp"
-                        android:fontFamily="@font/hk_grotesk_medium"
-                        android:textColor="@color/black"></TextView>
-
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:padding="5dp"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/hour24_protection"
-                        ></ImageView>
+                android:text="@string/basic_info_desc"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_medium"
+                android:layout_margin="10dp"></TextView>
 
-                    <TextView
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/white_round_background"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aminities"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/hk_grotesk_medium"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/_24_7_service"
-                        android:textSize="16sp"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginStart="10dp"
-                        android:fontFamily="@font/hk_grotesk_medium"
-                        android:textColor="@color/black"></TextView>
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/maintenance"
+                            ></ImageView>
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maintaince"
+                            android:textSize="16sp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/cctv"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CCTV"
+                            android:textSize="16sp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:padding="5dp"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/wifi"
-                        ></ImageView>
-
-                    <TextView
+                    android:layout_marginStart="30dp"
+                    android:orientation="vertical">
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/wifi"
-                        android:textSize="16sp"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginStart="10dp"
-                        android:fontFamily="@font/hk_grotesk_medium"
-                        android:textColor="@color/black"></TextView>
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/hour24_protection"
+                            ></ImageView>
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_24_7_service"
+                            android:textSize="16sp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/wifi"
+                            ></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wifi"
+                            android:textSize="16sp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:orientation="horizontal">
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/warranties_and_certifications"
+                android:textSize="18sp"
+                android:fontFamily="@font/hk_grotesk_medium"
+                android:textColor="@color/black"
+                android:background="@drawable/bottomsheet"
+                android:backgroundTint="@color/white"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
             android:padding="10dp"
-            android:text="@string/warranties_and_certifications"
-            android:textSize="18sp"
-            android:fontFamily="@font/hk_grotesk_medium"
-            android:textColor="@color/black"
-            android:background="@drawable/bottomsheet"
-            android:backgroundTint="@color/white"></TextView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="2dp"
-        android:padding="10dp"
-        android:background="@drawable/white_background_b_round"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/warranty"
-            android:textSize="15sp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/hk_grotesk_medium"
-            android:layout_margin="10dp"></TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/address_warranty"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/hk_grotesk_regular"
+            android:background="@drawable/white_background_b_round"
             android:layout_marginStart="10dp"
-            android:layout_marginBottom="10dp"
-            ></TextView>
+            android:layout_marginEnd="10dp"
+            >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/warranty"
-            android:textSize="15sp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/hk_grotesk_medium"
-            android:layout_margin="5dp"></TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Best Repair Award Winners"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/hk_grotesk_regular"></TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="2019"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/hk_grotesk_regular"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/warranty"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_medium"
+                android:layout_margin="10dp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address_warranty"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/warranty"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_medium"
+                android:layout_margin="5dp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best Repair Award Winners"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/hk_grotesk_regular"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2019"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/hk_grotesk_regular"></TextView>
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Best Workshop Achievement Award"
-            android:textSize="12sp"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/hk_grotesk_regular"
-            android:layout_marginStart="10dp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best Workshop Achievement Award"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:layout_marginStart="10dp"></TextView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="2019"
-            android:textSize="12sp"
-            android:textColor="@color/black"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/hk_grotesk_regular"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2019"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/hk_grotesk_regular"></TextView>
 
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

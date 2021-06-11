@@ -14,7 +14,6 @@
         android:layout_width="80dp"
         android:layout_marginTop="20dp"
         android:layout_height="3dp"
-
         android:layout_marginLeft="140dp"
         android:backgroundTint="@color/white"
         android:background="@drawable/rounded"
@@ -24,15 +23,16 @@
         android:layout_height="wrap_content"
         android:text="How can we help?"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="28sp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/hkgbold"
+        android:fontFamily="@font/hk_grotesk_bold"
         android:textAlignment="center"></TextView>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create your account to save your preference and jump start your practice"
         android:textColor="@color/white"
+        android:fontFamily="@font/hk_grotesk_regular"
         android:textSize="16sp"
         android:textAlignment="center"></TextView>
     <LinearLayout
@@ -59,7 +59,8 @@
             android:layout_height="wrap_content"
             android:text="Choose a specific service when you know the problem"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="14sp"
             android:layout_marginLeft="15dp"
             ></TextView>
     </LinearLayout>
@@ -84,7 +85,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Help me diagnose my vehicle and recieve quotes from mechanics"
-            android:textSize="16sp"
+            android:textSize="14sp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:layout_marginLeft="15dp"
             ></TextView>
     </LinearLayout>

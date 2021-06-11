@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.streamlance.MainPage.ProvidersQuotes;
 import com.example.streamlance.R;
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
@@ -22,12 +23,15 @@ public class Services_Summary extends Activity {
     private TextView mStartDate, mEndDate;
     private Spinner spinner;
 
+
     private Button mViewQuotaBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_services_summary);
         mStartDate = (TextView)findViewById(R.id.start_date_tx);
+        mViewQuotaBtn = (Button)findViewById(R.id.view_quota_btn);
+
         mEndDate = (TextView)findViewById(R.id.end_date_tx);
         spinner = (Spinner)findViewById(R.id.select_hours_range);
 
@@ -46,19 +50,17 @@ public class Services_Summary extends Activity {
         Dialog dialog = new Dialog(Services_Summary.this);
         dialog.setContentView(R.layout.quata_submited_dialog);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
-
+        mViewQuotaBtn = (Button)dialog.findViewById(R.id.view_quota_btn);
         dialog.show();
 
-/*
-        mViewQuotaBtn = (Button)findViewById(R.id.view_quota_btn);
         mViewQuotaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Services_Summary.this, QuotaDetails.class);
+                Intent intent = new Intent(Services_Summary.this, ProvidersQuotes.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 // date selection method
     public void selectDate(View view) {

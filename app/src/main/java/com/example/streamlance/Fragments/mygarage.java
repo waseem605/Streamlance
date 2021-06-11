@@ -32,6 +32,7 @@ public class mygarage extends Fragment {
         View v= inflater.inflate(R.layout.fragment_mygarage, container, false);
         mbtn=(Button)v.findViewById(R.id.add_vehicle);
         mbtnadd=(Button)v.findViewById(R.id.addvehicle);
+
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

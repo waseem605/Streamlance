@@ -1,6 +1,8 @@
 package com.example.streamlance.MainPage;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,9 +28,14 @@ public class ByMake extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_by_make);
         mbtn=(Button)findViewById(R.id.bymake_vehicle);
+
+
+
+
         mbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(ByMake.this, Garage.class);
                 startActivity(intent);
             }
@@ -63,4 +70,7 @@ public class ByMake extends AppCompatActivity {
 
 
     }
+
+
+
 }

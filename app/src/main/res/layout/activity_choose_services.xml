@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="20dp"
+        android:textColor="@color/black"
         android:layout_marginBottom="10dp"
         android:text="@string/choose_service"
         android:textSize="24sp"
@@ -23,6 +24,8 @@
         android:layout_height="wrap_content"
         android:text="@string/choose_type_service"
         android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dm_sans_regular"
         android:gravity="center"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="60dp"></TextView>
@@ -48,7 +51,9 @@
             android:textSize="20sp"
             android:padding="10dp"
             android:layout_marginStart="10dp"
+            android:textColor="@color/black"
             android:layout_marginEnd="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:text="Maintenance Schedule"></TextView>
 
         <CheckBox
@@ -76,8 +81,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:padding="10dp"
             android:layout_marginStart="10dp"
+            android:textColor="@color/black"
             android:layout_marginEnd="10dp"
             android:text="Oil and Filter service"></TextView>
 
@@ -106,7 +113,9 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:padding="10dp"
+            android:textColor="@color/black"
             android:layout_marginStart="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:layout_marginEnd="10dp"
             android:text="@string/brake_service_S"></TextView>
 
@@ -134,8 +143,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:padding="10dp"
             android:layout_marginStart="10dp"
+            android:textColor="@color/black"
             android:layout_marginEnd="10dp"
             android:text="@string/engine_S"></TextView>
 
@@ -164,8 +175,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:padding="10dp"
             android:layout_marginStart="10dp"
+            android:textColor="@color/black"
             android:layout_marginEnd="10dp"
             android:text="@string/oil_and_filter_S" />
         <CheckBox
@@ -194,6 +207,8 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:padding="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/brake_service_S"></TextView>
@@ -223,6 +238,8 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:padding="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/others"></TextView>

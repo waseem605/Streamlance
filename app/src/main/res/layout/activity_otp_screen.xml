@@ -24,7 +24,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/hkgbold"
+            android:fontFamily="@font/hk_grotesk_bold"
             android:text="@string/otp_heading"
             android:textColor="@color/black"
             android:textSize="28sp"
@@ -41,6 +41,7 @@
             android:text="@string/otp_desc"
             android:textAlignment="center"
             android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.9"
@@ -61,6 +62,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:padding="0dp"
+                android:fontFamily="@font/dm_sans_regular"
                 android:text="Phone Number"
                 android:textColor="@color/black"
                 android:textSize="18sp"></TextView>
@@ -84,6 +86,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="267dp"
+                    android:fontFamily="@font/dm_sans_regular"
                     android:layout_height="match_parent"
                     android:hint="333-1234567" />
             </LinearLayout>
@@ -100,6 +103,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/rounded"
+        android:fontFamily="@font/hk_grotesk_semi_bold"
         android:text="@string/get_otp"
         android:textAllCaps="false"
         android:textColor="@color/white"

@@ -17,9 +17,7 @@
                 android:bottom="20dp">
                 <bitmap android:src="@drawable/icon_ionic_md_arrow_dropdown"
                     />
-
             </item>
         </layer-list>
     </item>
-
 </selector>

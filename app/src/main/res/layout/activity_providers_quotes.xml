@@ -10,6 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="Provider Quotes"
+        android:textColor="@color/black"
+        android:fontFamily="@font/hk_grotesk_semi_bold"
         app:titleMarginStart="140dp"
         android:gravity="center"></androidx.appcompat.widget.Toolbar>
     <LinearLayout
@@ -26,6 +28,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:background="@color/white"
                 android:text="SORT"></Button>
         </LinearLayout>
@@ -44,6 +48,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:background="@color/white"
                 android:text="Filters"></Button>
         </LinearLayout>
@@ -61,6 +67,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:background="@color/white"
                 android:text="Map"></Button>
         </LinearLayout>

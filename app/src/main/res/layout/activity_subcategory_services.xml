@@ -35,6 +35,8 @@
             android:padding="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:text="@string/synthetic_oil"></TextView>
         <CheckBox
             android:layout_width="wrap_content"
@@ -47,6 +49,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:fontFamily="@font/hk_grotesk_regular"
+        android:textColor="@color/black"
         android:padding="5dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
@@ -56,6 +60,8 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:padding="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/synthetic_blend"></TextView>
@@ -80,6 +86,8 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:padding="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="@string/electronics"></TextView>

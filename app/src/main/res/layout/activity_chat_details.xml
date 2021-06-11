@@ -28,6 +28,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/chat_details_blue"
             android:text="hello how are you"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:textSize="18sp"
             android:textColor="@color/white"
             android:padding="10dp"></TextView>
@@ -37,6 +38,7 @@
             android:layout_below="@id/other_text"
             android:layout_marginTop="20dp"
             android:layout_alignParentEnd="true"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:layout_alignParentRight="true"
             android:background="@drawable/chat_details_white"
             android:text="yes i am fine "
@@ -68,6 +70,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:background="@drawable/chat_details_white"
             android:hint="hello"
             android:padding="5dp"
