@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.nfc.Tag;
 import android.os.Bundle;
@@ -63,6 +64,7 @@ public class Garage extends AppCompatActivity {
             public void onClick(View v) {
                Bottom_Sheet bottom_sheet=new Bottom_Sheet();
                bottom_sheet.show(getSupportFragmentManager(),bottom_sheet.getTag());
+
             }
         });
 
