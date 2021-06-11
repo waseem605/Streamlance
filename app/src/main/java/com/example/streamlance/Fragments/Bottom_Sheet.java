@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.example.streamlance.FlowTwo.Diagonosis;
 import com.example.streamlance.R;
 import com.example.streamlance.Services.Choose_services;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -22,7 +23,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 
 public class Bottom_Sheet extends BottomSheetDialogFragment {
-    LinearLayout mlinearLayout;
+    LinearLayout mlinearLayout, mHelpLinear;
     public Bottom_Sheet ()
     {
 
@@ -44,6 +45,7 @@ public class Bottom_Sheet extends BottomSheetDialogFragment {
 
         View view = inflater.inflate(R.layout.fragment_bottom__sheet, container, false);
         getActivity().getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        mHelpLinear = (LinearLayout)view.findViewById(R.id.help_me_fix_car);
         mlinearLayout = (LinearLayout)view.findViewById(R.id.choose_service);
         mlinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +54,15 @@ public class Bottom_Sheet extends BottomSheetDialogFragment {
                 startActivity(intent);
             }
         });
+
+        mHelpLinear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Diagonosis.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 }

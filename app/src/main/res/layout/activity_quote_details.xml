@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/gray"
     tools:context=".GarageFragments.Quote_Details">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,20 +24,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cancel"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/orange"
             android:textSize="16sp"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="230dp"></TextView>
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:title="Quote Details"
-        app:titleMarginStart="140dp"
-        android:gravity="center"></androidx.appcompat.widget.Toolbar>
-    <LinearLayout
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Quote Details"
+            app:titleMarginStart="140dp"
+            android:gravity="center" />
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -54,13 +57,10 @@
             android:src="@drawable/car"
             app:civ_border_color="#FF000000" />
 
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <TextView
                 android:id="@+id/carname"
@@ -68,9 +68,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:paddingTop="5dp"
+                android:textColor="@color/black"
                 android:layout_marginLeft="5dp"
                 android:text="BMW x5"
-                android:textSize="16sp"
+                android:textSize="19sp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textStyle="bold" />
 
             <TextView
@@ -79,58 +81,75 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:paddingTop="5dp"
+                android:textColor="@color/black"
                 android:paddingBottom="5dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/hk_grotesk_regular"
                 android:text="67jhgfb57ndf " />
 
         </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:orientation="horizontal"
-        android:layout_margin="10dp"
-        android:background="@drawable/bottomsheet"
-        android:backgroundTint="@color/white">
-        <TextView
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Selected Garage"
-            android:textSize="20sp"
-            android:layout_marginLeft="5dp"
-            android:fontFamily="@font/hkgbold"
-
-            ></TextView>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/rounded_white"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:scaleType="matrix"
-            android:layout_margin="10dp"
-            android:src="@drawable/__import_image"></ImageView>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:orientation="vertical">
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Gresasy Elbo Auto Repair"
-            android:textSize="22sp"
-            android:fontFamily="@font/hkgbold"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="143 valentine st,sanFrancisco 0.2km"></TextView>
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bottomsheet"
+                android:backgroundTint="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Garage"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/hk_grotesk_semi_bold"
+
+                    ></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/white_background_b_round"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:scaleType="matrix"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/__import_image"></ImageView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Gresasy Elbo Auto Repair"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/hk_grotesk_regular"
+                        android:text="143 valentine st,sanFrancisco 0.2km"></TextView>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -144,11 +163,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Garage Note"
+            android:fontFamily="@font/hk_grotesk_medium"
+            android:textColor="@color/black"
             android:layout_marginLeft="10dp"
             android:textSize="16sp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
             android:layout_marginLeft="10dp"
             android:textSize="12sp"></TextView>
@@ -160,24 +183,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Service Requested"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
-                android:textSize="16sp"></TextView>
+                android:textSize="14sp"></TextView>
 
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="34dp"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:text="Labors"
-                android:textSize="16sp"></TextView>
+                android:textSize="14sp"></TextView>
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="Parts"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:textSize="16sp"></TextView>
+                android:layout_marginLeft="30dp"
+                android:textSize="14sp"></TextView>
         </LinearLayout>
 
         <LinearLayout
@@ -193,6 +222,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
                 android:text="Oil and Filter Service"
                 android:textSize="13sp"></TextView>
 
@@ -200,6 +231,8 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
                 android:layout_marginTop="5dp"
                 android:text="$141.0"
                 android:textSize="13sp"></TextView>
@@ -209,6 +242,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
                 android:text="$141.0"
                 android:textSize="13sp"></TextView>
 
@@ -225,17 +260,23 @@
             android:layout_width="133dp"
             android:layout_height="wrap_content"
             android:text="Oil and Filter Service"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginLeft="10dp"
             android:textSize="13sp"></TextView>
         <TextView
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="$141.0"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginLeft="50dp"
             android:textSize="13sp"></TextView>
         <TextView
             android:layout_width="50dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:text="$141.0"
             android:layout_marginLeft="20dp"
             android:textSize="13sp"></TextView>
@@ -254,6 +295,8 @@
             android:layout_height="wrap_content"
             android:text="Oil and Filter Service"
             android:layout_marginTop="5dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginLeft="10dp"
             android:textSize="13sp"></TextView>
 
@@ -261,6 +304,8 @@
             android:layout_width="50dp"
             android:layout_height="23dp"
             android:layout_marginLeft="50dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginTop="5dp"
             android:text="$141.0"
             android:textSize="13sp"></TextView>
@@ -269,6 +314,8 @@
             android:layout_height="wrap_content"
             android:text="$141.0"
             android:layout_marginLeft="20dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginTop="5dp"
             android:textSize="13sp"></TextView>
 
@@ -284,6 +331,8 @@
             android:layout_width="133dp"
             android:layout_height="wrap_content"
             android:text="Sub Total"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:textSize="13sp"></TextView>
@@ -291,6 +340,8 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="$462.0"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="5dp"
             android:textSize="13sp"></TextView>
@@ -298,6 +349,8 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="$464.0"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:textSize="13sp"></TextView>
@@ -330,6 +383,8 @@
                 android:layout_width="133dp"
                 android:layout_height="wrap_content"
                 android:text="Sub Total"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:textColor="@color/black"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
@@ -338,6 +393,8 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="$464.0"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:textColor="@color/black"
                 android:layout_marginLeft="117dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
@@ -354,6 +411,8 @@
                 android:layout_width="133dp"
                 android:layout_height="wrap_content"
                 android:text="Sub Total"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:textColor="@color/black"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
@@ -362,6 +421,8 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="$464.0"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:textColor="@color/black"
                 android:layout_marginLeft="117dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
@@ -378,6 +439,8 @@
                 android:layout_width="133dp"
                 android:layout_height="wrap_content"
                 android:text="Sub Total"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:textColor="@color/black"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
@@ -385,6 +448,8 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="$464.0"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:textColor="@color/black"
                 android:layout_marginLeft="117dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
@@ -403,6 +468,9 @@
                 android:background="@drawable/rounded"
                 android:text="Complete"
                 android:layout_marginLeft="20dp"
+                android:textSize="19sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/white"
                 ></Button>
             <Button
@@ -411,7 +479,10 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded"
                 android:text="Send Message"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:id="@+id/viewquotes"
+                android:textAllCaps="false"
+                android:textSize="19sp"
                 android:textColor="@color/white"
                 ></Button>
         </LinearLayout>

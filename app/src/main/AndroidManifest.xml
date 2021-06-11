@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Streamlance">
+        <activity android:name=".FlowTwo.Diagonosis"></activity>
+        <activity android:name=".GarageFragments.Quote_DetailsCompleted" />
         <activity android:name=".GarageFragments.Quote_Details" />
         <activity android:name=".GarageFragments.Garage_Info" />
         <activity android:name=".MainPage.ProvidersQuotes" />
         <activity android:name=".MainPage.ByMake" />
-        <activity android:name=".Services.QuotaDetails" />
         <activity android:name=".Services.Services_Summary" />
         <activity android:name=".Services.SubcategoryServices" />
         <activity android:name=".Services.Choose_services" />
