@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/paymentdiagnosis"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Payments.Payment_Method"
-    android:id="@+id/paymentmethoddialog"
     android:background="@drawable/bottom"
     android:orientation="vertical"
+    tools:context=".FlowTwo.Payment_Diagnosis"
     app:behavior_hideable="true"
     app:layout_behavior="@string/bottom_sheet_behavior">
     <View
@@ -84,29 +84,21 @@
         android:layout_height="wrap_content"
         android:background="@drawable/rounded"
         android:backgroundTint="@color/orange"
-        android:layout_margin="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:textColor="@color/white"
         android:text="Add Card"
         android:fontFamily="@font/hk_grotesk_bold"
         android:textSize="20sp">
     </Button>
-   <Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/rounded"
-    android:backgroundTint="@color/white"
-    android:layout_marginStart="20dp"
-       android:layout_marginEnd="20dp"
-    android:textColor="@color/Back_color"
-    android:text="Scan Card"
-    android:fontFamily="@font/hk_grotesk_bold"
-    android:textSize="20sp">
-</Button>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
+
 
 </LinearLayout>

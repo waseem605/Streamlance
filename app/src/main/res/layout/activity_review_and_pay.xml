@@ -465,6 +465,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/linearreviewandpay"
             android:background="@drawable/rounded_white"
             android:backgroundTint="@color/Back_color"
             android:layout_margin="20dp"
