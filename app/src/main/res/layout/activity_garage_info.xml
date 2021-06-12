@@ -57,9 +57,9 @@
             android:fontFamily="@font/hk_grotesk_regular"></TextView>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
              android:layout_marginLeft="70dp"
-            android:scaleType="fitXY"
+            android:scaleType="matrix"
             android:src="@drawable/group_59682"></ImageView>
 
     </LinearLayout>

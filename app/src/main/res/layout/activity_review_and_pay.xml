@@ -327,8 +327,8 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:text="Appointment"
-           android:textSize="24sp"
-           android:fontFamily="@font/hk_grotesk_bold"
+           android:textSize="18sp"
+           android:fontFamily="@font/hk_grotesk_semi_bold"
            android:background="@drawable/bottomsheet"
            android:backgroundTint="@color/white"
            android:layout_marginTop="10dp"
@@ -339,8 +339,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Monday 10 Nov 2017 at 10:00 AM to 12:00"
-            android:textSize="16sp"
-            android:fontFamily="@font/hk_grotesk_bold"
+            android:textSize="15sp"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
             android:background="@drawable/white_background_b_round"
             android:backgroundTint="@color/white"
             android:layout_marginTop="2dp"
@@ -351,8 +351,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pickup Location"
-            android:textSize="24sp"
-            android:fontFamily="@font/hk_grotesk_bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
             android:background="@drawable/bottomsheet"
             android:backgroundTint="@color/white"
             android:layout_marginTop="10dp"
@@ -363,8 +363,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="145 Valenciia st, 36 9th St-Dubai-UAE"
-            android:textSize="16sp"
-            android:fontFamily="@font/hk_grotesk_bold"
+            android:textSize="15sp"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
             android:background="@drawable/white_background_b_round"
             android:backgroundTint="@color/white"
             android:layout_marginTop="2dp"
@@ -375,8 +375,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Payment Method"
-            android:textSize="24sp"
-            android:fontFamily="@font/hk_grotesk_bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
             android:background="@drawable/bottomsheet"
             android:backgroundTint="@color/white"
             android:layout_marginTop="10dp"
@@ -402,12 +402,14 @@
                     android:layout_height="50dp"
                     android:layout_marginLeft="5dp"
                     android:src="@drawable/creditcard"></ImageView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="Credit Card"
-                    android:textSize="14sp"></TextView>
+                    android:textSize="13sp"
+                    android:fontFamily="@font/hk_grotesk_regular"></TextView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -419,13 +421,15 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/paypal"></ImageView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Paypal"
-                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="2sp"
-                    android:textSize="14sp"></TextView>
+                    android:layout_marginTop="5dp"
+                    android:text="Paypal"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/hk_grotesk_regular"></TextView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -442,7 +446,8 @@
                     android:layout_height="wrap_content"
                     android:text="Apple pay"
                     android:layout_marginTop="5dp"
-                    android:textSize="14sp"></TextView>
+                    android:textSize="13sp"
+                    android:fontFamily="@font/hk_grotesk_regular"></TextView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -459,7 +464,8 @@
                     android:layout_height="wrap_content"
                     android:text="Cash on Delivery"
                     android:layout_marginTop="5dp"
-                    android:textSize="14sp"></TextView>
+                    android:textSize="13sp"
+                    android:fontFamily="@font/hk_grotesk_regular"></TextView>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -484,7 +490,7 @@
                 android:layout_height="wrap_content"
                 android:text="Confirm and pay"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="19sp"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
         </LinearLayout>

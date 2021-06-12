@@ -17,6 +17,7 @@
             android:background="@drawable/rounded"
             android:backgroundTint="@color/orange"
             android:text="Message"
+            android:id="@+id/btnmessage"
             android:textSize="15sp"
             android:textAllCaps="false"
             android:fontFamily="@font/hk_grotesk_regular"
