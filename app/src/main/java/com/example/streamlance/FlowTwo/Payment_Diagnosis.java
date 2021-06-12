@@ -42,7 +42,10 @@ public class Payment_Diagnosis extends BottomSheetDialogFragment {
         mAdd_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Payment_Diagnosis.this.getActivity(), MainActivity.class));
+
+
+
+
             }
         });
 

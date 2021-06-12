@@ -9,35 +9,88 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Streamlance">
-        <activity android:name=".FlowTwo.Diagnosis_Proivider_Quotes" />
-        <activity android:name=".FlowTwo.DiagnosisReport" />
-        <activity android:name=".FlowTwo.DiagnosisQuote" />
-        <activity android:name=".Services.RecivedQuote" />
-        <activity android:name=".Payments.ReviewAndPay" />
-        <activity android:name=".Services.BookNowSummary" />
-        <activity android:name=".FlowTwo.Diagonosis" />
-        <activity android:name=".GarageFragments.Quote_DetailsCompleted" />
-        <activity android:name=".GarageFragments.Quote_Details" />
-        <activity android:name=".GarageFragments.Garage_Info" />
-        <activity android:name=".MainPage.ProvidersQuotes" />
-        <activity android:name=".MainPage.ByMake" />
-        <activity android:name=".Services.Services_Summary" />
-        <activity android:name=".Services.SubcategoryServices" />
-        <activity android:name=".Services.Choose_services" />
-        <activity android:name=".MainPage.ChatDetails" />
-        <activity android:name=".MainPage.ChatActivity" />
-        <activity android:name=".common.GetStarted" />
-        <activity android:name=".Login.PasswordVerification" />
+        <activity android:name=".MainPage.Map_Activity"></activity>
+        <activity
+            android:name=".FlowTwo.Diagnosis_Proivider_Quotes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlowTwo.DiagnosisReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlowTwo.DiagnosisQuote"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Services.RecivedQuote"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Payments.ReviewAndPay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Services.BookNowSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FlowTwo.Diagonosis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GarageFragments.Quote_DetailsCompleted"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GarageFragments.Quote_Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GarageFragments.Garage_Info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainPage.ProvidersQuotes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainPage.ByMake"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Services.Services_Summary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Services.SubcategoryServices"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Services.Choose_services"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainPage.ChatDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainPage.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.GetStarted"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.PasswordVerification"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainPage.MainActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Login.Login" />
-        <activity android:name=".Login.Password" />
-        <activity android:name=".Login.RegisterUser" />
-        <activity android:name=".Login.VerifyOtp" />
-        <activity android:name=".common.OTP_Screen" />
-        <activity android:name=".common.Onboarding" />
-        <activity android:name=".common.Splash_Screen">
+        <activity
+            android:name=".Login.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.RegisterUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.VerifyOtp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.OTP_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.Onboarding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.Splash_Screen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
