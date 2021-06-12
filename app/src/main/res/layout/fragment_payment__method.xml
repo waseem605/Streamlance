@@ -91,6 +91,7 @@
         android:layout_margin="20dp"
         android:textColor="@color/white"
         android:text="Add Card"
+        android:id="@+id/addcard"
         android:fontFamily="@font/dm_sans_bold"
         android:textSize="14sp">
     </Button>
