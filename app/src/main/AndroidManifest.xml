@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Streamlance">
-        <activity android:name=".FlowTwo.Diagnosis_Proivider_Quotes"></activity>
+        <activity android:name=".FlowTwo.Diagnosis_Proivider_Quotes" />
         <activity android:name=".FlowTwo.DiagnosisReport" />
+        <activity android:name=".FlowTwo.DiagnosisQuote" />
         <activity android:name=".Services.RecivedQuote" />
         <activity android:name=".Payments.ReviewAndPay" />
         <activity android:name=".Services.BookNowSummary" />

@@ -66,6 +66,7 @@ public class Services_Summary extends Activity {
     public void selectDate(View view) {
         MaterialDatePicker.Builder<Pair<Long, Long>> builder = MaterialDatePicker.Builder.dateRangePicker();
 
+        builder.setTitleText("Select Date");
         final MaterialDatePicker materialDatePicker = builder.build();
 
         //materialDatePicker.show(getSupportFragmentManager(),"select date");

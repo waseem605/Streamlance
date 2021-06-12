@@ -41,8 +41,6 @@ public class Diagonosis extends AppCompatActivity {
         });
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_main_navigation);
-        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Home()).commit();
-
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

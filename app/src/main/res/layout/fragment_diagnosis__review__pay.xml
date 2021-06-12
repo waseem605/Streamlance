@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/diagnosisreviewandpay"
-    android:background="@drawable/bottom"
+    android:background="@drawable/bottom_sheet_custom"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".FlowTwo.Diagnosis_Review_Pay"

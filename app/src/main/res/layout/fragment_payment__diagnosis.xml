@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:id="@+id/paymentdiagnosis"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bottom"
+    android:background="@drawable/bottom_sheet_custom"
     android:orientation="vertical"
     tools:context=".FlowTwo.Payment_Diagnosis"
     app:behavior_hideable="true"
@@ -93,6 +93,7 @@
         android:layout_marginEnd="20dp"
         android:textColor="@color/white"
         android:text="Add Card"
+        android:id="@+id/add_card_btn"
         android:fontFamily="@font/dm_sans_bold"
         android:textSize="14sp">
     </Button>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,51 +9,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:layout_marginBottom="604dp"
         android:background="@drawable/white_round_background"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/hk_grotesk_bold"
-            android:gravity="center"
-            android:text="@string/quota_submitted"
-            android:textSize="26sp"></TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/quota_submitted_desc"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:gravity="center"
             android:padding="5dp"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/hk_grotesk_regular"
             android:paddingStart="40dp"
-            android:layout_margin="20dp"
-            android:paddingEnd="40dp"></TextView>
+            android:paddingEnd="40dp"
+            android:textColor="@color/black"
+            android:text="@string/view_history_desc"
+            android:textSize="16sp"></TextView>
 
         <Button
+            android:id="@+id/view_history_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/view_quota_btn"
-            android:background="@drawable/rounded"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            android:textAllCaps="false"
-            android:text="@string/view_quotes"
+            android:background="@drawable/rounded"
             android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:text="@string/view_history"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"></Button>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

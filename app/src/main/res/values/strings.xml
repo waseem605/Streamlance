@@ -118,5 +118,7 @@
     <string name="start_button">Get Started</string>
     <string name="request_diagnosis_desc">Your diagnose request is submitted successfully! View quotes from provider</string>
     <string name="view_diagnosis_quotes">View Diagnosis Quotes</string>
+    <string name="view_history">View History</string>
+    <string name="view_history_desc">Your service quote has been saved in services history. You can view it again in completed history tab.</string>
 
 </resources>

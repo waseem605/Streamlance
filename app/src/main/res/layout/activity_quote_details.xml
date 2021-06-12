@@ -490,6 +490,7 @@
                 android:layout_marginLeft="10dp"
                 android:textSize="19sp"
                 android:textAllCaps="false"
+                android:id="@+id/complete_quote_btn"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/white"
                 ></Button>

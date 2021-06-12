@@ -81,7 +81,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        t<include layout="@layout/sample_provider_quotes"></include>
+
+        <include layout="@layout/sample_provider_quotes" />
     </ScrollView>
 
 
