@@ -42,9 +42,7 @@ public class Bottom_Sheet extends BottomSheetDialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
         View view = inflater.inflate(R.layout.fragment_bottom__sheet, container, false);
-        getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         mHelpLinear = (LinearLayout)view.findViewById(R.id.help_me_fix_car);
         mlinearLayout = (LinearLayout)view.findViewById(R.id.choose_service);
         mlinearLayout.setOnClickListener(new View.OnClickListener() {
