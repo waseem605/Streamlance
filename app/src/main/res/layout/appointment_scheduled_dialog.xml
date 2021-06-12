@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,8 +25,9 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/hk_grotesk_bold"
             android:gravity="center"
-            android:text="Request Submitted"
-            android:textSize="26sp" />
+            android:textColor="@color/black"
+            android:text="Appointment Scheduled"
+            android:textSize="26sp"></TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -36,8 +38,8 @@
             android:padding="5dp"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
-            android:text="@string/request_diagnosis_desc"
-            android:textSize="16sp" />
+            android:text="Your service is scheduled you will receive confirmation email."
+            android:textSize="16sp"></TextView>
 
         <Button
             android:id="@+id/view_quota_btn"
@@ -48,10 +50,11 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/rounded"
             android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:text="@string/view_diagnosis_quotes"
+            android:text="Done"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"></Button>
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

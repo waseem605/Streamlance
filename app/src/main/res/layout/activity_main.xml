@@ -7,6 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainPage.MainActivity"
     android:id="@+id/fragment_container">
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_main_navigation"
         android:layout_width="match_parent"
@@ -15,6 +16,8 @@
         android:background="@color/white"
         android:layout_alignParentBottom="true"
         app:itemIconSize="24sp"
+        app:itemIconTint="@color/Back_color"
+        app:itemTextColor="@color/Back_color"
         android:layout_centerHorizontal="true"
         app:menu="@menu/bottom_nav_menu" />
 
