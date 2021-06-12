@@ -67,4 +67,6 @@
     <string name="book_services">Book Services</string>
     <string name="let_s_start">Let`s Start</string>
     <string name="start_button">Get Started</string>
+    <string name="request_diagnosis_desc">Your diagnose request is submitted successfully! View quotes from provider</string>
+    <string name="view_diagnosis_quotes">View Diagnosis Quotes</string>
 </resources>

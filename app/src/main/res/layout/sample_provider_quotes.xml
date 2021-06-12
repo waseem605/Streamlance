@@ -15,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:layout_marginTop="10dp"
+            android:id="@+id/picture_pq"
             android:src="@drawable/__import_image"></ImageView>
         <LinearLayout
             android:layout_width="match_parent"

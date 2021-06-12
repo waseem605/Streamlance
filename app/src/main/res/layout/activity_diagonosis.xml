@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -204,7 +204,8 @@
                     android:background="@drawable/ring"
                     android:backgroundTint="@color/orange"
                     android:text="+"
-                    android:textColor="@color/orange"></Button>
+                    android:textColor="@color/orange" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -212,7 +213,7 @@
                     android:padding="10dp"
                     android:textColor="@color/orange"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:text="@string/add_additional_service"></TextView>
+                    android:text="@string/add_additional_service" />
             </LinearLayout>
         </LinearLayout>
 
@@ -226,7 +227,9 @@
             android:text="Request Diagnosis"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textSize="20sp"
-            android:textColor="@color/white"></Button>
-
+            android:textColor="@color/white" />
     </LinearLayout>
-</ScrollView>
+
+
+
+</RelativeLayout>
