@@ -11,6 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="42dp"
@@ -31,12 +34,14 @@
                 android:layout_marginLeft="230dp"></TextView>
 
         </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
 
-        <androidx.appcompat.widget.Toolbar
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:title="Quote Details"
-            app:titleMarginStart="140dp"
+            android:text="Quote Details"
+            android:textSize="24sp"
+            android:fontFamily="@font/hk_grotesk_bold"
             android:gravity="center" />
 
         <LinearLayout
@@ -465,18 +470,17 @@
         </LinearLayout>
 
 
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded"
-                android:text="Request Again"
-               android:layout_margin="20dp"
-                android:textSize="19sp"
-                android:textAllCaps="false"
-                android:fontFamily="@font/hk_grotesk_semi_bold"
-                android:textColor="@color/white"
-                ></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/requestquote"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:text="Request Again"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19sp"></Button>
 
     </LinearLayout>
 </ScrollView>

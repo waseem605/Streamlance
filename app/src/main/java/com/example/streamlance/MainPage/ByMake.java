@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.example.streamlance.Fragments.Garage;
 import com.example.streamlance.Fragments.Home;
 import com.example.streamlance.Fragments.mygarage;
 import com.example.streamlance.R;
@@ -21,7 +22,7 @@ import java.util.Arrays;
 public class ByMake extends AppCompatActivity {
 
     private Spinner mNameSpinner,mYearSpinner,mModelSpinner,mTrimSpinner;
-    Button mbtn,mbtnadd;
+    Button mbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,7 @@ public class ByMake extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ByMake.this, Garage.class);
+                Intent intent = new Intent(ByMake.this,MainActivity.class);
                 startActivity(intent);
             }
         });

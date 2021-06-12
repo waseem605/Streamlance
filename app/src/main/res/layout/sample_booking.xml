@@ -32,7 +32,7 @@
             android:inputType="date"
             android:focusable="false"
             android:textSize="10dp"
-            android:layout_marginLeft="90dp"></TextView>
+            android:layout_marginLeft="80dp"></TextView>
         <TextClock
             android:id="@+id/time"
             android:layout_width="wrap_content"
@@ -204,6 +204,7 @@
             </LinearLayout>
             <Button
                 android:layout_width="150dp"
+                android:id="@+id/btnbooking"
                 android:layout_height="wrap_content"
                 android:text="View Details"
                 android:fontFamily="@font/hk_grotesk_medium"

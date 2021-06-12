@@ -28,7 +28,7 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="@string/sunday"
@@ -40,7 +40,7 @@
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="close"
                 android:textSize="15sp"
-                android:layout_marginStart="250dp"
+                android:layout_marginStart="120dp"
                 android:textColor="@color/black"></TextView>
     </LinearLayout>
         <LinearLayout
@@ -49,7 +49,7 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="@string/monday"
@@ -61,7 +61,7 @@
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="10:00 AM - 6:00 PM"
                 android:textSize="15sp"
-                android:layout_marginStart="150dp"
+                android:layout_marginStart="120dp"
                 android:textColor="@color/black"></TextView>
         </LinearLayout>
         <LinearLayout
@@ -70,7 +70,7 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="Tuesday"
@@ -82,7 +82,7 @@
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="10:00 AM - 6:00 PM"
                 android:textSize="15sp"
-                android:layout_marginStart="150dp"
+                android:layout_marginStart="120dp"
                 android:textColor="@color/black"></TextView>
         </LinearLayout>
         <LinearLayout
@@ -91,7 +91,7 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="Wednesday:"
@@ -112,7 +112,7 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="Thursday"
@@ -124,7 +124,7 @@
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="10:00 AM - 6:00 PM"
                 android:textSize="15sp"
-                android:layout_marginStart="140dp"
+                android:layout_marginStart="120dp"
                 android:textColor="@color/black"></TextView>
         </LinearLayout>
         <LinearLayout
@@ -133,7 +133,7 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="Friday"
@@ -145,7 +145,7 @@
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="10:00 AM - 6:00 PM"
                 android:textSize="15sp"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="120dp"
                 android:textColor="@color/black"></TextView>
         </LinearLayout>
         <LinearLayout
@@ -154,7 +154,7 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="Saturday"
@@ -164,9 +164,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
-                android:text="7:00 AM - 6:00 PM"
+                android:text="  7:00 AM - 6:00 PM"
                 android:textSize="15sp"
-                android:layout_marginStart="150dp"
+                android:layout_marginStart="120dp"
                 android:textColor="@color/black"></TextView>
         </LinearLayout>
     </LinearLayout>

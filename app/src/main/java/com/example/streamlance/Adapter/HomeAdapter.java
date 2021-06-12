@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.streamlance.Fragments.Completed;
+import com.example.streamlance.Fragments.Garage;
 import com.example.streamlance.Fragments.Home;
 import com.example.streamlance.Fragments.Notification;
 import com.example.streamlance.Fragments.Profile;
@@ -34,7 +35,7 @@ public class HomeAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0: return new mygarage();
+            case 0: return new Garage();
             case 1: return new my_booking();
             case 2: return new Completed();
             default:return new mygarage();

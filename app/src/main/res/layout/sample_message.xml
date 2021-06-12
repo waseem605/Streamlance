@@ -5,6 +5,7 @@
     android:layout_marginTop="20dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
+    android:id="@+id/samplemessage"
     android:background="@drawable/white_round_background"
     android:orientation="horizontal">
 
@@ -48,7 +49,7 @@
              android:hint="00:00 am"
              android:inputType="time"
              android:focusable="false"
-             android:layout_marginLeft="160dp"
+             android:layout_marginLeft="140dp"
              android:layout_marginTop="13dp"
              android:textSize="10dp"/>
 
@@ -58,7 +59,7 @@
             android:id="@+id/chesisno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="7dp"
             android:paddingTop="7dp"
             android:paddingBottom="5dp"
             android:text="Last Message " />

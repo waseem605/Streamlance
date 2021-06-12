@@ -10,9 +10,27 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Home"
-        app:titleMarginStart="160dp"
-        android:gravity="center"></androidx.appcompat.widget.Toolbar>
+        android:gravity="center">
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/orange"
+            android:text="Message"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"></Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="70dp"
+            android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+    </androidx.appcompat.widget.Toolbar>
 
 
 
@@ -24,6 +42,7 @@
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:id="@+id/viewPage"></androidx.viewpager.widget.ViewPager>
+
 
 
 </LinearLayout>

@@ -10,11 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.streamlance.MainPage.ByMake;
-import com.example.streamlance.MainPage.Garage;
 import com.example.streamlance.R;
-import com.google.android.material.bottomsheet.BottomSheetDialog;
-
-import java.util.function.IntToDoubleFunction;
 
 
 public class mygarage extends Fragment {
@@ -40,6 +36,7 @@ public class mygarage extends Fragment {
                 startActivity(intent);
             }
         });
+        mbtnadd=(Button)v.findViewById(R.id.addvehicle);
         mbtnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

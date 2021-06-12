@@ -9,11 +9,19 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/Back_color"
-        android:titleTextColor="@color/white"
-        app:title="Notification"
-        app:titleTextColor="@color/white"
-        android:gravity="center">
+        android:background="@color/Back_color">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:fontFamily="@font/hk_grotesk_bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete_button"
+            android:layout_marginLeft="150dp"></ImageView>
 
     </androidx.appcompat.widget.Toolbar>
     <com.google.android.material.tabs.TabLayout

@@ -11,11 +11,25 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/Back_color"
-        app:titleTextColor="@color/white"
-        app:title="Message"
-        app:titleMarginStart="150dp"
-        android:gravity="center">
+        android:background="@color/Back_color">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/left_arrow"
+            app:tint="@color/white"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:fontFamily="@font/hk_grotesk_bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginLeft="100dp"></TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete_button"
+            android:layout_marginLeft="60dp"></ImageView>
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -36,16 +50,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></EditText>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+    <include layout="@layout/sample_message"></include>
+    <include layout="@layout/sample_message"></include>
+    <include layout="@layout/sample_message"></include>
 
 </LinearLayout>

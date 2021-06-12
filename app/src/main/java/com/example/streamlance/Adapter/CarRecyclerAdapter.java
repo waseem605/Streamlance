@@ -1,7 +1,6 @@
 package com.example.streamlance.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,14 +11,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.streamlance.Fragments.Bottom_Sheet;
-import com.example.streamlance.MainPage.Garage;
 import com.example.streamlance.Models.Cars;
 import com.example.streamlance.R;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class CarRecyclerAdapter extends RecyclerView.Adapter<CarRecyclerAdapter.ViewHolder> {
     ArrayList<Cars> list;

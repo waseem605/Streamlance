@@ -103,10 +103,11 @@
                 android:src="@drawable/call_withbackground_icon" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
                 android:text="@string/message_link"
+                android:id="@+id/messagetx"
                 android:layout_marginLeft="10dp"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:textColor="@color/black"
@@ -115,7 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="105dp"
+                android:layout_marginLeft="50dp"
                 android:src="@drawable/next_icon"></ImageView>
         </LinearLayout>
         <LinearLayout
@@ -131,7 +132,7 @@
                 android:src="@drawable/payment_icon" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
                 android:text="@string/payment_method"
@@ -143,7 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="37dp"
+                android:layout_marginLeft="50dp"
                 android:src="@drawable/next_icon"></ImageView>
         </LinearLayout>
         <LinearLayout
@@ -159,7 +160,7 @@
                 android:src="@drawable/profile_icon_blue" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
                 android:text="@string/profile"
@@ -171,7 +172,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="130dp"
+                android:layout_marginLeft="50dp"
                 android:src="@drawable/next_icon"></ImageView>
         </LinearLayout>
     </LinearLayout>
@@ -201,7 +202,7 @@
                 android:src="@drawable/about_steamlan" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
                 android:fontFamily="@font/hk_grotesk_medium"
@@ -213,7 +214,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="35dp"
+                android:layout_marginLeft="50dp"
                 android:src="@drawable/next_icon"></ImageView>
         </LinearLayout>
         <LinearLayout
@@ -229,7 +230,7 @@
                 android:src="@drawable/help_icon" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
                 android:fontFamily="@font/hk_grotesk_medium"
@@ -257,7 +258,7 @@
                 android:src="@drawable/privacy_icon" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
                 android:text="@string/privacy_policy"
@@ -269,7 +270,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="50dp"
 
                 android:src="@drawable/next_icon"></ImageView>
         </LinearLayout>

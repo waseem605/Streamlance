@@ -19,27 +19,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/gray">
-        <LinearLayout
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="5dp"
-            android:background="@color/white">
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
                 android:textColor="@color/black"
                 android:id="@+id/sort_button"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="9dp"
                 android:onClick="callSortdata"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:background="@color/white"
                 android:text="SORT"></Button>
-        </LinearLayout>
+
         <LinearLayout
-            android:layout_width="130dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
             android:background="@color/white">
 
             <ImageView
@@ -47,32 +44,38 @@
                 android:layout_height="25dp"
                 android:layout_margin="10dp"
                 android:src="@drawable/forma_1"></ImageView>
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:background="@color/white"
-                android:text="Filters"></Button>
+                android:text="Filters"></TextView>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="130dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
             android:background="@color/white">
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/group_59985"
                 android:layout_margin="10dp"></ImageView>
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:background="@color/white"
-                android:text="Map"></Button>
+                android:text="Map"></TextView>
         </LinearLayout>
 
     </LinearLayout>

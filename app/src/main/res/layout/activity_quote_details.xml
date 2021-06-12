@@ -11,32 +11,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/left_arrow"></ImageView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cancel"
-            android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:textColor="@color/orange"
-            android:textSize="16sp"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="230dp"></TextView>
-
-        </LinearLayout>
-
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/left_arrow"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:fontFamily="@font/hk_grotesk_semi_bold"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="230dp"></TextView>
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:title="Quote Details"
-            app:titleMarginStart="140dp"
+            android:text="Quote Details"
+            android:textSize="24sp"
+            android:fontFamily="@font/hk_grotesk_bold"
             android:gravity="center" />
 
         <LinearLayout
@@ -155,7 +160,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/bottomsheet"
         android:backgroundTint="@color/white"
         android:orientation="vertical">
@@ -253,7 +258,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:orientation="horizontal">
         <TextView
@@ -287,7 +292,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:orientation="horizontal">
         <TextView
@@ -324,7 +329,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:orientation="horizontal">
         <TextView
@@ -361,7 +366,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:orientation="horizontal">
   <View
@@ -376,7 +381,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:orientation="horizontal">
             <TextView
@@ -404,7 +409,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:orientation="horizontal">
             <TextView
@@ -432,7 +437,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:orientation="horizontal">
             <TextView
@@ -459,7 +464,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@color/white"
             android:layout_margin="10dp"
             >
             <Button
@@ -467,15 +471,15 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded"
                 android:text="Complete"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:textSize="19sp"
                 android:textAllCaps="false"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/white"
                 ></Button>
             <Button
-                android:layout_width="130dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded"
                 android:text="Send Message"
