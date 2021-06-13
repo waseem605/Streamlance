@@ -282,7 +282,7 @@
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:textColor="@color/black"
                     android:text="Oil and Filter Service"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="100dp"
@@ -292,7 +292,7 @@
                     android:textColor="@color/black"
                     android:layout_marginTop="5dp"
                     android:text="$141.0"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="100dp"
@@ -302,7 +302,7 @@
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:textColor="@color/black"
                     android:text="$141.0"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
@@ -324,7 +324,7 @@
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:textColor="@color/black"
                     android:text="Front Brake Pad Set - OEM"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="100dp"
@@ -334,7 +334,7 @@
                     android:textColor="@color/black"
                     android:layout_marginTop="5dp"
                     android:text="$141.0"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="100dp"
@@ -344,7 +344,7 @@
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:textColor="@color/black"
                     android:text="$141.0"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
@@ -366,7 +366,7 @@
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:textColor="@color/black"
                     android:text="Oil and Filter Service"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="100dp"
@@ -376,7 +376,7 @@
                     android:textColor="@color/black"
                     android:layout_marginTop="5dp"
                     android:text="$141.0"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="100dp"
@@ -386,7 +386,7 @@
                     android:fontFamily="@font/hk_grotesk_regular"
                     android:textColor="@color/black"
                     android:text="$141.0"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
@@ -399,6 +399,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
@@ -407,7 +408,8 @@
                     android:textColor="@color/black"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
+
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
@@ -416,7 +418,8 @@
                     android:textColor="@color/black"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="5dp"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
+
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
@@ -425,7 +428,7 @@
                     android:textColor="@color/black"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="5dp"
-                    android:textSize="24sp"></TextView>
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
@@ -436,13 +439,14 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
                 android:orientation="horizontal">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginLeft="10dp"
-                    android:background="@color/black"></View>
+                    android:background="@color/black" />
             </LinearLayout>
 
             <LinearLayout
