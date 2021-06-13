@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainPage.ChatDetails">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/back_arrow_Cd"
+            android:src="@drawable/left_arrow">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="36sp"
+            android:layout_marginLeft="80dp"
+            android:fontFamily="@font/hk_grotesk_bold"
+            android:text="Xpress Autos &amp; Tires">
+        </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:orientation="horizontal">
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/circle_button"
+                android:backgroundTint="@color/orange"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"></Button>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:textSize="18sp"
+                    android:textColor="@color/orange"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_tx"
+            android:text="9:40 AM"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/other_text"
+            android:layout_below="@id/time_tx"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/chat_details_blue"
+            android:text="hello how are you"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:padding="20dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/other_text"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/chat_details_white"
+            android:text="yes i am fine "
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:padding="20dp"></TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:layout_margin="10dp"
+                android:id="@+id/attach_file_btn"
+                android:src="@drawable/attach_btn"></ImageView>
+
+        <EditText
+            android:id="@+id/sms_editText"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:background="@drawable/chat_details_white"
+            android:hint="hello"
+            android:padding="10dp"
+            android:textSize="30sp"></EditText>
+
+
+        <ImageView
+            android:id="@+id/send_sms_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="10dp"
+            android:layout_margin="5dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/send_btn"></ImageView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

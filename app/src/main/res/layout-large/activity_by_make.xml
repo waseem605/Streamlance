@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainPage.ByMake">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/back_arrow_bm"
+            android:src="@drawable/left_arrow"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By Make"
+            android:layout_marginStart="250dp"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textSize="35sp"
+            android:textColor="@color/black"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_vehicle_s_make"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textSize="30sp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_spinner"
+            android:id="@+id/spinner_car_name"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_vehicle_s_make"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textSize="30sp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/style_spinner"
+            android:id="@+id/spinner_car_year"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_vehicle_s_make"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textSize="30sp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@drawable/style_spinner"
+            android:id="@+id/vehical_model"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_your_vehicle_s_trim"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/style_spinner"
+            android:id="@+id/vehical_trim"></Spinner>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Add Vehicle"
+        android:id="@+id/bymake_vehicle"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded"
+        android:textColor="@color/white"
+        android:padding="20dp"></Button>
+
+
+
+
+</LinearLayout>
