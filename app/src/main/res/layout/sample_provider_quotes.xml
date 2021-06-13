@@ -79,7 +79,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="7dp"
                     android:src="@drawable/dollar_symbol"
                     android:layout_marginLeft="10dp"></ImageView>
 
