@@ -11,6 +11,7 @@
         android:layout_margin="20dp"
         android:background="@drawable/white_round_background"
         android:gravity="center"
+        android:padding="20dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,12 +27,12 @@
             android:layout_margin="20dp"
             android:fontFamily="@font/hk_grotesk_regular"
             android:gravity="center"
-            android:padding="10dp"
+            android:padding="15dp"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
             android:textColor="@color/black"
             android:text="@string/view_history_desc"
-            android:textSize="28sp"></TextView>
+            android:textSize="30sp"></TextView>
 
         <Button
             android:id="@+id/view_history_btn"
@@ -46,6 +47,6 @@
             android:text="@string/view_history"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="30sp"></Button>
+            android:textSize="32sp"></Button>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

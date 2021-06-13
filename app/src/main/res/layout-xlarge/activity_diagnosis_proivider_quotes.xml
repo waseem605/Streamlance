@@ -14,6 +14,7 @@
             android:layout_height="wrap_content"
             android:text="Provider Quotes"
             android:textColor="@color/black"
+            android:padding="10dp"
             android:textSize="36sp"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:gravity="center"
@@ -21,11 +22,12 @@
     </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
+        android:paddingBottom="10dp"
         android:orientation="horizontal"
         android:background="@color/gray">
         <Button
-            android:layout_width="250dp"
+            android:layout_width="260dp"
             android:layout_height="match_parent"
             android:textColor="@color/black"
             android:id="@+id/sort_button"
@@ -37,9 +39,10 @@
             android:text="SORT"></Button>
 
         <LinearLayout
-            android:layout_width="250dp"
+            android:layout_width="260dp"
             android:layout_height="match_parent"
             android:orientation="horizontal"
+            android:padding="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="2dp"
             android:background="@color/white">
@@ -66,6 +69,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="2dp"
+            android:padding="10dp"
             android:background="@color/white">
             <ImageView
                 android:layout_width="35dp"

@@ -22,12 +22,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_margin="30dp"
             android:fontFamily="@font/hk_grotesk_bold"
             android:gravity="center"
             android:textColor="@color/black"
             android:text="Appointment Scheduled"
-            android:textSize="26sp"></TextView>
+            android:textSize="36sp"></TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -35,11 +35,12 @@
             android:layout_margin="20dp"
             android:fontFamily="@font/hk_grotesk_regular"
             android:gravity="center"
-            android:padding="5dp"
+            android:padding="15dp"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
+            android:textColor="@color/black"
             android:text="Your service is scheduled you will receive confirmation email."
-            android:textSize="16sp"></TextView>
+            android:textSize="26sp"></TextView>
 
         <Button
             android:id="@+id/view_quota_btn"
@@ -52,8 +53,9 @@
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:text="Done"
             android:textAllCaps="false"
+            android:padding="15dp"
             android:textColor="@color/white"
-            android:textSize="20sp"></Button>
+            android:textSize="32sp"></Button>
     </LinearLayout>
 
 

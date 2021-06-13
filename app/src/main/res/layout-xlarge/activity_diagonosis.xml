@@ -130,7 +130,7 @@
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="230dp"
                     android:layout_margin="10dp"
                     android:background="@drawable/round_border"
                     android:hint="Describe your problem"
@@ -239,7 +239,7 @@
                 android:id="@+id/addition_service_lt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="3dp"
                 android:background="@drawable/white_background_b_round"
                 android:onClick="cllAddionalServices"
                 android:orientation="horizontal"
@@ -268,7 +268,7 @@
             android:id="@+id/request_btn_D"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="160dp"
             android:layout_marginBottom="20dp"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
@@ -278,7 +278,7 @@
             android:textAllCaps="false"
             android:padding="15dp"
             android:textColor="@color/white"
-            android:textSize="26sp" />
+            android:textSize="30sp" />
     </LinearLayout>
 
 

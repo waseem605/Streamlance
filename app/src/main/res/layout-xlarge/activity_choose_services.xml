@@ -16,6 +16,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
+            android:padding="10dp"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="40dp"
@@ -34,7 +35,7 @@
         android:textColor="@color/black"
         android:layout_marginBottom="15dp"
         android:text="@string/choose_service"
-        android:textSize="38sp"
+        android:textSize="45sp"
         android:textStyle="bold"
         android:fontFamily="@font/dm_sans_bold"></TextView>
 
@@ -42,10 +43,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/choose_type_service"
-        android:textSize="32sp"
+        android:textSize="34sp"
         android:textColor="@color/black"
         android:fontFamily="@font/dm_sans_regular"
         android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="60dp"></TextView>
 
@@ -68,7 +71,7 @@
             android:layout_width="430dp"
             android:layout_height="wrap_content"
             android:textSize="36sp"
-            android:padding="10dp"
+            android:padding="15dp"
             android:layout_marginStart="10dp"
             android:textColor="@color/black"
             android:layout_marginEnd="10dp"
@@ -86,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -117,7 +120,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -148,7 +151,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -180,7 +183,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -212,7 +215,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -243,7 +246,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:background="@drawable/white_round_background"
         android:orientation="horizontal">
@@ -278,7 +281,7 @@
         android:background="@drawable/rounded"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="55dp"
         android:text="@string/continue_btn"
         android:layout_marginBottom="40dp"
         android:textSize="38sp"

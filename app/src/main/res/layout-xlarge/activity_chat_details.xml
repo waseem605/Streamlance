@@ -8,11 +8,12 @@
     tools:context=".MainPage.ChatDetails">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
+        android:padding="10dp"
         android:layout_height="wrap_content"
         >
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/back_arrow_Cd"
             android:src="@drawable/left_arrow">
         </ImageView>
@@ -62,7 +63,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/time_tx"
             android:text="9:40 AM"
-            android:textSize="18sp"
+            android:textSize="26sp"
             android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"></TextView>
 
@@ -75,7 +76,7 @@
             android:background="@drawable/chat_details_blue"
             android:text="hello how are you"
             android:fontFamily="@font/hk_grotesk_regular"
-            android:textSize="30sp"
+            android:textSize="36sp"
             android:textColor="@color/white"
             android:padding="20dp"></TextView>
         <TextView
@@ -88,7 +89,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/chat_details_white"
             android:text="yes i am fine "
-            android:textSize="30sp"
+            android:textSize="36sp"
             android:textColor="@color/black"
             android:padding="20dp"></TextView>
 
@@ -98,15 +99,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="670dp"
         android:layout_gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true">
 
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:paddingTop="10dp"
                 android:paddingStart="10dp"
                 android:layout_margin="10dp"
@@ -117,18 +118,18 @@
             android:id="@+id/sms_editText"
             android:layout_width="600dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/hk_grotesk_regular"
             android:background="@drawable/chat_details_white"
             android:hint="hello"
             android:padding="10dp"
-            android:textSize="30sp"></EditText>
+            android:textSize="36sp"></EditText>
 
 
         <ImageView
             android:id="@+id/send_sms_btn"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_alignParentEnd="true"
             android:paddingTop="10dp"
             android:layout_margin="5dp"

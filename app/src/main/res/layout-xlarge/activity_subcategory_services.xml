@@ -16,6 +16,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
+            android:padding="10dp"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="40dp"
@@ -32,7 +33,7 @@
             android:textColor="@color/black"
             android:layout_marginBottom="10dp"
             android:text="@string/oil_and_filter_S"
-            android:textSize="36sp"
+            android:textSize="45sp"
             android:fontFamily="@font/dm_sans_bold"></TextView>
 
 
@@ -41,14 +42,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:padding="5dp"
+            android:padding="10dp"
             android:layout_gravity="center"
             android:background="@drawable/white_round_background"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="600dp"
                 android:layout_height="wrap_content"
-                android:textSize="26sp"
+                android:textSize="30sp"
                 android:padding="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
@@ -68,14 +69,14 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/hk_grotesk_regular"
             android:textColor="@color/black"
-            android:padding="5dp"
+            android:padding="10dp"
             android:layout_gravity="center"
             android:background="@drawable/white_round_background"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="600dp"
                 android:layout_height="wrap_content"
-                android:textSize="26sp"
+                android:textSize="30sp"
                 android:padding="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textColor="@color/black"
@@ -94,14 +95,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:padding="5dp"
+            android:padding="10dp"
             android:layout_gravity="center"
             android:background="@drawable/white_round_background"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="600dp"
                 android:layout_height="wrap_content"
-                android:textSize="26sp"
+                android:textSize="30sp"
                 android:padding="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textColor="@color/black"
@@ -122,13 +123,13 @@
             android:textAllCaps="false"
             android:onClick="callToServicSummary"
             android:background="@drawable/rounded"
-            android:layout_marginTop="470dp"
+            android:layout_marginTop="650dp"
             android:layout_marginLeft="10dp"
             android:padding="15dp"
             android:layout_marginRight="10dp"
             android:text="@string/continue_btn"
             android:textColor="@color/white"
-            android:textSize="26sp"></Button>
+            android:textSize="32sp"></Button>
 
     </LinearLayout>
 

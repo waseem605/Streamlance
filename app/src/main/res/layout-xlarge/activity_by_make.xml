@@ -9,10 +9,11 @@
     tools:context=".MainPage.ByMake">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/back_arrow_bm"
             android:src="@drawable/left_arrow"/>
         <TextView
@@ -21,7 +22,7 @@
             android:text="By Make"
             android:layout_marginStart="250dp"
             android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:textSize="35sp"
+            android:textSize="40sp"
             android:textColor="@color/black"/>
     </androidx.appcompat.widget.Toolbar>
 
@@ -38,7 +39,7 @@
             android:layout_height="wrap_content"
             android:text="@string/select_your_vehicle_s_make"
             android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:textSize="30sp"
+            android:textSize="36sp"
             android:layout_marginBottom="15dp"
             android:textColor="@color/black">
         </TextView>
@@ -64,7 +65,7 @@
             android:layout_height="wrap_content"
             android:text="@string/select_your_vehicle_s_make"
             android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:textSize="30sp"
+            android:textSize="36sp"
             android:layout_marginBottom="15dp"
             android:textColor="@color/black">
         </TextView>
@@ -89,7 +90,7 @@
             android:layout_height="wrap_content"
             android:text="@string/select_your_vehicle_s_make"
             android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:textSize="30sp"
+            android:textSize="36sp"
             android:layout_marginBottom="15dp"
             android:textColor="@color/black">
         </TextView>
@@ -116,7 +117,7 @@
             android:layout_height="wrap_content"
             android:text="@string/select_your_vehicle_s_trim"
             android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:textSize="30sp"
+            android:textSize="36sp"
             android:layout_marginBottom="10dp"
             android:textColor="@color/black">
         </TextView>
@@ -136,9 +137,11 @@
         android:text="+ Add Vehicle"
         android:id="@+id/bymake_vehicle"
         android:textAllCaps="false"
-        android:textSize="26sp"
-
-        android:layout_margin="20dp"
+        android:textSize="32sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/rounded"
         android:textColor="@color/white"
         android:padding="20dp"></Button>

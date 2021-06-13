@@ -26,10 +26,11 @@
             android:fontFamily="@font/hk_grotesk_semi_bold" />
        <Button
            android:layout_width="120dp"
-           android:layout_height="50dp"
+           android:layout_height="60dp"
            android:background="@drawable/rounded"
            android:backgroundTint="@color/orange"
            android:text="Chat"
+           android:textSize="22sp"
            android:textAllCaps="false"
            android:fontFamily="@font/hk_grotesk_semi_bold"
            android:textColor="@color/white"

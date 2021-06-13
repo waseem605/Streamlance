@@ -24,62 +24,72 @@
             android:layout_marginBottom="10dp"
             android:text="@string/service_summary"
             android:textColor="@color/black"
-            android:textSize="34sp"
+            android:textSize="45sp"
             android:textStyle="bold"
             android:fontFamily="@font/dm_sans_bold"></TextView>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/white_round_background"
-            android:padding="15dp">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="15dp"
-                android:src="@drawable/bmw_logo"></ImageView>
-
-            <TextView
-                android:id="@+id/car_name_ss"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="65dp"
-                android:layout_marginEnd="15dp"
-                android:fontFamily="@font/hk_grotesk_semi_bold"
-                android:text="@string/bmw_x5"
-                android:textSize="20sp"></TextView>
-            <TextView
-                android:id="@+id/car_model_number_ss"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="65dp"
-                android:layout_marginEnd="15dp"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:text="@string/_625fedf66a80"
-                android:textSize="16sp"></TextView>
-        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_white"
+            android:orientation="horizontal"
+            android:id="@+id/samplecar">
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/carpic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:src="@drawable/car"
+                app:civ_border_color="#FF000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/carname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:text="BMW x5"
+                    android:textSize="34sp"
+                    android:fontFamily="@font/hk_grotesk_semi_bold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chesisno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:paddingBottom="5dp"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:text="67jhgfb57ndf " />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="19sp"
+                android:textSize="30sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:padding="10dp"
                 android:textColor="@color/black"
@@ -90,7 +100,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="24sp"
                 android:layout_marginTop="2dp"
                 android:padding="10dp"
                 android:paddingStart="20dp"
@@ -101,7 +111,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="24sp"
                 android:padding="10dp"
                 android:layout_marginTop="2dp"
                 android:textColor="@color/black"
@@ -129,7 +139,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:textSize="24sp"
                     android:padding="10dp"
                     android:textColor="@color/orange"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
@@ -145,7 +155,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="19sp"
+                android:textSize="30sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:padding="10dp"
                 android:textColor="@color/black"
@@ -157,7 +167,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="24sp"
                 android:padding="10dp"
                 android:paddingEnd="30dp"
                 android:textColor="@color/black"
@@ -176,15 +186,15 @@
                 android:background="@drawable/white_background_b_round">
 
                 <Button
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:background="@drawable/pen_icon"
                     android:backgroundTint="@color/orange"
                     android:textColor="@color/orange"></Button>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:textSize="24sp"
                     android:padding="10dp"
                     android:textColor="@color/orange"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
@@ -200,7 +210,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="19sp"
+                android:textSize="32dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:padding="10dp"
                 android:paddingStart="20dp"
@@ -216,9 +226,11 @@
                 android:background="@drawable/white_background_b_round">
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="120dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:textSize="24sp"
+                    android:padding="10dp"
                     android:hint="Describe your special requirements"
                     android:paddingBottom="40dp"
                     android:background="@drawable/white_backgroun_with_border">
@@ -242,7 +254,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="19sp"
+                android:textSize="32sp"
+                android:padding="10dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
                 android:background="@drawable/bottomsheet"
@@ -313,7 +326,9 @@
                     android:text="@string/preferred_hours"></TextView>
                 <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="80dp"
+                    android:scrollbarSize="26sp"
+                    android:padding="10dp"
                     android:entries="@array/prefer_hours"
                     android:id="@+id/select_hours_range">
 
@@ -334,8 +349,8 @@
             android:layout_margin="10dp"
             android:text="@string/request_quote"
             android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:textSize="30sp"
-            android:textColor="@color/white"></Button>
+            android:textSize="32sp"
+            android:textColor="@color/white" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></TextView>
