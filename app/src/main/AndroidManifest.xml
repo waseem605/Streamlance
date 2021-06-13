@@ -92,6 +92,7 @@
         <activity
             android:name=".common.Onboarding"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".common.Splash_Screen"
             android:screenOrientation="portrait">
