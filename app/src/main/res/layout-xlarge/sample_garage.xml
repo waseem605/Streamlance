@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_white"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/picture_pq"
+            android:src="@drawable/__import_image"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gresasy Albo Auto Repair"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"></TextView>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/___color"></Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
+            android:text="145 valencia st.san Fransisco 0.2km"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/star"
+                android:layout_marginLeft="10dp"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/hk_grotesk_medium"
+                android:text="4.8"
+                android:textSize="24sp"></TextView>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pin"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="50dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.6km"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:fontFamily="@font/hk_grotesk_medium"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/carr"
+                android:layout_marginLeft="10dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loaner Car"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="24sp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/tow_truck"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shuttle Service"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="24sp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/carr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loaner Car"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="24sp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/tow_truck"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shuttle Service"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/carr"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loaner Car"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
