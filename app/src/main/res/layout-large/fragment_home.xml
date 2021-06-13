@@ -10,6 +10,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center">
         <Button
             android:layout_width="120dp"
@@ -29,6 +30,7 @@
             android:layout_height="wrap_content"
             android:text="Home"
             android:textSize="40sp"
+            android:textColor="@color/black"
             android:gravity="center"
             android:layout_marginLeft="140dp"
             android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
@@ -38,7 +40,7 @@
 
     <com.google.android.material.tabs.TabLayout
       android:layout_width="match_parent"
-      android:layout_height="80dp"
+      android:layout_height="50dp"
       android:id="@+id/tablayout"></com.google.android.material.tabs.TabLayout>
    <androidx.viewpager.widget.ViewPager
        android:layout_width="match_parent"

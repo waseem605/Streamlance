@@ -78,7 +78,7 @@ public class ByMake extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(ByMake.this,Garage.class));
+                startActivity(new Intent(ByMake.this,MainActivity.class));
             }
         });
     }

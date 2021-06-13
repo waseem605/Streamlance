@@ -26,14 +26,14 @@
             android:gravity="center"
             android:fontFamily="@font/hk_grotesk_bold"
             android:textAlignment="center"
-            android:textSize="28sp" />
+            android:textSize="38sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:fontFamily="@font/hk_grotesk_medium"
             android:text="@string/slide_description4"
-            android:textSize="18sp"
+            android:textSize="28sp"
             android:textColor="@color/white"/>
 
         <Button
@@ -43,10 +43,11 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/custom_button"
             android:text="@string/start_button"
+            android:padding="15dp"
             android:textAllCaps="false"
             android:fontFamily="@font/dm_sans_bold"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="30sp" />
     </LinearLayout>
 
 
