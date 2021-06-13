@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="20dp"
     android:layout_marginLeft="10dp"
+    android:padding="10dp"
     android:layout_marginRight="10dp"
     android:id="@+id/samplemessage"
     android:background="@drawable/white_round_background"
@@ -36,10 +37,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:paddingTop="5dp"
-
             android:layout_marginLeft="15dp"
             android:text="Garage Name"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
          <TextClock
              android:id="@+id/time"
@@ -50,7 +50,7 @@
              android:focusable="false"
              android:layout_marginLeft="300dp"
              android:layout_marginTop="13dp"
-             android:textSize="16sp"/>
+             android:textSize="18sp"/>
 
      </LinearLayout>
 
@@ -62,7 +62,7 @@
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:text="Last Message "
-            android:textSize="16sp"/>
+            android:textSize="20sp"/>
 
     </LinearLayout>
 

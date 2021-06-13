@@ -6,6 +6,7 @@
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:background="#FFFFFF"
+    android:paddingBottom="15dp"
     android:orientation="horizontal"
     android:id="@+id/samplecar">
 
@@ -15,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="5dp"
-        android:padding="5dp"
+        android:padding="15dp"
         android:src="@drawable/car"
         app:civ_border_color="#FF000000" />
 
@@ -30,10 +31,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="40dp"
-
-            android:paddingTop="5dp"
+            android:padding="15dp"
             android:text="BMW x5"
-            android:textSize="25sp"
+            android:textSize="32sp"
             android:textStyle="bold" />
 
         <TextView
@@ -41,8 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:paddingTop="5dp"
-            android:textSize="20sp"
+            android:padding="5dp"
+            android:textSize="26sp"
             android:paddingBottom="5dp"
             android:text="67jhgfb57ndf " />
 

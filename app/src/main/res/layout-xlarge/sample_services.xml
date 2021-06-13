@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:padding="15dp"
         android:layout_marginStart="10dp"
         android:background="@drawable/white_round_background"
         android:orientation="vertical">
@@ -19,25 +19,26 @@
             android:text="@string/oil_and_filter_S"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="20dp"
+            android:padding="15dp"
             android:fontFamily="@font/hk_grotesk_medium"
-            android:textSize="26sp"
+            android:textSize="30sp"
             android:textColor="@color/black"></TextView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:padding="15dp"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/square_icon_ss"></ImageView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="@string/synthetic_oil"
-                android:textSize="20sp"
+                android:textSize="26sp"
                 android:layout_marginStart="20dp"
                 android:textColor="@color/black"></TextView>
         </LinearLayout>
@@ -47,15 +48,15 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/square_icon_ss"></ImageView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="@string/electronics"
-                android:textSize="20sp"
+                android:textSize="26sp"
                 android:layout_marginStart="20dp"
                 android:textColor="@color/black"></TextView>
         </LinearLayout>
@@ -65,15 +66,15 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/square_icon_ss"></ImageView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="@string/synthetic_blend"
-                android:textSize="20sp"
+                android:textSize="26sp"
                 android:layout_marginStart="20dp"
                 android:textColor="@color/black"></TextView>
         </LinearLayout>
@@ -83,15 +84,15 @@
             android:padding="10dp"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/square_icon_ss"></ImageView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:text="@string/synthetic_oil"
-                android:textSize="20sp"
+                android:textSize="26sp"
                 android:layout_marginStart="20dp"
                 android:textColor="@color/black"></TextView>
         </LinearLayout>

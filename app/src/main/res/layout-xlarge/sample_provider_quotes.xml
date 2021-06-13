@@ -238,16 +238,17 @@
             android:layout_margin="20dp"
             >
             <Button
-                android:layout_width="300dp"
+                android:layout_width="350dp"
                 android:layout_height="70dp"
                 android:background="@drawable/rounded"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:text="Chat"
+                android:layout_marginStart="10dp"
                 android:textSize="28sp"
                 android:textColor="@color/white"
                 ></Button>
             <Button
-                android:layout_width="300dp"
+                android:layout_width="350dp"
                 android:layout_marginLeft="20dp"
                 android:layout_height="70dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
