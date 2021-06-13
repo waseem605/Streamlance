@@ -281,7 +281,7 @@
         android:text="@string/continue_btn"
         android:layout_marginBottom="40dp"
         android:textSize="38sp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:textAllCaps="false"
         android:textColor="@color/white"></Button>
     </LinearLayout>

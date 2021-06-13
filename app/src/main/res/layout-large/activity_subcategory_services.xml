@@ -18,8 +18,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:id="@+id/back_arrow_Sbs"
                 android:src="@drawable/left_arrow"/>
         </androidx.appcompat.widget.Toolbar>
@@ -32,7 +32,7 @@
             android:textColor="@color/black"
             android:layout_marginBottom="10dp"
             android:text="@string/oil_and_filter_S"
-            android:textSize="24sp"
+            android:textSize="36sp"
             android:fontFamily="@font/dm_sans_bold"></TextView>
 
 
@@ -46,9 +46,9 @@
             android:background="@drawable/white_round_background"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="26sp"
                 android:padding="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
@@ -56,9 +56,9 @@
                 android:textColor="@color/black"
                 android:text="@string/synthetic_oil"></TextView>
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
                 android:button="@drawable/custom_checkbox"
                 />
         </LinearLayout>
@@ -73,9 +73,9 @@
             android:background="@drawable/white_round_background"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="270dp"
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="26sp"
                 android:padding="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textColor="@color/black"
@@ -83,8 +83,8 @@
                 android:layout_marginEnd="10dp"
                 android:text="@string/synthetic_blend"></TextView>
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:button="@drawable/custom_checkbox"
                 android:layout_marginLeft="9dp"
                 android:layout_marginTop="4dp"
@@ -99,9 +99,9 @@
             android:background="@drawable/white_round_background"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="26sp"
                 android:padding="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textColor="@color/black"
@@ -109,9 +109,9 @@
                 android:layout_marginEnd="10dp"
                 android:text="@string/electronics"></TextView>
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="165dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
                 android:button="@drawable/custom_checkbox"
                 />
         </LinearLayout>
@@ -124,10 +124,11 @@
             android:background="@drawable/rounded"
             android:layout_marginTop="270dp"
             android:layout_marginLeft="10dp"
+            android:padding="15dp"
             android:layout_marginRight="10dp"
             android:text="@string/continue_btn"
             android:textColor="@color/white"
-            android:textSize="20sp"></Button>
+            android:textSize="26sp"></Button>
 
     </LinearLayout>
 

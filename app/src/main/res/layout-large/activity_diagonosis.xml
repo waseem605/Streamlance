@@ -268,12 +268,15 @@
             android:id="@+id/request_btn_D"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
             android:background="@drawable/rounded"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:text="Request Diagnosis"
             android:textAllCaps="false"
-            android:padding="5dp"
+            android:padding="15dp"
             android:textColor="@color/white"
             android:textSize="26sp" />
     </LinearLayout>

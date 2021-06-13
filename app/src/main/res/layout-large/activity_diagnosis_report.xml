@@ -127,7 +127,7 @@
         android:background="@drawable/rounded"
         android:fontFamily="@font/hk_grotesk_semi_bold"
         android:text="Confirm"
-        android:padding="10dp"
+        android:padding="15dp"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="34sp" />

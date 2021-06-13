@@ -136,7 +136,8 @@
         android:text="+ Add Vehicle"
         android:id="@+id/bymake_vehicle"
         android:textAllCaps="false"
-        android:textSize="20sp"
+        android:textSize="26sp"
+
         android:layout_margin="20dp"
         android:background="@drawable/rounded"
         android:textColor="@color/white"
