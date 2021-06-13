@@ -20,11 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textColor="@color/black"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             android:text="@string/service_summary"
-            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textSize="34sp"
             android:textStyle="bold"
             android:fontFamily="@font/dm_sans_bold"></TextView>
 
@@ -259,8 +259,8 @@
                 android:background="@color/white">
 
                 <Button
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:textColor="@color/black"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="10dp"
@@ -272,7 +272,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/start_date_tx"
                     android:text="March 21"
-                    android:textSize="16sp"
+                    android:textSize="26sp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
 
@@ -280,7 +280,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="-"
-                    android:textSize="16sp"
+                    android:textSize="26sp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:textColor="@color/black"
@@ -291,7 +291,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/end_date_tx"
                     android:text="March 21"
-                    android:textSize="16sp"
+                    android:textSize="26sp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
 
@@ -306,7 +306,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="30sp"
                     android:padding="10dp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
@@ -329,11 +329,12 @@
             android:id="@+id/continue_Btn"
             android:onClick="callQuotasubmited"
             android:textAllCaps="false"
+            android:padding="15dp"
             android:background="@drawable/rounded"
             android:layout_margin="10dp"
             android:text="@string/request_quote"
             android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:textColor="@color/white"></Button>
         <TextView
             android:layout_width="match_parent"
