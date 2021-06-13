@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.streamlance.GarageFragments.Garage_Info;
 import com.example.streamlance.R;
@@ -17,6 +18,7 @@ import com.example.streamlance.Services.Services_Summary;
 
 public class ProvidersQuotes extends AppCompatActivity {
     Button mbtn, mSortBtn;
+    LinearLayout map;
 
     private ImageView mPicture_pq;
     @Override
@@ -25,6 +27,14 @@ public class ProvidersQuotes extends AppCompatActivity {
         setContentView(R.layout.activity_providers_quotes);
         mSortBtn = (Button)findViewById(R.id.sort_button);
         mPicture_pq = (ImageView)findViewById(R.id.picture_pq);
+        map=(LinearLayout)findViewById(R.id.linearmap);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ProvidersQuotes.this,Map_Activity.class);
+                startActivity(intent);
+            }
+        });
 
 
         mPicture_pq.setOnClickListener(new View.OnClickListener() {

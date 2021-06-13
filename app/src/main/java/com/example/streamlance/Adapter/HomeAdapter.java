@@ -38,7 +38,7 @@ public class HomeAdapter extends FragmentPagerAdapter {
             case 0: return new Garage();
             case 1: return new my_booking();
             case 2: return new Completed();
-            default:return new mygarage();
+            default:return new Garage();
         }
     }
 

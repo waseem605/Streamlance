@@ -10,10 +10,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.streamlance.MainPage.ChatActivity;
+import com.example.streamlance.Payments.Payment_Method;
 import com.example.streamlance.R;
 
 public class Profile extends Fragment {
-    private LinearLayout mLinearLayout;
+    private LinearLayout mLinearLayout,paymentmethod;
     private TextView message;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class Profile extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_profile, container, false);
         mLinearLayout = (LinearLayout)view.findViewById(R.id.message_layout);
+        paymentmethod=(LinearLayout)view.findViewById(R.id.paymentmethod);
         message = (TextView)view.findViewById(R.id.messagetx);
 
         message.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +37,13 @@ public class Profile extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(Profile.this.getActivity(),ChatActivity.class);
                 startActivity(intent);
+            }
+        });
+        paymentmethod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Payment_Method dialog=new Payment_Method();
+                dialog.show(getFragmentManager(),dialog.getTag());
             }
         });
         return view;

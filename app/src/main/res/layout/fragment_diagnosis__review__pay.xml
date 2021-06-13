@@ -130,6 +130,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:id="@+id/addcreditcard"
                 android:background="@drawable/rounded"
                 android:backgroundTint="@color/white"
                 android:layout_marginLeft="5dp"
