@@ -114,6 +114,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingStart="15dp"
+                android:onClick="cllAddionalServicesS"
                 android:layout_marginTop="2dp"
                 android:background="@drawable/white_background_b_round">
 
@@ -251,8 +252,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:onClick="selectDate"
+                android:id="@+id/datePic_layout"
                 android:layout_marginTop="2dp"
+                android:padding="10dp"
                 android:background="@color/white">
 
                 <Button

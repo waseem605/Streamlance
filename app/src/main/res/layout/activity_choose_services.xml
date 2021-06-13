@@ -7,10 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".Services.Choose_services"
     android:orientation="vertical">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/left_arrow"
+                android:id="@+id/back_arrow_Cs"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -264,6 +278,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/continue_btn"
+        android:layout_marginBottom="20dp"
         android:textSize="20sp"
         android:textColor="@color/white"></Button>
     </LinearLayout>

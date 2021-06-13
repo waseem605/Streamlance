@@ -13,6 +13,7 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:id="@+id/back_arrow_Cd"
             android:src="@drawable/left_arrow">
         </ImageView>
         <LinearLayout

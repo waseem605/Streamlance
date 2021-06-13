@@ -10,9 +10,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.streamlance.FlowTwo.Diagonosis;
 import com.example.streamlance.MainPage.ProvidersQuotes;
 import com.example.streamlance.R;
 import com.google.android.material.datepicker.MaterialDatePicker;
@@ -23,7 +25,11 @@ public class Services_Summary extends Activity {
     private TextView mStartDate, mEndDate;
     private Spinner spinner;
 
+    LinearLayout linearDate;
 
+
+    MaterialDatePicker.Builder<Pair<Long, Long>> builder = MaterialDatePicker.Builder.dateRangePicker();
+    final MaterialDatePicker materialDatePicker = builder.build();
     private Button mViewQuotaBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +37,7 @@ public class Services_Summary extends Activity {
         setContentView(R.layout.activity_services_summary);
         mStartDate = (TextView)findViewById(R.id.start_date_tx);
         mViewQuotaBtn = (Button)findViewById(R.id.view_quota_btn);
+        linearDate = (LinearLayout)findViewById(R.id.datePic_layout);
 
         mEndDate = (TextView)findViewById(R.id.end_date_tx);
         spinner = (Spinner)findViewById(R.id.select_hours_range);
@@ -61,22 +68,22 @@ public class Services_Summary extends Activity {
                 startActivity(intent);
             }
         });
-    }
-// date selection method
-    public void selectDate(View view) {
-        MaterialDatePicker.Builder<Pair<Long, Long>> builder = MaterialDatePicker.Builder.dateRangePicker();
 
-        builder.setTitleText("Select Date");
-        final MaterialDatePicker materialDatePicker = builder.build();
-
-        //materialDatePicker.show(getSupportFragmentManager(),"select date");
-
-        materialDatePicker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener() {
+        linearDate.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onPositiveButtonClick(Object selection) {
-                mStartDate.setText(materialDatePicker.getHeaderText());
+            public void onClick(View v) {
+                materialDatePicker.show(materialDatePicker.getChildFragmentManager(), "date");
             }
         });
+    }
 
+    public void cllAddionalServicesS(View view) {
+
+
+        Dialog dialog = new Dialog(Services_Summary.this);
+        dialog.setContentView(R.layout.dialog_additonal_services);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        //mViewQuotaBtn = (Button)dialog.findViewById(R.id.view_quota_btn);
+        dialog.show();
     }
 }

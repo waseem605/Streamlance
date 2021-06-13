@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,6 +18,7 @@ import com.example.streamlance.Fragments.Notification;
 import com.example.streamlance.Fragments.Profile;
 import com.example.streamlance.Fragments.Search;
 import com.example.streamlance.R;
+import com.example.streamlance.Services.Services_Summary;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.jetbrains.annotations.NotNull;
@@ -23,14 +26,15 @@ import org.jetbrains.annotations.NotNull;
 public class Diagonosis extends AppCompatActivity {
 
     private Button mRequestbtn;
-    LinearLayout linearLayout;
+    LinearLayout linearLayout,mAddition_service;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagonosis);
         mRequestbtn = (Button)findViewById(R.id.request_btn_D);
-        linearLayout = findViewById(R.id.diagonos_layout_mini);
+        linearLayout = (LinearLayout) findViewById(R.id.diagonos_layout_mini);
+        mAddition_service = (LinearLayout) findViewById(R.id.addition_service_lt);
 
 
         mRequestbtn.setOnClickListener(new View.OnClickListener() {
@@ -75,5 +79,18 @@ public class Diagonosis extends AppCompatActivity {
         });
 
 
+
+
     }
+
+    public void cllAddionalServices(View view) {
+        Dialog dialog = new Dialog(Diagonosis.this);
+        dialog.setContentView(R.layout.dialog_additonal_services);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        //mViewQuotaBtn = (Button)dialog.findViewById(R.id.view_quota_btn);
+        dialog.show();
+
+    }
+
+
 }
