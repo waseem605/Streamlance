@@ -13,14 +13,14 @@
         android:orientation="vertical">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_height="350dp"
             android:layout_marginTop="10dp"
             android:id="@+id/picture_pq"
             android:src="@drawable/__import_image"></ImageView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:orientation="horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -29,8 +29,8 @@
             android:background="@drawable/rounded_white"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/star"
                 android:layout_marginLeft="10dp"></ImageView>
@@ -43,18 +43,18 @@
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:textColor="@color/black"
                 android:text="4.8"
-                android:textSize="20sp"></TextView>
+                android:textSize="34sp"></TextView>
         </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="40dp"
                 android:background="@drawable/rounded_white"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginTop="8dp"
                     android:src="@drawable/pin"
                     android:layout_marginLeft="10dp"></ImageView>
@@ -67,18 +67,18 @@
                     android:fontFamily="@font/hk_grotesk_medium"
                     android:textColor="@color/black"
                     android:text="2.6km"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="34sp"></TextView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="40dp"
                 android:background="@drawable/rounded_white"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginTop="7dp"
                     android:src="@drawable/dollar_symbol"
                     android:layout_marginLeft="10dp"></ImageView>
@@ -91,7 +91,7 @@
                     android:textColor="@color/black"
                     android:fontFamily="@font/hk_grotesk_medium"
                     android:text="$776.61"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="34sp"></TextView>
             </LinearLayout>
         </LinearLayout>
 
@@ -103,15 +103,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gresasy Albo Auto Repair"
-                android:textSize="20sp"
+                android:textSize="40sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"></TextView>
             <Button
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/___color"></Button>
         </LinearLayout>
@@ -119,7 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textSize="14sp"
+            android:textSize="24sp"
             android:textColor="@color/black"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:text="Monday, 10 Nov 2017 at 10:00 AM to 12:00 PM"
@@ -131,6 +131,7 @@
             android:fontFamily="@font/hk_grotesk_regular"
             android:textColor="@color/black"
             android:text="145 valencia st.san Fransisco 0.2km"
+            android:textSize="24sp"
             android:layout_marginLeft="10dp"></TextView>
 
 
@@ -140,8 +141,8 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/carr"
                 android:layout_marginLeft="10dp"></ImageView>
@@ -152,11 +153,11 @@
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
-                android:textSize="13sp"
+                android:textSize="24sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/tow_truck"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"></ImageView>
@@ -167,7 +168,7 @@
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
-                android:textSize="13sp"
+                android:textSize="24sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
         </LinearLayout>
         <LinearLayout
@@ -177,8 +178,8 @@
             android:layout_marginTop="10dp">
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/carr"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"></ImageView>
@@ -189,11 +190,11 @@
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
-                android:textSize="13sp"
+                android:textSize="24sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/tow_truck"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"></ImageView>
@@ -204,7 +205,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/black"
-                android:textSize="13sp"
+                android:textSize="24sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
         </LinearLayout>
         <LinearLayout
@@ -213,8 +214,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="10dp">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/carr"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"></ImageView>
@@ -225,7 +226,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/black"
-                android:textSize="13sp"
+                android:textSize="24sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
 
         </LinearLayout>
@@ -234,19 +235,19 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:background="@color/white"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             >
             <Button
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
                 android:background="@drawable/rounded"
                 android:text="Chat"
                 android:textColor="@color/white"
                 ></Button>
             <Button
-                android:layout_width="150dp"
+                android:layout_width="250dp"
                 android:layout_marginLeft="20dp"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:background="@drawable/rounded"
                 android:text="View Quotes"
                 android:id="@+id/viewquotes"

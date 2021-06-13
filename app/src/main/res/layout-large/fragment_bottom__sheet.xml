@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottom_sheet"
+    android:background="@drawable/bottom_sheet_custom"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    >
+
+    <View
+        android:layout_width="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="280dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How can we help?"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/hk_grotesk_bold"
+        android:textAlignment="center"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your account to save your preference and jump start your practice"
+        android:textColor="@color/white"
+        android:fontFamily="@font/hk_grotesk_regular"
+        android:textSize="26sp"
+        android:textAlignment="center"></TextView>
+    <LinearLayout
+        android:id="@+id/choose_service"
+        android:layout_width="570dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bottomsheet_extend"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Service"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="34sp"
+            android:fontFamily="@font/hkgbold"
+            android:layout_marginLeft="15dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose a specific service when you know the problem"
+            android:textColor="@color/white"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="24sp"
+            android:layout_marginLeft="15dp"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="570dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/help_me_fix_car"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bottomsheet_extend"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help me fix my car"
+            android:textSize="34sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/hkgbold"
+            android:layout_marginLeft="15dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help me diagnose my vehicle and recieve quotes from mechanics"
+            android:textSize="24sp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:layout_marginLeft="15dp"
+            ></TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>
