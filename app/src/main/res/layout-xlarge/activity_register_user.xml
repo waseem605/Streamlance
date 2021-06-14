@@ -51,14 +51,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="150dp"
         android:fontFamily="@font/hk_grotesk_regular"
         android:padding="5dp"
         android:text="@string/account_desc"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="32sp"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -69,7 +69,7 @@
         android:src="@drawable/camera_icon"
         android:layout_alignParentStart="true"
         android:layout_below="@id/account_desc"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="30dp"/>
 
     <TextView
@@ -95,7 +95,7 @@
         android:layout_marginLeft="120dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="48dp"
-        android:padding="10dp"
+        android:padding="7dp"
         android:fontFamily="@font/hk_grotesk_regular"
         android:text="Please make sure your photo clearly shows your face."
         android:textColor="@color/black"
@@ -113,7 +113,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
-        android:padding="10dp"
+        android:padding="5dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="20dp"
@@ -134,7 +134,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginStart="30dp"
-        android:padding="10dp"
+        android:padding="5dp"
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:padding="10dp"
+        android:padding="5dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
@@ -181,7 +181,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
-        android:padding="10dp"
+        android:padding="5dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/textField2"
         android:hint="@string/address">
@@ -203,11 +203,11 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="@font/dm_sans_regular"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="5dp"
         android:layout_alignParentStart="true"
         android:textSize="30sp"
-        android:padding="10dp"
+        android:padding="3dp"
         android:text="@string/terms" />
 
     <Button

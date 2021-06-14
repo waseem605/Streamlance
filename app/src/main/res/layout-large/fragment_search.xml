@@ -1,78 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.Search">
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar"
         android:layout_height="wrap_content"
         android:background="@color/Back_color">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/search"
             android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:fontFamily="@font/hk_grotesk_bold"
-            android:textSize="32sp"
-            android:text="Search"></TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:fontFamily="@font/hk_grotesk_bold"
-                android:textSize="44sp"
-                android:text="for garage "></TextView>
+                android:textSize="26sp"
+                android:text="Search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/hk_grotesk_bold"
+                android:textSize="36sp"
+                android:text="for garage " />
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/searchbar"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar"
         android:background="@color/Back_color">
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
-            android:padding="3dp"
+            android:padding="5dp"
             android:layout_marginStart="20dp"
             android:background="@drawable/searchbar"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/searchicon"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/search_icon"></ImageView>
             <EditText
-                android:layout_width="320dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
-                android:textSize="24sp"
+                android:textSize="26sp"
+                android:layout_marginStart="10dp"
+                android:layout_toLeftOf="@id/filter_icon"
+                android:layout_toEndOf="@id/searchicon"
+                android:id="@+id/search_garage"
                 android:hint="Search"
                 ></EditText>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="30dp"
-                android:src="@drawable/fiilter"></ImageView>
 
-        </LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/filter_icon"
+                android:src="@drawable/fiilter" />
+
+        </RelativeLayout>
     </LinearLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/searchbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
         android:background="@drawable/rounded_white">
 
         <include layout="@layout/sample_garage" />
     </ScrollView>
 
-</LinearLayout>
+</RelativeLayout>
