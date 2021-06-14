@@ -24,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
+            android:padding="15dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="50dp"
@@ -50,13 +51,14 @@
 
 
             <Button
-                android:layout_width="200dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="@string/book_services"
                 android:background="@drawable/rounded"
-                android:paddingStart="50dp"
+                android:paddingStart="30dp"
                 android:paddingEnd="30dp"
-                android:layout_marginStart="60dp"
+                android:textSize="30dp"
+                android:layout_marginStart="120dp"
                 android:textColor="@color/white"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:padding="20dp"

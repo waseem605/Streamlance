@@ -16,14 +16,15 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@drawable/white_round_background"
-            android:padding="10dp"
+            android:padding="20dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/basic_informations"
-                android:textSize="28sp"
+                android:textSize="32sp"
+                android:padding="15dp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:layout_margin="5dp"></TextView>
@@ -32,7 +33,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/basic_info_desc"
-                android:textSize="24sp"
+                android:textSize="28sp"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:layout_margin="10dp"></TextView>
@@ -44,15 +46,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:padding="10dp"
+            android:padding="20dp"
             android:background="@drawable/white_round_background"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/aminities"
+                android:padding="15dp"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="36sp"
                 android:fontFamily="@font/hk_grotesk_medium"></TextView>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -65,7 +68,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="20dp"
                         android:padding="5dp"
                         android:orientation="horizontal">
                         <ImageView
@@ -88,7 +91,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="20dp"
                         android:padding="5dp"
                         android:orientation="horizontal">
                         <ImageView
@@ -111,12 +114,12 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
+                    android:layout_marginStart="150dp"
                     android:orientation="vertical">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="20dp"
                         android:padding="5dp"
                         android:orientation="horizontal">
                         <ImageView
@@ -139,7 +142,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="20dp"
                         android:padding="5dp"
                         android:orientation="horizontal">
                         <ImageView
@@ -172,9 +175,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:padding="20dp"
                 android:text="@string/warranties_and_certifications"
-                android:textSize="28sp"
+                android:textSize="32sp"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:textColor="@color/black"
                 android:background="@drawable/bottomsheet"
@@ -186,7 +189,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="2dp"
-            android:padding="10dp"
+            android:padding="15dp"
             android:background="@drawable/white_background_b_round"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
@@ -196,7 +199,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/warranty"
-                android:textSize="25sp"
+                android:textSize="28sp"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:layout_margin="10dp"></TextView>
@@ -204,7 +208,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/address_warranty"
-                android:textSize="24sp"
+                android:textSize="26sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:layout_marginStart="10dp"
@@ -215,7 +219,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/warranty"
-                android:textSize="25sp"
+                android:padding="10dp"
+                android:textSize="28sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_medium"
                 android:layout_margin="5dp"></TextView>
@@ -223,7 +228,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Best Repair Award Winners"
-                android:textSize="24sp"
+                android:textSize="26sp"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"></TextView>
@@ -231,7 +237,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="2019"
-                android:textSize="24sp"
+                android:textSize="26sp"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"></TextView>
@@ -241,7 +248,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Best Workshop Achievement Award"
-                android:textSize="22sp"
+                android:textSize="26sp"
+                android:padding="10dp"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_regular"
@@ -251,7 +259,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="2019"
-                android:textSize="22sp"
+                android:textSize="26sp"
+                android:padding="10dp"
                 android:textColor="@color/black"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/hk_grotesk_regular"></TextView>
