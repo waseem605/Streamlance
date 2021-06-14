@@ -440,6 +440,7 @@
                     android:text="Request Again"
                     android:textSize="34sp"
                     android:padding="15dp"
+                    android:id="@+id/requestquote"
                     android:layout_margin="20dp"
                     android:fontFamily="@font/hk_grotesk_semi_bold"></Button>
 
