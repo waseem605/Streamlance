@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ public class Onboarding extends AppCompatActivity {
     private ViewPager mSlideViewPager;
     private LinearLayout mDotLinearLayout;
     private TextView[] mDots;
-    private Button mGetStarted;
+    private ImageView mNextBtn;
     RelativeLayout relativeLayout;
 
     private SliderAdapter sliderAdapter;
@@ -27,7 +28,7 @@ public class Onboarding extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_onboarding);
-
+        mNextBtn = (ImageView)findViewById(R.id.Next_btn);
         mSlideViewPager=(ViewPager)findViewById(R.id.slide_viewpager);
         mDotLinearLayout=(LinearLayout)findViewById(R.id.dot_layout);
         relativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
@@ -38,7 +39,7 @@ public class Onboarding extends AppCompatActivity {
 
         addDotsIndicator(0);
         mDotLinearLayout.setVisibility(View.VISIBLE);
-        //mGetStarted.setVisibility(View.INVISIBLE);
+        mNextBtn.setVisibility(View.INVISIBLE);
 
         mSlideViewPager.addOnPageChangeListener(onPageChangeListener);
 
@@ -86,14 +87,14 @@ public class Onboarding extends AppCompatActivity {
 
             addDotsIndicator(i);
             if(i==0){
-                //next().setVisibility(View.INVISIBLE);
+                mNextBtn.setVisibility(View.INVISIBLE);
             }
             else if(i==1){
-                //mGetStarted.setVisibility(View.INVISIBLE);
+                mNextBtn.setVisibility(View.INVISIBLE);
             }
             else if(i==2){
                 next();
-                //mGetStarted.setVisibility(View.INVISIBLE);
+                mNextBtn.setVisibility(View.VISIBLE);
             }/*
             else if(i==3)
             {
@@ -111,7 +112,7 @@ public class Onboarding extends AppCompatActivity {
     };
     public void next()
     {
-        relativeLayout.setOnClickListener(new View.OnClickListener() {
+        mNextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Onboarding.this,GetStarted.class));

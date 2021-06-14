@@ -21,7 +21,7 @@ public class Garage extends Fragment {
 
    Button mbtnadd;
 
-   LinearLayout carlinearLayout,btnlinearLayout;
+   private LinearLayout carlinearLayout,btnlinearLayout;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +35,7 @@ public class Garage extends Fragment {
         carlinearLayout=(LinearLayout)v.findViewById(R.id.samplecar);
         btnlinearLayout=(LinearLayout)v.findViewById(R.id.addmorevehicle);
         mbtnadd = (Button) v.findViewById(R.id.addvehicle);
+
         mbtnadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +43,7 @@ public class Garage extends Fragment {
                 startActivity(intent);
             }
         });
+
         carlinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +51,7 @@ public class Garage extends Fragment {
                 dialog.show(getFragmentManager(),dialog.getTag());
             }
         });
+
         btnlinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
