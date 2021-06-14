@@ -123,10 +123,11 @@
             android:textAllCaps="false"
             android:onClick="callToServicSummary"
             android:background="@drawable/rounded"
-            android:layout_marginTop="650dp"
+            android:layout_marginTop="440dp"
             android:layout_marginLeft="10dp"
             android:padding="15dp"
             android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
             android:text="@string/continue_btn"
             android:textColor="@color/white"
             android:textSize="32sp"></Button>

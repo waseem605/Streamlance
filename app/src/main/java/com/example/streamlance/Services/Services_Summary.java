@@ -48,6 +48,13 @@ public class Services_Summary extends Activity {
         spinner.setAdapter(adapter);
         //spinner.setOnItemClickListener((AdapterView.OnItemClickListener) this);
 
+
+        linearDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                materialDatePicker.show(materialDatePicker.getChildFragmentManager(), "date");
+            }
+        });
     }
 
 
@@ -69,12 +76,7 @@ public class Services_Summary extends Activity {
             }
         });
 
-        linearDate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                materialDatePicker.show(materialDatePicker.getChildFragmentManager(), "date");
-            }
-        });
+
     }
 
     public void cllAddionalServicesS(View view) {

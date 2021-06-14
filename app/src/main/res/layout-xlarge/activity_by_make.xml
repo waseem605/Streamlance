@@ -12,8 +12,8 @@
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:id="@+id/back_arrow_bm"
             android:src="@drawable/left_arrow"/>
         <TextView
@@ -22,7 +22,7 @@
             android:text="By Make"
             android:layout_marginStart="250dp"
             android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:textSize="40sp"
+            android:textSize="38sp"
             android:textColor="@color/black"/>
     </androidx.appcompat.widget.Toolbar>
 

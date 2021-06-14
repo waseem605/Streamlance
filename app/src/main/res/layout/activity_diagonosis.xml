@@ -264,6 +264,7 @@
     </LinearLayout>
 
 
+    </ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_main_navigation"
         android:layout_width="match_parent"
@@ -276,5 +277,5 @@
         app:itemTextColor="@color/Back_color"
         android:layout_centerHorizontal="true"
         app:menu="@menu/bottom_nav_menu" />
-    </ScrollView>
+
 </RelativeLayout>

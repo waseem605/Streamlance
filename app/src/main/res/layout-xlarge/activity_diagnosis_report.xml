@@ -11,7 +11,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:background="@color/white"
-        android:padding="15dp"
+        android:padding="5dp"
         android:layout_height="wrap_content">
         <ImageView
             android:layout_width="40dp"
@@ -122,7 +122,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="470dp"
+        android:layout_marginTop="270dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/rounded"
         android:fontFamily="@font/hk_grotesk_semi_bold"

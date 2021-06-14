@@ -24,7 +24,7 @@ public class ChatDetails extends AppCompatActivity {
         mBack_arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ChatDetails.this, Quote_Details.class));
+                startActivity(new Intent(ChatDetails.this, ChatActivity.class));
             }
         });
     }

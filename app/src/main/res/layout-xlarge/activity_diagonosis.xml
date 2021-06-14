@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,289 +9,295 @@
     tools:context=".FlowTwo.Diagonosis">
 
     <LinearLayout
-        android:id="@+id/diagonos_layout_mini"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bottom_main_navigation"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="0dp"
         android:orientation="vertical">
 
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:padding="7dp">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/left_arrow" />
-
-            <TextView
-                android:layout_width="600dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/hk_grotesk_semi_bold"
-                android:gravity="center"
-                android:text="How can we help?"
-                android:textColor="@color/black"
-                android:textSize="36sp" />
-
-        </androidx.appcompat.widget.Toolbar>
-
-
         <LinearLayout
-            android:id="@+id/samplecar"
+            android:id="@+id/diagonos_layout_mini"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/rounded_white"
-            android:orientation="horizontal">
-
-            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/carpic"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="15dp"
-                android:padding="5dp"
-                android:src="@drawable/car"
-                app:civ_border_color="#FF000000" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/carname"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="15dp"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:paddingTop="5dp"
-                    android:text="BMW x5"
-                    android:textColor="@color/black"
-                    android:textSize="34sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/chesisno"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:fontFamily="@font/hk_grotesk_regular"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:text="67jhgfb57ndf "
-                    android:textColor="@color/black"
-                    android:textSize="22sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/bottomsheet"
-            android:backgroundTint="@color/white"
+            android:layout_above="@+id/bottom_main_navigation"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
             android:orientation="vertical">
 
-            <LinearLayout
+            <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bottomsheet"
-                android:backgroundTint="@color/white"
-                android:orientation="horizontal"
-                android:padding="10dp">
+                android:background="@color/white"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/left_arrow" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="600dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:text="What's happening to your car?"
+                    android:gravity="center"
+                    android:text="How can we help?"
                     android:textColor="@color/black"
                     android:textSize="36sp" />
 
-            </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
 
             <LinearLayout
+                android:id="@+id/samplecar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/white_background_b_round">
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_white"
+                android:orientation="horizontal">
 
-                <EditText
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/carpic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:src="@drawable/car"
+                    app:civ_border_color="#FF000000" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="230dp"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/round_border"
-                    android:hint="Describe your problem"
-                    android:padding="10dp"
-                    android:textSize="28sp">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                </EditText>
+                    <TextView
+                        android:id="@+id/carname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:paddingTop="5dp"
+                        android:text="BMW x5"
+                        android:textColor="@color/black"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/chesisno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/hk_grotesk_regular"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="67jhgfb57ndf "
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/bottomsheet"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/white"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="600dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:padding="10dp"
-                    android:text="Choose the Service (optional)"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:background="@color/white"
-                android:orientation="horizontal"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="600dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:text="Car is not starting"
-                    android:textColor="@color/black"
-                    android:textSize="30sp" />
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20dp"
-                    android:src="@drawable/next_icon" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:background="@color/white"
-                android:orientation="horizontal"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="600dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:text="I need a pre-purchase inspection"
-                    android:textColor="@color/black"
-                    android:textSize="30sp" />
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20dp"
-                    android:src="@drawable/next_icon" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:background="@color/white"
-                android:orientation="horizontal"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="600dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:text="Check engine light Is on"
-                    android:textColor="@color/black"
-                    android:textSize="30sp" />
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="20dp"
-                    android:src="@drawable/next_icon" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/addition_service_lt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:background="@drawable/white_background_b_round"
-                android:onClick="cllAddionalServices"
-                android:orientation="horizontal"
-                android:paddingStart="5dp">
-
-                <Button
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/ring"
-                    android:backgroundTint="@color/orange"
-                    android:text="+"
-                    android:textColor="@color/orange" />
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:padding="10dp"
-                    android:text="@string/add_additional_service"
-                    android:textColor="@color/orange"
-                    android:textSize="30sp" />
+                    android:background="@drawable/bottomsheet"
+                    android:backgroundTint="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:text="What's happening to your car?"
+                        android:textColor="@color/black"
+                        android:textSize="36sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_background_b_round">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/round_border"
+                        android:hint="Describe your problem"
+                        android:padding="10dp"
+                        android:textSize="28sp">
+
+                    </EditText>
+                </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottomsheet"
+                    android:backgroundTint="@color/white">
+
+                    <TextView
+                        android:layout_width="600dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:padding="10dp"
+                        android:text="Choose the Service (optional)"
+                        android:textColor="@color/black"
+                        android:textSize="32sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="600dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:text="Car is not starting"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/next_icon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="600dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:text="I need a pre-purchase inspection"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/next_icon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="600dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:text="Check engine light Is on"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/next_icon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addition_service_lt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/white_background_b_round"
+                    android:onClick="cllAddionalServices"
+                    android:orientation="horizontal"
+                    android:paddingStart="5dp">
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ring"
+                        android:backgroundTint="@color/orange"
+                        android:text="+"
+                        android:textColor="@color/orange" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        android:padding="10dp"
+                        android:text="@string/add_additional_service"
+                        android:textColor="@color/orange"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/request_btn_D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:text="Request Diagnosis"
+                android:textAllCaps="false"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/request_btn_D"
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_main_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/rounded"
-            android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:text="Request Diagnosis"
-            android:textAllCaps="false"
-            android:padding="15dp"
-            android:textColor="@color/white"
-            android:textSize="30sp" />
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            app:itemIconSize="24sp"
+            app:itemIconTint="@color/Back_color"
+            app:itemTextColor="@color/Back_color"
+            android:layout_centerHorizontal="true"
+            app:menu="@menu/bottom_nav_menu" />
     </LinearLayout>
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_main_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/hk_grotesk_regular"
-        android:background="@color/white"
-        android:layout_alignParentBottom="true"
-        app:itemIconSize="24sp"
-        app:itemIconTint="@color/Back_color"
-        app:itemTextColor="@color/Back_color"
-        android:layout_centerHorizontal="true"
-        app:menu="@menu/bottom_nav_menu" />
-</RelativeLayout>
+</ScrollView>

@@ -11,18 +11,16 @@
         android:id="@+id/button_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:fontFamily="@font/hk_grotesk_regular"
-        android:layout_marginStart="550dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="40dp"
         android:background="#00000000"
         android:text="@string/skip"
         android:padding="10dp"
         android:textColor="@color/Back_color"
-        android:textSize="34sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,7 +32,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="90dp"
+        android:layout_below="@id/button_skip"
         android:layout_marginEnd="60dp"
         android:text="@string/create_account"
         android:textAlignment="center"
@@ -43,8 +41,7 @@
         android:textStyle="bold"
         android:fontFamily="@font/hk_grotesk_bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_skip" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/account_desc"
@@ -70,6 +67,7 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:src="@drawable/camera_icon"
+        android:layout_alignParentStart="true"
         android:layout_below="@id/account_desc"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="30dp"/>
@@ -77,13 +75,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_profile"
         android:layout_below="@id/account_desc"
+        android:layout_marginStart="20dp"
         android:layout_marginLeft="170dp"
         android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/add_Image"
         android:fontFamily="@font/hk_grotesk_semi_bold"
+        android:text="@string/add_profile"
         android:textColor="@color/black"
-        android:textSize="36sp"/>
+        android:textSize="36sp" />
 
     <TextView
         android:layout_width="233dp"
@@ -113,6 +113,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
+        android:padding="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="20dp"
@@ -124,7 +125,7 @@
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/black"
             android:padding="15dp"
-            android:textSize="26sp" />
+            android:textSize="30sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -133,6 +134,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginStart="30dp"
+        android:padding="10dp"
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -145,7 +147,7 @@
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/black"
             android:padding="15dp"
-            android:textSize="26sp"
+            android:textSize="30sp"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -154,6 +156,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
+        android:padding="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
@@ -167,7 +170,7 @@
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/black"
             android:padding="15dp"
-            android:textSize="26sp" />
+            android:textSize="30sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -178,6 +181,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
+        android:padding="10dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/textField2"
         android:hint="@string/address">
@@ -188,7 +192,7 @@
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/black"
             android:padding="15dp"
-            android:textSize="26sp" />
+            android:textSize="30sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
@@ -199,21 +203,23 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="@font/dm_sans_regular"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="75dp"
         android:layout_marginBottom="5dp"
-        android:textSize="26sp"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp"
+        android:padding="10dp"
         android:text="@string/terms" />
 
     <Button
         android:id="@+id/lets_start_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/terms"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:padding="15dp"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="105dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/rounded"
         android:text="@string/let_s_start"

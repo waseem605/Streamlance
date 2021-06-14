@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,16 +11,27 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
         android:fontFamily="@font/hk_grotesk_bold"
         android:textColor="@color/black"
+        android:id="@+id/myvehicl"
         android:text="My Vehicles"
         android:textSize="20sp"></TextView>
 
-   <include layout="@layout/sample_cars"></include>
+   <include layout="@layout/sample_cars"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/samplecar"
+       android:layout_below="@id/myvehicl"></include>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/samplecar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
         android:orientation="horizontal"
         android:id="@+id/addmorevehicle">
 
@@ -40,16 +52,19 @@
             android:textColor="@color/Back_color"
             android:textSize="16sp"></TextView>
     </LinearLayout>
-<Button
-android:layout_width="50dp"
-android:layout_height="50dp"
-android:background="@drawable/circle_button"
-android:backgroundTint="@color/Back_color"
-android:text="+"
-android:layout_marginLeft="280dp"
-    android:layout_marginTop="280dp"
-android:textSize="20sp"
-android:textColor="@color/white"
-    android:id="@+id/addvehicle"></Button>
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/addvehicle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/circle_button"
+        android:backgroundTint="@color/Back_color"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -50,88 +50,104 @@
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_tx"
+                android:text="9:40 AM"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/other_text"
+                android:layout_below="@id/time_tx"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/chat_details_blue"
+                android:text="hello how are you"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:padding="10dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/other_text"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/chat_details_white"
+                android:text="yes i am fine "
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:padding="10dp"></TextView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/time_tx"
-            android:text="9:40 AM"
-            android:layout_marginTop="30dp"
-            android:layout_centerHorizontal="true"></TextView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/other_text"
-            android:layout_below="@id/time_tx"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/chat_details_blue"
-            android:text="hello how are you"
-            android:fontFamily="@font/hk_grotesk_regular"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:padding="10dp"></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/other_text"
-            android:layout_marginTop="20dp"
-            android:layout_alignParentEnd="true"
-            android:fontFamily="@font/hk_grotesk_regular"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/chat_details_white"
-            android:text="yes i am fine "
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:padding="10dp"></TextView>
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="400dp"
-        android:layout_gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="center">
 
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
                 android:id="@+id/attach_file_btn"
                 android:src="@drawable/attach_btn"></ImageView>
 
+
         <EditText
             android:id="@+id/sms_editText"
-            android:layout_width="260dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/hk_grotesk_regular"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/send_sms_btn"
+            android:layout_toEndOf="@+id/attach_file_btn"
             android:background="@drawable/chat_details_white"
+            android:fontFamily="@font/hk_grotesk_regular"
             android:hint="hello"
-            android:padding="5dp"
+            android:padding="10dp"
             android:textSize="20sp"></EditText>
-
 
         <ImageView
             android:id="@+id/send_sms_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
             android:padding="5dp"
             android:src="@drawable/send_btn"></ImageView>
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 
 
-</LinearLayout>
+</RelativeLayout>

@@ -51,7 +51,7 @@
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/search_icon"></ImageView>
             <EditText
-                android:layout_width="400dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textSize="24sp"
