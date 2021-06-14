@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/bottomsheet"
+        android:backgroundTint="#FFFFFF"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booked"
+            android:fontFamily="@font/hk_grotesk_medium"
+            android:textSize="15sp"
+            android:textColor="#FFA500"></TextView>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint="DD/MM/YYYY"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:text="02/06/2021"
+            android:inputType="date"
+            android:focusable="false"
+            android:textSize="10dp"
+            android:layout_marginLeft="60dp"></TextView>
+        <TextClock
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="00:00 am"
+            android:inputType="time"
+            android:focusable="false"
+            android:textSize="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF">
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/carpic"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:src="@drawable/car"
+            app:civ_border_color="#FF000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/carname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:layout_marginLeft="5dp"
+                android:text="BMW x5"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chesisno"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textSize="12sp"
+                android:paddingBottom="5dp"
+                android:text="67jhgfb57ndf " />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Service Type:"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Service"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="	#FFA500"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_white"
+            android:textColor="@color/black"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/hk_grotesk_medium"
+            android:text="Services Requested"
+            android:textSize="18sp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
+                android:text="Oil and Filter Services"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="-"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:text="Engine Oil"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_white"
+            android:text="Smoke Services"
+            android:textSize="14sp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_background_b_round"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:text="Price"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="$22.58"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="130dp"
+                android:id="@+id/btnbooking"
+                android:layout_height="wrap_content"
+                android:text="View Details"
+                android:fontFamily="@font/hk_grotesk_medium"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded"></Button>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

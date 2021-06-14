@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FlowTwo.DiagnosisReport">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="20dp"
+            android:src="@drawable/x_icon"/>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Summary Diagnosis"
+            android:gravity="center"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fiilter"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            app:tint="@color/black" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottomsheet"
+            android:backgroundTint="@color/white"
+            android:text="Diagnosis"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Car is not starting"
+            android:padding="15dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_background_b_round"
+            android:text="I need a pre-purchase inspection"
+            android:paddingBottom="30dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottomsheet"
+            android:backgroundTint="@color/white"
+            android:text="Your Description"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_background_b_round"
+            android:text="If the key does not turn, you may have a problem with the ignition system. We currently do not offer ignition related services for cars that save Key Fobs."
+            android:paddingBottom="30dp"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm_request_diagonos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/hk_grotesk_semi_bold"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>
