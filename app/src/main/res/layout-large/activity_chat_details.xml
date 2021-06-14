@@ -8,37 +8,43 @@
     tools:context=".MainPage.ChatDetails">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
             android:id="@+id/back_arrow_Cd"
             android:src="@drawable/left_arrow">
         </ImageView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/back_arrow_Cd"
             android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="36sp"
-            android:layout_marginLeft="80dp"
             android:fontFamily="@font/hk_grotesk_bold"
             android:text="Xpress Autos &amp; Tires">
         </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="70dp"
                 android:orientation="horizontal">
-            <Button
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/circle_button"
-                android:backgroundTint="@color/orange"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="5dp"></Button>
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/circle_button"
+                    android:backgroundTint="@color/orange" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,11 +55,13 @@
                     android:layout_marginTop="3dp"></TextView>
             </LinearLayout>
         </LinearLayout>
+        </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"
         android:id="@+id/ct_sv"
+        android:layout_below="@id/toolbar"
         android:layout_height="wrap_content">
 
         <RelativeLayout

@@ -12,20 +12,27 @@
         android:id="@+id/chat_toolb"
         android:layout_height="wrap_content"
         >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
             android:id="@+id/back_arrow_Cd"
             android:src="@drawable/left_arrow">
         </ImageView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/back_arrow_Cd"
             android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="32sp"
+            android:textSize="40sp"
             android:layout_marginLeft="20dp"
             android:fontFamily="@font/hk_grotesk_bold"
             android:text="Xpress Autos &amp; Tires">
@@ -34,22 +41,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-            <Button
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:background="@drawable/circle_button"
-                android:backgroundTint="@color/orange"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="5dp"></Button>
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/circle_button"
+                    android:backgroundTint="@color/orange"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Online"
+                    android:textSize="18sp"
                     android:textColor="@color/orange"
                     android:layout_marginLeft="2dp"
-                    android:layout_marginTop="3dp"></TextView>
+                    android:layout_marginTop="3dp" />
             </LinearLayout>
         </LinearLayout>
+        </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
 

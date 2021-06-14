@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,25 +17,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/Back_color">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:id="@+id/leftarrow"
                 android:src="@drawable/left_arrow"
-                app:tint="@color/white"></ImageView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Messages"
-                android:fontFamily="@font/hk_grotesk_bold"
-                android:textColor="@color/white"
-                android:textSize="26sp"
-                android:layout_marginLeft="250dp"></TextView>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/delete_button"
-                android:layout_marginLeft="250dp"></ImageView>
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                app:tint="@color/white" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Messages"
+                    android:layout_toEndOf="@id/leftarrow"
+                    android:fontFamily="@font/hk_grotesk_bold"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:layout_marginLeft="120dp" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/delete_button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"></ImageView>
+            </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
         <EditText
@@ -49,7 +60,7 @@
             android:fontFamily="@font/segoe_ui"
             android:gravity="center"
             android:hint="@string/searchbar"
-            android:padding="15dp"
+            android:padding="10dp"
             android:textSize="32sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -61,4 +72,4 @@
 
     </LinearLayout>
 
-</ScrollView>
+</RelativeLayout>

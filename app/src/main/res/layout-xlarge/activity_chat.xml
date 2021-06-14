@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -16,24 +16,35 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:background="@color/Back_color">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:id="@+id/leftarrow"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
                 android:src="@drawable/left_arrow"
                 app:tint="@color/white"></ImageView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/leftarrow"
+                android:layout_marginLeft="280dp"
+                android:layout_alignParentTop="true"
                 android:text="Messages"
                 android:fontFamily="@font/hk_grotesk_bold"
                 android:textColor="@color/white"
-                android:textSize="26sp"
-                android:layout_marginLeft="250dp"></TextView>
+                android:textSize="40sp"
+                ></TextView>
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/delete_button"
-                android:layout_marginLeft="250dp"></ImageView>
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"></ImageView>
+            </RelativeLayout>
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -60,4 +71,4 @@
 
     </LinearLayout>
 
-</ScrollView>
+</RelativeLayout>

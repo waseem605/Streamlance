@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,25 +17,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/Back_color">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
             <ImageView
+                android:id="@+id/leftarrow"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:src="@drawable/left_arrow"
-                app:tint="@color/white"></ImageView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Messages"
-                android:fontFamily="@font/hk_grotesk_bold"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:layout_marginLeft="100dp"></TextView>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/delete_button"
-                android:layout_marginLeft="60dp"></ImageView>
+                app:tint="@color/white" />
 
+                <TextView
+                    android:id="@+id/msg"
+                    android:layout_toEndOf="@id/leftarrow"
+                    android:layout_marginLeft="90dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hk_grotesk_bold"
+                    android:text="Messages"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/delbtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delete_button" />
+            </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
         <EditText
@@ -61,4 +74,4 @@
 
 
     </LinearLayout>
-</ScrollView>
+</RelativeLayout>
