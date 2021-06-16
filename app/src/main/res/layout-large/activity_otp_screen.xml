@@ -91,6 +91,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/dm_sans_regular"
                     android:textSize="28sp"
+                    android:background="@null"
                     android:hint="333-1234567" />
             </LinearLayout>
 

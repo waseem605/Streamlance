@@ -91,6 +91,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/dm_sans_regular"
                     android:textSize="30sp"
+                    android:background="@null"
                     android:hint="333-1234567" />
             </LinearLayout>
 

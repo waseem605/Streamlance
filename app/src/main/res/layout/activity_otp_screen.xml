@@ -87,6 +87,7 @@
                    <com.google.android.material.textfield.TextInputEditText
                        android:layout_width="267dp"
                        android:layout_height="match_parent"
+                       android:background="@null"
                        android:fontFamily="@font/dm_sans_regular"
                        android:hint="333-1234567" />
                </LinearLayout>
