@@ -131,8 +131,6 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:id="@+id/addcreditcard"
-                android:background="@drawable/rounded"
-                android:backgroundTint="@color/white"
                 android:layout_marginLeft="5dp"
                 android:src="@drawable/creditcard"></ImageView>
             <TextView
@@ -153,8 +151,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/rounded"
-                android:backgroundTint="@color/white"
+               app:tint="@color/white"
                 android:src="@drawable/paypal"></ImageView>
             <TextView
                 android:layout_width="wrap_content"
@@ -175,8 +172,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/rounded"
-                android:backgroundTint="@color/white"
+                app:tint="@color/white"
                 android:src="@drawable/applepay"></ImageView>
             <TextView
                 android:layout_width="wrap_content"
