@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,85 +8,106 @@
     android:orientation="vertical"
     tools:context=".GarageFragments.Garage_Info">
 
-    <ImageView
+    <com.denzcoskun.imageslider.ImageSlider
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:id="@+id/ivgarage"
-        android:scaleType="fitXY"
-        android:src="@drawable/carimport_imagere" />
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        app:placeholder="@drawable/carimport_imagere"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:auto_cycle="true"
+        app:delay="2000"
+        app:selected_dot="@color/orange"
+        android:outlineSpotShadowColor="@color/orange"
+        app:period="3000"
+        android:id="@+id/slide_garage_images">
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_below="@id/slide_garage_images"
+        android:id="@+id/lllayout"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="230dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gresasy Albo Auto Repair"
-            android:textSize="25sp"
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/hk_grotesk_semi_bold" />
-       <Button
-           android:layout_width="70dp"
-           android:layout_height="30dp"
-           android:background="@drawable/rounded"
-           android:backgroundTint="@color/orange"
-           android:text="Chat"
-           android:textAllCaps="false"
-           android:fontFamily="@font/hk_grotesk_semi_bold"
-           android:textColor="@color/white"
-           android:layout_marginStart="40dp"></Button>
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="Gresasy Albo Auto Repair"
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_semi_bold" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/orange"
+                android:text="Chat"
+                android:textAllCaps="false"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="40dp"></Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/pin"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="145 valencia st,san Francisco"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hk_grotesk_regular"></TextView>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/chattt"></ImageView>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="Open Now"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#24B345"></TextView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tablayoutgarageinfo"></com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewpagergarageinfo"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            ></androidx.viewpager.widget.ViewPager>
+
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
-        <ImageView
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/pin"></ImageView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="145 valencia st,san Francisco"
-            android:textSize="16sp"
-            android:layout_marginLeft="5dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/hk_grotesk_regular"></TextView>
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-             android:layout_marginLeft="80dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/chattt"></ImageView>
 
-    </LinearLayout>
-    <TextView
-        android:layout_width="80dp"
-        android:layout_height="20dp"
-        android:text="Open Now"
-        android:layout_marginLeft="20dp"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:fontFamily="@font/hk_grotesk_regular"
-        android:background="@drawable/rounded"
-        android:backgroundTint="#24B345"></TextView>
 
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/tablayoutgarageinfo"></com.google.android.material.tabs.TabLayout>
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/viewpagergarageinfo"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        ></androidx.viewpager.widget.ViewPager>
-
-</LinearLayout>
+</RelativeLayout>

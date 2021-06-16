@@ -30,6 +30,13 @@ public class SliderAdapter extends PagerAdapter {
             R.drawable.vector_free_towing_car_illustration,
     };
 
+    //garage info images
+    public  int[]garage_images ={
+      R.drawable.carimport_imagere,
+      R.drawable.carimport_imagere,
+      R.drawable.carimport_imagere
+    };
+
     public int slide_heading[]={
             R.string.slide_heading1,
             R.string.slide_heading2,
@@ -61,10 +68,15 @@ public class SliderAdapter extends PagerAdapter {
         View view = layoutInflater.inflate(R.layout.slide_layout,container,false);
 
         ImageView slideImageView = (ImageView)view.findViewById(R.id.slide_Images);
+        //ImageView slideImageGarage = (ImageView)view.findViewById(R.id.garage_images_slide);
         TextView slideHeading = (TextView) view.findViewById(R.id.slide_heading);
         TextView slideDescription = (TextView) view.findViewById(R.id.slide_description);
 
+
+
         slideImageView.setImageResource(slide_Images[position]);
+        //slideImageView.setImageResource(garage_images[position]);
+
         slideHeading.setText(slide_heading[position]);
         slideDescription.setText(slide_description[position]);
 
