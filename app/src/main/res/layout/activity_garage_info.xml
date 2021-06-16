@@ -10,14 +10,14 @@
 
     <com.denzcoskun.imageslider.ImageSlider
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:layout_alignParentEnd="true"
         app:placeholder="@drawable/carimport_imagere"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         app:auto_cycle="true"
         app:delay="2000"
-        app:selected_dot="@color/orange"
+        app:selected_dot="@drawable/dote_color_orange"
         android:outlineSpotShadowColor="@color/orange"
         app:period="3000"
         android:id="@+id/slide_garage_images">
