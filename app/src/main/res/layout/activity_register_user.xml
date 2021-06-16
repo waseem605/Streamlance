@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:padding="10dp"
     tools:context=".Login.RegisterUser">
 
@@ -103,13 +104,16 @@
         android:layout_below="@id/add_Image"
         android:layout_alignParentStart="true"
         app:boxStrokeColor="@color/black"
+        android:background="@drawable/white_backgroun_with_border"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxBackgroundMode="outline"
+        app:counterOverflowTextColor="@color/Back_color"
+        app:hintTextColor="@color/Back_color"
         app:boxStrokeWidthFocused="2dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginRight="20dp"
         android:hint="@string/firstname">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -117,16 +121,21 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textField1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
+        app:boxStrokeColor="@color/black"
+        android:background="@drawable/white_backgroun_with_border"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxBackgroundMode="outline"
+        app:counterOverflowTextColor="@color/Back_color"
+        app:hintTextColor="@color/Back_color"
+        app:boxStrokeWidthFocused="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textField"
@@ -137,19 +146,24 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="16sp"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textField2"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
+        android:background="@drawable/white_backgroun_with_border"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxBackgroundMode="outline"
+        app:counterOverflowTextColor="@color/Back_color"
+        app:hintTextColor="@color/Back_color"
+        app:boxStrokeWidthFocused="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
         android:layout_below="@id/textField1"
         android:hint="@string/email">
 
@@ -158,15 +172,19 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_layout"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
         android:layout_marginStart="30dp"
+        android:background="@drawable/white_backgroun_with_border"
+        app:boxStrokeErrorColor="@color/red"
+        app:boxBackgroundMode="outline"
+        app:counterOverflowTextColor="@color/Back_color"
+        app:hintTextColor="@color/Back_color"
+        app:boxStrokeWidthFocused="2dp"
         android:layout_marginEnd="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -178,7 +196,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
@@ -188,6 +206,7 @@
         android:layout_below="@+id/email_layout"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
+        android:buttonTint="@color/Back_color"
         android:fontFamily="@font/dm_sans_regular"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"

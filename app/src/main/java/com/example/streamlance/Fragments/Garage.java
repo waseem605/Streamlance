@@ -44,13 +44,13 @@ public class Garage extends Fragment {
             }
         });
 
-        carlinearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Bottom_Sheet dialog=new Bottom_Sheet();
-                dialog.show(getFragmentManager(),dialog.getTag());
-            }
-        });
+       carlinearLayout.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Bottom_Sheet dialog=new Bottom_Sheet();
+               dialog.show(getFragmentManager(),dialog.getTag());
+           }
+       });
 
         btnlinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override

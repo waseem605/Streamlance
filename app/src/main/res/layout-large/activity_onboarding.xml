@@ -45,11 +45,10 @@
             android:layout_width="70dp"
             android:layout_height="60dp"
             android:layout_alignParentRight="true"
-            android:src="@drawable/right_arrow"
+            android:src="@drawable/right_icon_d"
             android:layout_marginRight="10dp"
             android:id="@+id/Next_btn"
-            android:padding="10dp"
-            app:tint="@color/orange"/>
+            android:padding="10dp"/>
 
     </RelativeLayout>
 
