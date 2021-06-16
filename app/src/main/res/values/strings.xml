@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Streamlance</string>
+    <string name="app_name">Streamlane</string>
     <!-- onBoarding text-->
     <string name="slide_heading1">How It Works</string>
     <string name="slide_heading2">How It Will Be Helpful For You</string>

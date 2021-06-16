@@ -62,10 +62,11 @@
                 android:layout_marginLeft="10dp"
                 android:src="@drawable/search_icon"></ImageView>
             <EditText
-                android:layout_width="500dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textSize="26sp"
+                android:background="@null"
                 android:layout_marginStart="10dp"
                 android:layout_toLeftOf="@id/filter_icon"
                 android:layout_toEndOf="@id/searchicon"
@@ -76,7 +77,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="5dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="15dp"
                 android:id="@+id/filter_icon"

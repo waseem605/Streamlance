@@ -9,7 +9,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
+        android:scaleType="fitXY"
+        android:id="@+id/ivgarage"
         android:src="@drawable/carimport_imagere" />
     <LinearLayout
         android:layout_width="match_parent"

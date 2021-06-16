@@ -143,7 +143,7 @@
             </LinearLayout>
             <Button
                 android:layout_width="350dp"
-                android:id="@+id/btnbooking"
+                android:id="@+id/btncompleted"
                 android:layout_height="wrap_content"
                 android:text="View Details"
                 android:fontFamily="@font/hk_grotesk_medium"

@@ -10,6 +10,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:id="@+id/ivgarage"
+        android:scaleType="fitXY"
         android:src="@drawable/carimport_imagere" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,11 +58,11 @@
             android:textColor="@color/black"
             android:fontFamily="@font/hk_grotesk_regular"></TextView>
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-             android:layout_marginLeft="60dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+             android:layout_marginLeft="80dp"
             android:scaleType="fitXY"
-            android:src="@drawable/group_59682"></ImageView>
+            android:src="@drawable/chattt"></ImageView>
 
     </LinearLayout>
     <TextView
