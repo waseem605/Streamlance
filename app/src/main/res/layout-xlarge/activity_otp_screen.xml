@@ -90,6 +90,7 @@
                     android:layout_width="567dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/dm_sans_regular"
+                    android:textCursorDrawable="@drawable/style_cursur"
                     android:textSize="30sp"
                     android:background="@null"
                     android:hint="333-1234567" />

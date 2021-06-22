@@ -13,7 +13,7 @@
         android:id="@+id/textView5"
         android:layout_width="500dp"
         android:layout_height="130dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="208dp"
         android:fontFamily="@font/hk_grotesk_bold"
         android:text="@string/verify_phone"
         android:textAlignment="center"
@@ -38,6 +38,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/secont_RL"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textView4">
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:text="00:36"
+            android:inputType="time"
+            android:textColor="@color/orange"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:text="Seconds"
+            android:id="@+id/second_Text"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/second"
+            android:textSize="26sp"
+            android:layout_marginStart="5dp" />
+    </RelativeLayout>
+
 
     <com.chaos.view.PinView
         android:id="@+id/pin_view"
@@ -45,7 +76,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
+        android:textCursorDrawable="@drawable/style_cursur"
         android:cursorVisible="true"
         android:inputType="number"
         app:itemCount="4"
@@ -54,7 +86,7 @@
         app:itemWidth="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/secont_RL"
         app:lineColor="@color/black" />
 
     <Button
@@ -74,33 +106,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pin_view" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="120dp"
-        android:fontFamily="@font/hk_grotesk_regular"
-        android:text="@string/resend_otp"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verify_number_btn" />
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/verify_number_btn">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/hk_grotesk_regular"
-        android:text="Resend"
-        android:textColor="@color/red"
-        android:textSize="30sp"
-        android:layout_marginLeft="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.791"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verify_number_btn" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:text="@string/resend_otp"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:text="Resend"
+            android:textColor="@color/red"
+            android:id="@+id/resend_otp"
+            android:layout_toEndOf="@id/textView6"
+            android:textSize="30sp"
+            android:layout_marginStart="5dp" />
+    </RelativeLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,12 +11,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.streamlance.Fragments.Home;
 import com.example.streamlance.Fragments.Notification;
 import com.example.streamlance.Fragments.Profile;
 import com.example.streamlance.Fragments.Search;
+import com.example.streamlance.MainPage.MainActivity;
 import com.example.streamlance.R;
 import com.example.streamlance.Services.Services_Summary;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,6 +29,7 @@ public class Diagonosis extends AppCompatActivity {
 
     private Button mRequestbtn;
     LinearLayout linearLayout,mAddition_service;
+    private ImageView mBackLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,16 @@ public class Diagonosis extends AppCompatActivity {
         mRequestbtn = (Button)findViewById(R.id.request_btn_D);
         linearLayout = (LinearLayout) findViewById(R.id.diagonos_layout_mini);
         mAddition_service = (LinearLayout) findViewById(R.id.addition_service_lt);
+        mBackLink = (ImageView) findViewById(R.id.back_arrow_diag);
+
+
+        mBackLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Diagonosis.this, MainActivity.class));
+            }
+        });
+
 
 
         mRequestbtn.setOnClickListener(new View.OnClickListener() {

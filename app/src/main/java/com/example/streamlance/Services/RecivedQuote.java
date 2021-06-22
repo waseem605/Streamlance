@@ -19,6 +19,10 @@ public class RecivedQuote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recived_quote);
         btnrecieved=findViewById(R.id.btnscheduleservice);
+
+
+
+
         btnrecieved.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

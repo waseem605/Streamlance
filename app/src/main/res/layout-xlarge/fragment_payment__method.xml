@@ -42,7 +42,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/cardpic"
             android:id="@+id/cardpic"></ImageView>
@@ -52,7 +52,9 @@
             android:layout_toEndOf="@id/cardpic"
             android:fontFamily="@font/dm_sans_regular"
             android:textSize="28sp"
-            android:gravity="center"
+            android:background="@null"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
             android:hint="399-1234-5678-0000"
             ></EditText>
         <ImageView
@@ -62,7 +64,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp"
-            android:src="@drawable/checked"></ImageView>
+            android:src="@drawable/darktik"></ImageView>
 
     </RelativeLayout>
     <RelativeLayout

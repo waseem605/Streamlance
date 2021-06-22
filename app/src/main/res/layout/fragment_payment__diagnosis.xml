@@ -35,14 +35,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:padding="3dp"
+        android:padding="8dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/searchbar"
         android:orientation="horizontal">
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/cardpic"
             android:id="@+id/cardpic"
@@ -52,6 +52,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/dm_sans_regular"
             android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textCursorDrawable="@drawable/style_cursur"
+            android:layout_marginStart="10dp"
+            android:background="@null"
             android:layout_toEndOf="@id/cardpic"
             android:hint="399-1234-5678-0000"
             ></EditText>
@@ -60,7 +64,7 @@
             android:layout_height="20dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
-            android:src="@drawable/checked"
+            android:src="@drawable/darktik"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"></ImageView>
 
@@ -76,6 +80,7 @@
             android:padding="15dp"
             android:layout_alignParentLeft="true"
             android:layout_marginStart="20dp"
+            android:textCursorDrawable="@drawable/style_cursur"
             android:background="@drawable/searchbar"
             android:hint="MM/YY"
             android:textSize="14sp"
@@ -85,6 +90,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:padding="15dp"
+            android:textCursorDrawable="@drawable/style_cursur"
             android:layout_marginStart="30dp"
             android:background="@drawable/searchbar"
             android:hint="CVC"

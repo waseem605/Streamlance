@@ -284,6 +284,7 @@
             android:backgroundTint="@color/white"
             android:layout_margin="10dp"
             android:padding="10dp"
+            android:textCursorDrawable="@drawable/style_cursur"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textSize="18sp"
             android:hint="Promo Code"/>

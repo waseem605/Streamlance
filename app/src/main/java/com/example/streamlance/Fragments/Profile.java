@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.streamlance.MainPage.ChatActivity;
@@ -14,7 +15,8 @@ import com.example.streamlance.Payments.Payment_Method;
 import com.example.streamlance.R;
 
 public class Profile extends Fragment {
-    private LinearLayout mLinearLayout,paymentmethod;
+    private RelativeLayout mMessageLink,paymentmethod;
+
     private TextView message;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,11 +30,11 @@ public class Profile extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_profile, container, false);
-        mLinearLayout = (LinearLayout)view.findViewById(R.id.message_layout);
-        paymentmethod=(LinearLayout)view.findViewById(R.id.paymentmethod);
+        mMessageLink = (RelativeLayout) view.findViewById(R.id.message_RL);
+        paymentmethod=(RelativeLayout) view.findViewById(R.id.payment_RL);
         message = (TextView)view.findViewById(R.id.messagetx);
 
-        message.setOnClickListener(new View.OnClickListener() {
+        mMessageLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Profile.this.getActivity(),ChatActivity.class);

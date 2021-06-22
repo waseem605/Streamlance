@@ -12,7 +12,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="190dp"
-            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
             android:id="@+id/imageclick"
             android:src="@drawable/__import_image"></ImageView>
         <LinearLayout
@@ -133,7 +133,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Loaner Car"
+                android:text="Tow pick-up"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
@@ -148,7 +148,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shuttle Service"
+                android:text="Mobile Mechanic"
                 android:textColor="@color/black"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
@@ -169,7 +169,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Loaner Car"
+                android:text="Car delivery"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"

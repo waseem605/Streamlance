@@ -25,7 +25,6 @@
             android:id="@+id/sort_button"
             android:layout_marginTop="5dp"
             android:textSize="24sp"
-            android:onClick="callSortdata"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:background="@color/white"
             android:text="SORT"></Button>

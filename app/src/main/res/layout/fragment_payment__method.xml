@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:padding="3dp"
+        android:padding="7dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/searchbar"
         android:orientation="horizontal">
@@ -43,7 +43,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/cardpic"
             android:id="@+id/cardpic"></ImageView>
@@ -52,6 +52,12 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/dm_sans_regular"
             android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:textCursorDrawable="@drawable/style_cursur"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+
             android:layout_toEndOf="@id/cardpic"
             android:hint="399-1234-5678-0000"
             ></EditText>
@@ -62,7 +68,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="5dp"
-            android:src="@drawable/checked"></ImageView>
+            android:src="@drawable/darktik"></ImageView>
 
     </RelativeLayout>
 
@@ -77,6 +83,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/searchbar"
+                android:textCursorDrawable="@drawable/style_cursur"
                 android:fontFamily="@font/dm_sans_regular"
                 android:hint="MM/YY"
                 android:padding="15dp"
@@ -89,6 +96,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/searchbar"
+                android:textCursorDrawable="@drawable/style_cursur"
                 android:fontFamily="@font/dm_sans_regular"
                 android:hint="CVC"
                 android:padding="15dp"

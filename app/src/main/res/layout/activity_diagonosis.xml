@@ -25,6 +25,7 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:id="@+id/back_arrow_diag"
                 android:src="@drawable/left_arrow"/>
             <TextView
                 android:layout_width="300dp"
@@ -77,6 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
                     android:layout_margin="10dp"
+                    android:textCursorDrawable="@drawable/style_cursur"
                     android:hint="Describe your problem"
                     android:padding="5dp"
                     android:background="@drawable/round_border">

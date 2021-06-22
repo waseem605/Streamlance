@@ -11,8 +11,10 @@
         android:orientation="vertical">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="340dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
             android:id="@+id/picture_pq"
             android:src="@drawable/__import_image"></ImageView>
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -46,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/style_spinner"
-            android:id="@+id/spinner_car_name"></Spinner>
+            android:id="@+id/spinner_car_name" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/style_spinner"
-            android:id="@+id/spinner_car_year"></Spinner>
+            android:id="@+id/spinner_car_year" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -92,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/style_spinner"
-            android:id="@+id/vehical_model"></Spinner>
+            android:id="@+id/vehical_model" />
     </LinearLayout>
 
     <LinearLayout
@@ -116,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/style_spinner"
-            android:id="@+id/vehical_trim"></Spinner>
+            android:id="@+id/vehical_trim" />
     </LinearLayout>
 
     <Button
@@ -129,7 +128,7 @@
         android:layout_margin="20dp"
         android:background="@drawable/rounded"
         android:textColor="@color/white"
-        android:padding="20dp"></Button>
+        android:padding="12dp" />
 
 
 

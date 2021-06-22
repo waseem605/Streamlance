@@ -138,6 +138,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
+            android:textCursorDrawable="@drawable/style_cursur"
             android:layout_toStartOf="@+id/send_sms_btn"
             android:layout_toEndOf="@+id/attach_file_btn"
             android:background="@drawable/chat_details_white"

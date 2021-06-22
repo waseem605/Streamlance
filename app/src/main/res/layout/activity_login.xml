@@ -60,6 +60,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:id="@+id/password_ET"
+            android:textCursorDrawable="@drawable/style_cursur"
             android:background="@null"
             android:inputType="textPassword"
             android:textSize="16sp" />
@@ -88,6 +89,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/repeat_password_ET"
             android:background="@null"
+            android:textCursorDrawable="@drawable/style_cursur"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:inputType="textPassword"
             android:textSize="16sp" />

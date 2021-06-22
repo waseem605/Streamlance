@@ -17,13 +17,16 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_margin="15dp"
+                    android:id="@+id/back_arrow_QdC"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:src="@drawable/left_arrow"></ImageView>
+                    android:src="@drawable/left_arrow" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -31,9 +34,10 @@
                     android:fontFamily="@font/hk_grotesk_semi_bold"
                     android:textColor="@color/orange"
                     android:textSize="16sp"
+                    android:id="@+id/cancel_QDC"
                     android:layout_marginTop="15dp"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"></TextView>
+                    android:layout_marginRight="20dp" />
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
@@ -180,259 +184,269 @@
                         android:textSize="14sp"></TextView>
                 </LinearLayout>
 
+
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="2dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
-                    android:background="@color/white"
-                    android:padding="5dp"
-                    android:orientation="horizontal">
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="133dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:text="Oil and Filter Service"
-                        android:textSize="13sp"></TextView>
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="50dp"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="5dp"
-                        android:text="$141.0"
-                        android:textSize="13sp"></TextView>
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:text="$141.0"
-                        android:textSize="13sp"></TextView>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:layout_marginRight="10dp"
-                    android:padding="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="133dp"
-                        android:layout_height="wrap_content"
-                        android:text="Oil and Filter Service"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="13sp"></TextView>
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:text="$141.0"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:layout_marginLeft="50dp"
-                        android:textSize="13sp"></TextView>
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:text="$141.0"
-                        android:layout_marginLeft="20dp"
-                        android:textSize="13sp"></TextView>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:padding="5dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="133dp"
-                        android:layout_height="wrap_content"
-                        android:text="Oil and Filter Service"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:layout_marginLeft="10dp"
-                        android:textSize="13sp"></TextView>
-
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="23dp"
-                        android:layout_marginLeft="50dp"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="5dp"
-                        android:text="$141.0"
-                        android:textSize="13sp"></TextView>
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:text="$141.0"
-                        android:layout_marginLeft="20dp"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:padding="5dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="133dp"
-                        android:layout_height="wrap_content"
-                        android:text="Sub Total"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:text="$462.0"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:layout_marginLeft="50dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:text="$464.0"
-                        android:fontFamily="@font/hk_grotesk_regular"
-                        android:textColor="@color/black"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="horizontal">
-                    <View
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="133dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:text="Oil and Filter Service"
+                            android:textSize="13sp"></TextView>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5dp"
+                            android:text="$141.0"
+                            android:textSize="13sp"></TextView>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:text="$141.0"
+                            android:textSize="13sp"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="133dp"
+                            android:layout_height="wrap_content"
+                            android:text="Oil and Filter Service"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="$141.0"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="50dp"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:text="$141.0"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="13sp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
                         android:layout_marginLeft="10dp"
-                        android:background="@color/black"></View>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:padding="5dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="133dp"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="133dp"
+                            android:layout_height="wrap_content"
+                            android:text="Oil and Filter Service"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"></TextView>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="23dp"
+                            android:layout_marginLeft="50dp"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5dp"
+                            android:text="$141.0"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="$141.0"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sub Total"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"
-                        android:textColor="@color/black"
+                        android:padding="5dp"
+                        android:layout_marginRight="10dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="133dp"
+                            android:layout_height="wrap_content"
+                            android:text="Sub Total"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="$462.0"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="$464.0"
+                            android:fontFamily="@font/hk_grotesk_regular"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
 
-                    <TextView
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:text="$464.0"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"
-                        android:textColor="@color/black"
-                        android:layout_marginLeft="117dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
+                    </LinearLayout>
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:layout_marginRight="10dp"
-                    android:padding="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="133dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sub Total"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"
-                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
-
-                    <TextView
-                        android:layout_width="50dp"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/black"></View>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="$464.0"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"
-                        android:textColor="@color/black"
-                        android:layout_marginLeft="117dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:layout_marginRight="10dp"
-                    android:padding="5dp"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="133dp"
-                        android:layout_height="wrap_content"
-                        android:text="Sub Total"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"
-                        android:textColor="@color/black"
+                        android:layout_marginRight="10dp"
                         android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
-                    <TextView
-                        android:layout_width="50dp"
+                        android:padding="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="133dp"
+                            android:layout_height="wrap_content"
+                            android:text="Sub Total"
+                            android:fontFamily="@font/hk_grotesk_semi_bold"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="$464.0"
+                            android:fontFamily="@font/hk_grotesk_semi_bold"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="117dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="$464.0"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"
-                        android:textColor="@color/black"
-                        android:layout_marginLeft="117dp"
-                        android:layout_marginTop="5dp"
-                        android:textSize="13sp"></TextView>
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="133dp"
+                            android:layout_height="wrap_content"
+                            android:text="Sub Total"
+                            android:fontFamily="@font/hk_grotesk_semi_bold"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="$464.0"
+                            android:fontFamily="@font/hk_grotesk_semi_bold"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="117dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="133dp"
+                            android:layout_height="wrap_content"
+                            android:text="Sub Total"
+                            android:fontFamily="@font/hk_grotesk_semi_bold"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="$464.0"
+                            android:fontFamily="@font/hk_grotesk_semi_bold"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="117dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="13sp"></TextView>
+
+                    </LinearLayout>
 
                 </LinearLayout>
+
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

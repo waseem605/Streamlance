@@ -8,6 +8,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.streamlance.R;
 import com.example.streamlance.Services.Services_Summary;
@@ -16,12 +17,25 @@ public class DiagnosisReport extends AppCompatActivity {
 
     private Button mConfirmBtn,mViewDiagonosBtn;
     Dialog request_dialog;
+    private ImageView mCross;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagnosis_report);
 
         mConfirmBtn = (Button)findViewById(R.id.confirm_request_diagonos);
+        mCross = (ImageView) findViewById(R.id.cross_icon);
+
+
+        mCross.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(DiagnosisReport.this,Diagonosis.class));
+            }
+        });
+
+
+
         mConfirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -16,8 +16,8 @@
         android:background="@color/white"
         android:layout_alignParentBottom="true"
         app:itemIconSize="24sp"
-        app:itemIconTint="@color/Back_color"
-        app:itemTextColor="@color/Back_color"
+        app:itemIconTint="#0c73ec"
+        app:itemTextColor="#0c73ec"
         android:layout_centerHorizontal="true"
         app:menu="@menu/bottom_nav_menu" />
 

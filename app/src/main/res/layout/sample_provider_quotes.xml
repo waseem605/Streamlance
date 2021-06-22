@@ -241,6 +241,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded"
                 android:text="Chat"
+                android:id="@+id/chat_btn"
                 android:textColor="@color/white"
                 ></Button>
             <Button

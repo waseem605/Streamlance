@@ -219,6 +219,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:textCursorDrawable="@drawable/style_cursur"
                     android:hint="Describe your special requirements"
                     android:paddingBottom="40dp"
                     android:background="@drawable/white_backgroun_with_border">
@@ -315,6 +316,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:entries="@array/prefer_hours"
+                    android:dropDownSelector="@color/orange"
                     android:id="@+id/select_hours_range">
 
                 </Spinner>

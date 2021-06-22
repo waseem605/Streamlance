@@ -38,6 +38,11 @@
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:background="@color/white"
+        app:tabTextColor="@color/black"
+        app:tabTextAppearance="@style/CustomTabTextnotification"
+        app:tabSelectedTextColor="@color/Back_color"
+        app:tabIndicator="@null"
         android:layout_below="@id/toolbar"
         android:id="@+id/Ntablayout"></com.google.android.material.tabs.TabLayout>
     <androidx.viewpager.widget.ViewPager
