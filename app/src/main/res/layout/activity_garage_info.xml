@@ -22,6 +22,23 @@
         app:period="3000"
         android:id="@+id/slide_garage_images">
 
+        <ImageView
+            android:id="@+id/left_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/left_arrow" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/share_icon"></ImageView>
     </com.denzcoskun.imageslider.ImageSlider>
 
     <LinearLayout
