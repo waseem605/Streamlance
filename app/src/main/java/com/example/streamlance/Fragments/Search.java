@@ -26,6 +26,7 @@ public class Search extends Fragment {
 
         super.onCreate(savedInstanceState);
         requireActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.Back_color));
+
     }
 
     @Override

@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:background="@color/white"
         android:layout_alignParentStart="true"
         android:id="@+id/toolbar"
         android:layout_alignParentRight="true"
@@ -64,6 +65,7 @@
     <com.google.android.material.tabs.TabLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:background="@color/white"
         app:tabSelectedTextColor="@color/Back_color"
         app:tabTextColor="@color/black"
@@ -74,6 +76,8 @@
       android:id="@+id/tablayout"></com.google.android.material.tabs.TabLayout>
    <androidx.viewpager.widget.ViewPager
        android:layout_width="match_parent"
+       android:layout_marginTop="2dp"
+       android:background="@color/white"
        android:layout_height="match_parent"
        android:layout_below="@id/tablayout"
        android:layout_alignParentStart="true"

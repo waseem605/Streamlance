@@ -1,10 +1,12 @@
 package com.example.streamlance.FlowTwo;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,10 +20,13 @@ public class DiagnosisReport extends AppCompatActivity {
     private Button mConfirmBtn,mViewDiagonosBtn;
     Dialog request_dialog;
     private ImageView mCross;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diagnosis_report);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.white));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+                setContentView(R.layout.activity_diagnosis_report);
 
         mConfirmBtn = (Button)findViewById(R.id.confirm_request_diagonos);
         mCross = (ImageView) findViewById(R.id.cross_icon);

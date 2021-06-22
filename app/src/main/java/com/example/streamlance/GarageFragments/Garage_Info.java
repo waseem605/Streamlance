@@ -43,7 +43,6 @@ public class Garage_Info extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garage_info);
         getWindow().setStatusBarColor(getResources().getColor(R.color.black));
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         mgarageInfoAdapter = new GarageInfoAdapter(getSupportFragmentManager());
         mviewPager = (ViewPager) findViewById(R.id.viewpagergarageinfo);
         mtabLayout = (TabLayout) findViewById(R.id.tablayoutgarageinfo);

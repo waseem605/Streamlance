@@ -28,6 +28,7 @@ public class Profile extends Fragment {
         requireActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.Back_color));
 
 
+
     }
 
     @Override

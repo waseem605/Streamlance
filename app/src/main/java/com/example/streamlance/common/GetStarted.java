@@ -16,9 +16,8 @@ public class GetStarted extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
+            getWindow().setStatusBarColor(getResources().getColor(R.color.Back_color));
         }
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
         mGetButton = (Button)findViewById(R.id.get_start_btn);
