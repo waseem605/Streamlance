@@ -36,85 +36,104 @@
             android:fontFamily="@font/dm_sans_bold"></TextView>
 
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/RL8">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_round_background"
-            android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:padding="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:fontFamily="@font/hk_grotesk_regular"
+                android:text="@string/synthetic_oil"
+                android:layout_margin="10dp"
                 android:textColor="@color/black"
-                android:text="@string/synthetic_oil"></TextView>
+                android:textSize="20dp"
+                android:fontFamily="@font/hk_grotesk_regular" />
+
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
-                android:button="@drawable/custom_checkbox"
-                />
-        </LinearLayout>
-        <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_checkbox" />
+
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:fontFamily="@font/hk_grotesk_regular"
-            android:textColor="@color/black"
-            android:padding="5dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_round_background"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="270dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:padding="10dp"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:text="@string/synthetic_blend"></TextView>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:button="@drawable/custom_checkbox"
-                android:layout_marginLeft="9dp"
-                android:layout_marginTop="4dp"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="5dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_round_background"
-            android:orientation="horizontal">
+            android:layout_below="@id/RL7"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/RL7">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:padding="10dp"
-                android:fontFamily="@font/hk_grotesk_regular"
+                android:text="@string/synthetic_blend"
+                android:layout_margin="10dp"
                 android:textColor="@color/black"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:text="@string/electronics"></TextView>
+                android:textSize="20dp"
+                android:fontFamily="@font/hk_grotesk_regular" />
+
             <CheckBox
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_checkbox" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="165dp"
-                android:button="@drawable/custom_checkbox"
-                />
-        </LinearLayout>
+                android:text="@string/electronics"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/hk_grotesk_regular" />
+
+            <CheckBox
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_checkbox" />
+
+        </RelativeLayout>
+
 
         <Button
             android:layout_width="match_parent"
@@ -127,7 +146,7 @@
             android:layout_marginRight="10dp"
             android:text="@string/continue_btn"
             android:textColor="@color/white"
-            android:textSize="20sp"></Button>
+            android:textSize="20sp" />
 
     </LinearLayout>
 

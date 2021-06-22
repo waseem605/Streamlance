@@ -14,10 +14,24 @@
     <string name="number">We have sent you an SMS with a code to number +971 2 xxxxxxx</string>
     <string name="resend_otp">Didn`t receive the OTP?</string>
 
-    <string name="slide_description1">Looking for a garage you can trust for a auto service or car repair? Using the Streamlane, you can find a garage near you.</string>
-    <string name="slide_description4">Looking for a garage you can trust for a auto service or car repair? Using the Streamlane, you can find a garage near you.</string>
-    <string name="slide_description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit iaculis ullamcorper. Morbi ac mauris eleifend, pretium turpis ut, orci.</string>
-    <string name="slide_description3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit iaculis ullamcorper. Morbi ac mauris eleifend, pretium turpis ut, orci.</string>
+    <string name="slide_description1"><br>Looking for a garage you can trust for a auto \n</br>
+        <br>service or car repair? Using the Streamlane, \n</br>
+        <br> you can find a garage near you.</br></string>
+
+    <string name="slide_description2"><br>Lorem ipsum dolor sit amet, consectetur \n</br>
+    <br>adipiscing elit. Maecenas suscipit iaculis \n</br>
+    <br>ullamcorper. Morbi ac mauris eleifend, \n</br>
+    <br>pretium ut, hendrerit lacus Vestibulum</br></string>
+
+    <string name="slide_description4"><br>Looking for a garage you can trust for a auto \n</br>
+        <br>service or car repair? Using the Streamlane, \n</br>
+        <br> you can find a garage near you.</br></string>
+
+    <string name="slide_description3"><br>Lorem ipsum dolor sit amet, consectetur \n</br>
+        <br>adipiscing elit. Maecenas suscipit iaculis \n</br>
+        <br>ullamcorper. Morbi ac mauris eleifend, \n</br>
+        <br>pretium ut, hendrerit lacus Vestibulum</br></string>
+
 
     <string name="otp_heading">Enter your phone number</string>
     <string name="otp_desc">Please enter your mobile number.You will receive a code to verify mobile number.</string>
@@ -82,7 +96,7 @@
     <string name="oil_and_filter_S">Oil and Filter service</string>
     <string name="others">Others</string>
     <string name="synthetic_oil">Synthetic Oil</string>
-    <string name="synthetic_blend">Synthetic Blend Oil/ High Mileage</string>
+    <string name="synthetic_blend">Synthetic Blend Oil</string>
     <string name="electronics">Electronics</string>
     <string name="service_summary">Service Summary</string>
     <string name="bmw_x5">BMW x5</string>

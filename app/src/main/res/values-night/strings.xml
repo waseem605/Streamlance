@@ -11,6 +11,32 @@
 
 
 
+    <string name="slide_description1"><br>Looking for a garage you can trust for a auto \n</br>
+        <br>service or car repair? Using the Streamlane, \n</br>
+        <br> you can find a garage near you.</br></string>
+
+    <string name="slide_description2"><br>Lorem ipsum dolor sit amet, consectetur \n</br>
+    <br>adipiscing elit. Maecenas suscipit iaculis \n</br>
+    <br>ullamcorper. Morbi ac mauris eleifend, \n</br>
+    <br>pretium ut, hendrerit lacus Vestibulum</br></string>
+
+    <string name="slide_description4"><br>Looking for a garage you can trust for a auto \n</br>
+        <br>service or car repair? Using the Streamlane, \n</br>
+        <br> you can find a garage near you.</br></string>
+
+    <string name="slide_description3"><br>Lorem ipsum dolor sit amet, consectetur \n</br>
+        <br>adipiscing elit. Maecenas suscipit iaculis \n</br>
+        <br>ullamcorper. Morbi ac mauris eleifend, \n</br>
+        <br>pretium ut, hendrerit lacus Vestibulum</br></string>
+
+    <string name="otp_heading">Enter your phone number</string>
+    <string name="otp_desc"><br>Please enter your mobile number. \n</br>
+        <br>You will receive a code to verify mobile \n</br> number.</string>
+
+
+
+
+
     <string name="notification">Notification</string>
     <string name="user">User</string>
     <string name="search">Search</string>

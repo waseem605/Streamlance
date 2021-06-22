@@ -30,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
 public class Diagonosis extends AppCompatActivity {
 
     private Button mRequestbtn;
-    LinearLayout linearLayout,mAddition_service;
+    LinearLayout linearLayout,mAddition_service,mLinearSample;
     private ImageView mBackLink;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -40,10 +40,14 @@ public class Diagonosis extends AppCompatActivity {
         getWindow().setStatusBarColor(getResources().getColor(R.color.white));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_diagonosis);
+
         mRequestbtn = (Button)findViewById(R.id.request_btn_D);
         linearLayout = (LinearLayout) findViewById(R.id.diagonos_layout_mini);
         mAddition_service = (LinearLayout) findViewById(R.id.addition_service_lt);
         mBackLink = (ImageView) findViewById(R.id.back_arrow_diag);
+
+        mLinearSample =(LinearLayout)findViewById(R.id.samplecar);
+        mLinearSample.setBackgroundDrawable(getResources().getDrawable(R.drawable.top_round));
 
 
         mBackLink.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +66,11 @@ public class Diagonosis extends AppCompatActivity {
             }
         });
 
+        Intent intent = getIntent();
+        int containerFM =intent.getIntExtra("ide",0);
         BottomNavigationView bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_main_navigation);
+
+        //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Home()).commit();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

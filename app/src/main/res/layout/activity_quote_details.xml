@@ -478,7 +478,7 @@
                         android:background="@drawable/rounded"
                         android:text="Send Message"
                         android:fontFamily="@font/hk_grotesk_semi_bold"
-                        android:id="@+id/viewquotes"
+                        android:id="@+id/viewquotesend"
                         android:textAllCaps="false"
                         android:textSize="19sp"
                         android:textColor="@color/white" />

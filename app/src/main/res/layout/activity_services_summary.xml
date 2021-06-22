@@ -10,11 +10,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/back_arrow_ss"
+                android:src="@drawable/left_arrow"/>
+        </androidx.appcompat.widget.Toolbar>
 
         <TextView
             android:layout_width="match_parent"
@@ -22,11 +31,11 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:text="@string/service_summary"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:fontFamily="@font/dm_sans_bold"></TextView>
+            android:fontFamily="@font/dm_sans_bold" />
 
         <RelativeLayout
             android:layout_width="match_parent"

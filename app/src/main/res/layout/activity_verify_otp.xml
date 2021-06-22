@@ -6,132 +6,154 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login.VerifyOtp"
-    android:background="@color/white">
+    android:background="@color/silver">
 
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="237dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="108dp"
-        android:fontFamily="@font/hk_grotesk_bold"
-        android:text="@string/verify_phone"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="250dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="11dp"
-        android:text="@string/number"
-        android:textAlignment="center"
-        android:fontFamily="@font/hk_grotesk_semi_bold"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bottomsheet"
+        android:id="@+id/Relativeotp"
+        android:backgroundTint="@color/white"
         android:gravity="center"
-        android:id="@+id/secont_RL"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/textView4">
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <View
+            android:layout_width="85dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="150dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/line"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/gray"
+            android:padding="30dp" />
 
         <TextView
-            android:id="@+id/second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:fontFamily="@font/hk_grotesk_regular"
-            android:text="00:36"
-            android:inputType="time"
-            android:textColor="@color/orange"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/hk_grotesk_regular"
-            android:text="Seconds"
-            android:id="@+id/second_Text"
+            android:id="@+id/textView5"
+            android:layout_width="237dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/hk_grotesk_bold"
+            android:text="@string/verify_phone"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
             android:textColor="@color/black"
-            android:layout_toEndOf="@id/second"
-            android:textSize="16sp"
-            android:layout_marginStart="5dp" />
-    </RelativeLayout>
+            android:textSize="28sp"/>
 
-
-
-    <com.chaos.view.PinView
-        android:id="@+id/pin_view"
-        style="@style/PinWidget.PinView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:cursorVisible="true"
-        android:inputType="number"
-        app:itemCount="4"
-        android:textCursorDrawable="@drawable/style_cursur"
-        app:itemHeight="50dp"
-        app:itemRadius="5dp"
-        app:itemWidth="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secont_RL"
-        app:lineColor="@color/black" />
-
-    <Button
-        android:id="@+id/verify_number_btn"
-        android:layout_width="260dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/rounded"
-        android:text="@string/verify_Number"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pin_view" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/verify_number_btn">
 
         <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_alignParentStart="true"
-            android:fontFamily="@font/hk_grotesk_regular"
-            android:text="@string/resend_otp"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/hk_grotesk_regular"
-            android:text="Resend"
-            android:id="@+id/resend_otp"
-            android:textColor="@color/red"
-            android:layout_toEndOf="@id/textView6"
+            android:layout_marginTop="10dp"
+            android:text="We have sent you an SMS with a code to \n number +971 2 xxxxxxx"
+            android:textAlignment="center"
             android:textSize="16sp"
-            android:layout_marginStart="5dp" />
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_below="@id/textView5"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:textColor="@color/black"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/second_RL"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/textView4"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/second_otp"
+                android:text="00:36"
+                android:inputType="time"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/hk_grotesk_regular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Seconds"
+                android:layout_toEndOf="@id/second_otp"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/hk_grotesk_regular"/>
+        </RelativeLayout>
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_view"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/second_RL"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:cursorVisible="true"
+            android:inputType="number"
+            app:itemCount="4"
+            android:padding="5dp"
+            app:itemHeight="50dp"
+            app:itemRadius="5dp"
+            app:itemWidth="50dp"
+            app:lineColor="@color/black" />
+
+        <Button
+            android:id="@+id/verify_number_btn"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded"
+            android:text="@string/verify_Number"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_below="@id/pin_view"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="120dp"
+            android:layout_below="@id/verify_number_btn"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/do_not"
+                android:text="@string/resend_otp"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/hk_grotesk_regular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Resend"
+                android:layout_toEndOf="@id/do_not"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/hk_grotesk_regular"/>
+        </RelativeLayout>
+
+
     </RelativeLayout>
 
 

@@ -2,17 +2,13 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item>
-        <shape android:shape="ring"
-            android:innerRadius="10dp"
-            android:thickness="2dp"
-            android:useLevel="false">
-        </shape>
+        <shape android:shape="oval"/>
     </item>
 
     <item
-        android:drawable="@drawable/radiobutton_pressed" />
+        android:drawable="@drawable/blue_rounded" />
     <size
-        android:width="40dp"
-        android:height="40dp"
+        android:width="25dp"
+        android:height="25dp"
         />
 </layer-list>

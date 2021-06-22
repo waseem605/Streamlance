@@ -16,8 +16,10 @@
         android:background="@color/white"
         android:layout_alignParentBottom="true"
         app:itemIconSize="24sp"
-        app:itemIconTint="#0c73ec"
-        app:itemTextColor="#0c73ec"
+        app:itemIconTint="@color/bottom_navigation_style"
+        app:itemRippleColor="@color/Back_color"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/bottom_navigation_style"
         android:layout_centerHorizontal="true"
         app:menu="@menu/bottom_nav_menu" />
 

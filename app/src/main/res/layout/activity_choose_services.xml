@@ -48,227 +48,360 @@
             android:gravity="center"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"></TextView>
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_margin="10dp"
-              android:padding="10dp"
-              android:layout_alignParentRight="true"
-              android:layout_alignParentLeft="true"
-              android:layout_gravity="center"
-              android:background="@drawable/white_round_background"
-              android:orientation="horizontal">
-              <ImageView
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_marginTop="7dp"
-                  android:layout_marginStart="7dp"
-                  android:src="@drawable/maintenance"></ImageView>
-              <TextView
-                  android:layout_width="230dp"
-                  android:layout_height="wrap_content"
-                  android:textSize="20sp"
-                  android:padding="10dp"
-                  android:layout_marginStart="10dp"
-                  android:textColor="@color/black"
-                  android:layout_marginEnd="10dp"
-                  android:fontFamily="@font/hk_grotesk_regular"
-                  android:text="Maintenance Schedule"></TextView>
 
-              <CheckBox
-                  android:layout_width="23dp"
-                  android:layout_height="wrap_content"
-                  android:layout_marginLeft="10dp"
-                  android:button="@drawable/custom_checkbox" />
-          </LinearLayout>
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_round_background"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_marginStart="7dp"
-                android:src="@drawable/oil_service"></ImageView>
-            <TextView
-                android:layout_width="230dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/RL1">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/maintenance"
+                    android:id="@+id/tv1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maintanance Schedule"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:layout_toEndOf="@id/tv1" />
+
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/custom_checkbox" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:fontFamily="@font/hk_grotesk_regular"
+                android:layout_below="@id/RL1"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/RL2">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/oil_service"
+                    android:id="@+id/tv2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:layout_toEndOf="@id/tv2"
+                    android:text="Oil and Filter Services"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/custom_checkbox" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RL2"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
                 android:padding="10dp"
                 android:layout_marginStart="10dp"
-                android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
-                android:text="Oil and Filter service"></TextView>
+                android:layout_marginBottom="10dp"
+                android:id="@+id/RL3">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/handbrake"
+                    android:id="@+id/tv3"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brake Services"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@id/tv3"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hk_grotesk_regular"></TextView>
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:button="@drawable/custom_checkbox" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_round_background"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_marginStart="7dp"
-                android:src="@drawable/handbrake"></ImageView>
-            <TextView
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:layout_marginStart="10dp"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:layout_marginEnd="10dp"
-                android:text="@string/brake_service_S"></TextView>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/custom_checkbox"></CheckBox>
 
-            <CheckBox
-                android:layout_width="wrap_content"
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:button="@drawable/custom_checkbox" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_round_background"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_marginStart="7dp"
-                android:src="@drawable/gear"></ImageView>
-            <TextView
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:padding="10dp"
-                android:layout_marginStart="10dp"
-                android:textColor="@color/black"
-                android:layout_marginEnd="10dp"
-                android:text="@string/engine_S"></TextView>
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:button="@drawable/custom_checkbox" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_round_background"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_marginStart="7dp"
-                android:src="@drawable/exhaust_pipe"></ImageView>
-
-            <TextView
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
+                android:layout_below="@id/RL3"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/hk_grotesk_regular"
                 android:padding="10dp"
-                android:text="@string/oil_and_filter_S"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:layout_marginBottom="10dp"
+                android:id="@+id/RL4">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/gear"
+                    android:id="@+id/tv4"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Engine"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
 
-            <CheckBox
-                android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:layout_toEndOf="@id/tv4"></TextView>
+
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/custom_checkbox"></CheckBox>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:button="@drawable/custom_checkbox"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_round_background"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_marginStart="7dp"
-                android:src="@drawable/handbrake"></ImageView>
-            <TextView
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:padding="10dp"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
+                android:layout_below="@id/RL4"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="@string/brake_service_S"></TextView>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:button="@drawable/custom_checkbox"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:padding="10dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_round_background"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"
-                android:layout_marginStart="7dp"
-                android:src="@drawable/car_services"></ImageView>
-            <TextView
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
                 android:padding="10dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/hk_grotesk_regular"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/RL5">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/maintenance"
+                    android:id="@+id/tv5"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maintanance Schedule"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:layout_toEndOf="@id/tv5"></TextView>
+
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/custom_checkbox"></CheckBox>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RL5"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="@string/others"></TextView>
-            <CheckBox
-                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/RL6">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/oil_service"
+                    android:id="@+id/tv6" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oil and Filter Services"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:layout_toEndOf="@id/tv6"></TextView>
+
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/custom_checkbox"></CheckBox>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:button="@drawable/custom_checkbox"
-                />
-        </LinearLayout>
+                android:layout_below="@id/RL6"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/RL7">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/handbrake"
+                    android:id="@+id/tv7"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brake Service"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:layout_toEndOf="@id/tv7"></TextView>
+
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/custom_checkbox" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RL7"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/RL8">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/exhaust_pipe"
+                    android:id="@+id/tv8"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+
+                    android:textSize="20dp"
+                    android:fontFamily="@font/hk_grotesk_regular"
+                    android:layout_toEndOf="@id/tv8"></TextView>
+                <CheckBox
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@drawable/custom_checkbox"></CheckBox>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -281,7 +414,7 @@
             android:text="@string/continue_btn"
             android:layout_marginBottom="20dp"
             android:textSize="20sp"
-            android:textColor="@color/white"></Button>
+            android:textColor="@color/white" />
     </LinearLayout>
 </ScrollView>
 

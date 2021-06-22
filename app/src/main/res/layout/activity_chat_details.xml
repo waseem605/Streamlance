@@ -110,43 +110,41 @@
 
     </ScrollView>
 
-
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="300dp"
+        android:layout_alignParentEnd="true"
         android:layout_gravity="center">
 
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:id="@+id/attach_file_btn"
-                android:src="@drawable/attach_btn"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/attach_file_btn"
+            android:src="@drawable/attach_btn" />
 
 
         <EditText
             android:id="@+id/sms_editText"
-            android:layout_width="250dp"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:textCursorDrawable="@drawable/style_cursur"
+            android:layout_marginBottom="5dp"
             android:layout_toStartOf="@+id/send_sms_btn"
             android:layout_toEndOf="@+id/attach_file_btn"
-            android:background="@drawable/chat_details_white"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/gray"
             android:fontFamily="@font/hk_grotesk_regular"
             android:hint="hello"
             android:padding="10dp"
-            android:textSize="20sp"></EditText>
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/send_sms_btn"
@@ -156,7 +154,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:padding="5dp"
-            android:src="@drawable/send_btn"></ImageView>
+            android:src="@drawable/send_btn" />
 
 
     </RelativeLayout>

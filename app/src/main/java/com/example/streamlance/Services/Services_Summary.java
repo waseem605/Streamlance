@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -25,6 +26,7 @@ import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClic
 public class Services_Summary extends Activity {
 
     private TextView mStartDate, mEndDate;
+    private ImageView mBackArrow;
     private Spinner spinner;
 
     LinearLayout linearDate;
@@ -41,6 +43,7 @@ public class Services_Summary extends Activity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_services_summary);
         mStartDate = (TextView)findViewById(R.id.start_date_tx);
+        mBackArrow = (ImageView) findViewById(R.id.back_arrow_ss);
         mViewQuotaBtn = (Button)findViewById(R.id.view_quota_btn);
         linearDate = (LinearLayout)findViewById(R.id.datePic_layout);
 
@@ -60,7 +63,18 @@ public class Services_Summary extends Activity {
                 materialDatePicker.show(materialDatePicker.getChildFragmentManager(), "date");
             }
         });
+
+
+        mBackArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Services_Summary.this,Choose_services.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
 
 
     //button click listener

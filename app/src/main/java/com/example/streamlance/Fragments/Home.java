@@ -23,11 +23,22 @@ import com.google.android.material.tabs.TabLayout;
 
 
 public class Home extends Fragment {
+    private static ViewPager mviewPager;
     Button messagebtn;
 
     HomeAdapter homeAdapter;
     private TabLayout mtabLayout;
-    private ViewPager mviewPager;
+
+    private static final String fragment_Id="fragmentId";
+
+    public static Home home(int i)
+    {
+        Bundle bundle =new Bundle();
+        bundle.putInt(fragment_Id,i);
+        Home home =new Home();
+        home.setArguments(bundle);
+        return home;
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -57,13 +68,24 @@ public class Home extends Fragment {
          });
 
 
-         homeAdapter =new HomeAdapter(getActivity().getSupportFragmentManager());
+        int qm= getArguments().getInt(fragment_Id);
+
+        homeAdapter =new HomeAdapter(getActivity().getSupportFragmentManager());
          mviewPager.setAdapter(homeAdapter);
          mtabLayout.setupWithViewPager(mviewPager);
+        receivedView(qm);
 
 
 
-         return v;
+
+        return v;
+
+    }
+
+
+    public static void receivedView(int i)
+    {
+        mviewPager.setCurrentItem(i);
 
     }
 }

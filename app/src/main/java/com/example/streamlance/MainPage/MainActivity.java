@@ -26,12 +26,21 @@ import org.jetbrains.annotations.NotNull;
 public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
+    private Intent intent;
+    int ConfirmBtn;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intent = getIntent();
+        int containerFM =intent.getIntExtra("ide",0);
+
+
         bottomNavigationView = (BottomNavigationView)findViewById(R.id.bottom_main_navigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Home()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,Home.home(containerFM)).commit();
 
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -40,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment=null;
                 switch (item.getItemId()) {
                     case R.id.home_nav:
-                        fragment = new Home();
+                        fragment =  Home.home(containerFM);
                         break;
 
                     case R.id.search_nav:
@@ -62,6 +71,14 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
+
+    }
+
+    public void fromApproveDetail()
+    {
+        intent =getIntent();
+        ConfirmBtn=intent.getIntExtra("confirmBtn",0);
 
 
     }

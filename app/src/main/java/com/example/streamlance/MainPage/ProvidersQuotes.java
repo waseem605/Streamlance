@@ -32,6 +32,7 @@ public class ProvidersQuotes extends AppCompatActivity {
         getWindow().setStatusBarColor(getResources().getColor(R.color.white));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_providers_quotes);
+
         mSortBtn = (Button)findViewById(R.id.sort_button);
         mChatButton = (Button)findViewById(R.id.chat_btn);
         mPicture_pq = (ImageView)findViewById(R.id.picture_pq);

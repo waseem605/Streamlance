@@ -148,7 +148,7 @@
             android:text="Sort"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp"></Button>
+            android:textSize="20sp" />
     </LinearLayout>
 
 
