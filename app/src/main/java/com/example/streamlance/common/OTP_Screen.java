@@ -19,7 +19,7 @@ public class OTP_Screen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
+        getWindow().setStatusBarColor(getResources().getColor(R.color.white));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_otp_screen);
         mGetOtpBtn = (Button)findViewById(R.id.get_otp_btn);

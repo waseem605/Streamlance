@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -17,7 +18,9 @@ import android.widget.TextView;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.streamlance.Adapter.GarageInfoAdapter;
+import com.example.streamlance.Fragments.Garage;
 import com.example.streamlance.MainPage.ChatDetails;
+import com.example.streamlance.MainPage.ProvidersQuotes;
 import com.example.streamlance.R;
 import com.example.streamlance.common.SliderAdapter;
 import com.google.android.material.tabs.TabLayout;
@@ -35,6 +38,7 @@ public class Garage_Info extends AppCompatActivity {
     private ViewPager mSlideViewPager;
     private RelativeLayout mDotLinearLayout;
     private TextView[] mDots;
+    ImageView leftarrow;
     private SliderAdapter sliderAdapter;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -46,6 +50,7 @@ public class Garage_Info extends AppCompatActivity {
         mgarageInfoAdapter = new GarageInfoAdapter(getSupportFragmentManager());
         mviewPager = (ViewPager) findViewById(R.id.viewpagergarageinfo);
         mtabLayout = (TabLayout) findViewById(R.id.tablayoutgarageinfo);
+        leftarrow=findViewById(R.id.left_arrow);
         mChat = (Button) findViewById(R.id.chat_garage);
         mviewPager.setAdapter(mgarageInfoAdapter);
         mtabLayout.setupWithViewPager(mviewPager);
@@ -64,6 +69,12 @@ public class Garage_Info extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Garage_Info.this, ChatDetails.class));
+            }
+        });
+        leftarrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Garage_Info.this, ProvidersQuotes.class));
             }
         });
 
