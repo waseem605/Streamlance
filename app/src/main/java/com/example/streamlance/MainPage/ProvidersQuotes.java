@@ -1,10 +1,12 @@
 package com.example.streamlance.MainPage;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,9 +25,12 @@ public class ProvidersQuotes extends AppCompatActivity {
     LinearLayout map;
 
     private ImageView mPicture_pq;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.white));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_providers_quotes);
         mSortBtn = (Button)findViewById(R.id.sort_button);
         mChatButton = (Button)findViewById(R.id.chat_btn);

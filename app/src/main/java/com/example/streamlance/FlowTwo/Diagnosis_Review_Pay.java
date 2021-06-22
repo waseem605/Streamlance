@@ -2,8 +2,10 @@ package com.example.streamlance.FlowTwo;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -32,9 +34,12 @@ public class Diagnosis_Review_Pay extends BottomSheetDialogFragment {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        requireActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
+        requireActivity().getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
 
         View v=inflater.inflate(R.layout.fragment_diagnosis__review__pay, container, false);
         mConfirmPay = (LinearLayout)v.findViewById(R.id.linearreviewandpay);

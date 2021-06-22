@@ -1,7 +1,10 @@
 package com.example.streamlance.Fragments;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,9 +20,12 @@ public class Search extends Fragment {
 
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        requireActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.Back_color));
     }
 
     @Override

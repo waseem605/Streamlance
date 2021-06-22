@@ -1,5 +1,6 @@
 package com.example.streamlance.MainPage;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -15,9 +16,11 @@ import com.example.streamlance.R;
 
 public class ChatActivity extends AppCompatActivity {
     LinearLayout linearLayout;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.Back_color));
         setContentView(R.layout.activity_chat);
         linearLayout=(LinearLayout)findViewById(R.id.samplemessage);
         linearLayout.setOnClickListener(new View.OnClickListener() {

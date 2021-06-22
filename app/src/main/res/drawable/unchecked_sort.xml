@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
-    <item>
-        <shape android:shape="ring"
-            android:innerRadius="10dp"
-            android:thickness="2dp"
-            android:useLevel="false">
-        </shape>
-    </item>
-    <item
-        android:drawable="@drawable/blue_ring" />
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
 
+
+    <solid android:color = "@color/white" />
     <size
-        android:width="40dp"
-        android:height="40dp" />
-
-
-
-</layer-list>
+        android:width="25dp"
+        android:height="25dp" />
+</shape>

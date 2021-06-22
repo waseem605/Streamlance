@@ -1,6 +1,9 @@
 package com.example.streamlance.Fragments;
 
+import android.os.Build;
 import android.os.Bundle;
+
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
@@ -20,9 +23,11 @@ public class Notification extends Fragment {
     ViewPager mViewPager;
     NotificationAdapter mNotificationAdapter;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requireActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.Back_color));
 
     }
 

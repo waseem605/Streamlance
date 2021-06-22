@@ -1,10 +1,12 @@
 package com.example.streamlance.FlowTwo;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,10 +20,14 @@ public class DiagnosisQuote extends AppCompatActivity {
 
     private Button mRejectService,mAcceptservic,mViewHistory;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.white));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_diagnosis_quote);
+
 
         mRejectService = (Button)findViewById(R.id.rejectServices_btn);
         mAcceptservic = (Button)findViewById(R.id.accept_services);

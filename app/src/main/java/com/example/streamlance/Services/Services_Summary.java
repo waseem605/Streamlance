@@ -1,11 +1,13 @@
 package com.example.streamlance.Services;
 
+import androidx.annotation.RequiresApi;
 import androidx.core.util.Pair;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -31,9 +33,12 @@ public class Services_Summary extends Activity {
     MaterialDatePicker.Builder<Pair<Long, Long>> builder = MaterialDatePicker.Builder.dateRangePicker();
     final MaterialDatePicker materialDatePicker = builder.build();
     private Button mViewQuotaBtn;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_services_summary);
         mStartDate = (TextView)findViewById(R.id.start_date_tx);
         mViewQuotaBtn = (Button)findViewById(R.id.view_quota_btn);

@@ -1,12 +1,14 @@
 package com.example.streamlance.FlowTwo;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,9 +33,12 @@ public class Diagonosis extends AppCompatActivity {
     LinearLayout linearLayout,mAddition_service;
     private ImageView mBackLink;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.white));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_diagonosis);
         mRequestbtn = (Button)findViewById(R.id.request_btn_D);
         linearLayout = (LinearLayout) findViewById(R.id.diagonos_layout_mini);

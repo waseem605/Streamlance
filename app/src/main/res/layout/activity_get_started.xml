@@ -23,14 +23,12 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="@string/slide_heading4"
-            android:gravity="center"
             android:fontFamily="@font/hk_grotesk_bold"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textSize="28sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:fontFamily="@font/hk_grotesk_medium"
             android:text="@string/slide_description4"
             android:textSize="18sp"

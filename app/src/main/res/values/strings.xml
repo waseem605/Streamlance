@@ -4,7 +4,8 @@
     <string name="slide_heading1">How It Works</string>
     <string name="slide_heading2">How It Will Be Helpful For You</string>
     <string name="slide_heading3">Our Customers And Garages</string>
-    <string name="slide_heading4">Discover Mechanic Nearby You</string>
+    <string name="slide_heading4"><br>Discover Mechanic </br>
+        <br>Nearby You</br></string>
 
     <string name="slide_Button">Get Started</string>
     <string name="get_otp">Get OTP</string>

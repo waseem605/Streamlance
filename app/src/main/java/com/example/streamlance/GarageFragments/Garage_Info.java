@@ -1,9 +1,11 @@
 package com.example.streamlance.GarageFragments;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -35,10 +37,13 @@ public class Garage_Info extends AppCompatActivity {
     private TextView[] mDots;
     private SliderAdapter sliderAdapter;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garage_info);
+        getWindow().setStatusBarColor(getResources().getColor(R.color.black));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         mgarageInfoAdapter = new GarageInfoAdapter(getSupportFragmentManager());
         mviewPager = (ViewPager) findViewById(R.id.viewpagergarageinfo);
         mtabLayout = (TabLayout) findViewById(R.id.tablayoutgarageinfo);
