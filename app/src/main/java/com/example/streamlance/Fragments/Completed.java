@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.streamlance.GarageFragments.Quote_DetailsCompleted;
 import com.example.streamlance.R;
@@ -16,6 +17,7 @@ import com.example.streamlance.R;
 
 public class Completed extends Fragment {
  Button btncompleted;
+ TextView completed;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,9 @@ public class Completed extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragment_completed, container, false);
-        btncompleted=(Button)v.findViewById(R.id.btncompleted);
+        btncompleted=(Button)v.findViewById(R.id.btnbooking);
+        completed=v.findViewById(R.id.tabtype);
+        completed.setText("Completed");
         btncompleted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

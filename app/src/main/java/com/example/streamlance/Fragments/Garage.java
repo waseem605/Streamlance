@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.streamlance.MainPage.ByMake;
 import com.example.streamlance.R;
@@ -20,6 +21,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 public class Garage extends Fragment {
 
    Button mbtnadd;
+   TextView service,servicetype;
 
    private LinearLayout carlinearLayout,btnlinearLayout;
     @Override
@@ -35,6 +37,10 @@ public class Garage extends Fragment {
         carlinearLayout=(LinearLayout)v.findViewById(R.id.samplecar);
         btnlinearLayout=(LinearLayout)v.findViewById(R.id.addmorevehicle);
         mbtnadd = (Button) v.findViewById(R.id.addvehicle);
+        service=v.findViewById(R.id.service);
+        servicetype=v.findViewById(R.id.servicetype);
+        service.setVisibility(View.INVISIBLE);
+        servicetype.setVisibility(View.INVISIBLE);
 
         mbtnadd.setOnClickListener(new View.OnClickListener() {
             @Override

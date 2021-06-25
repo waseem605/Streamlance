@@ -6,6 +6,6 @@
     android:orientation="vertical"
     android:background="@color/silver"
     tools:context=".Fragments.Completed">
-   <include layout="@layout/sample_completed"></include>
+   <include layout="@layout/sample_booking"></include>
 
 </LinearLayout>
