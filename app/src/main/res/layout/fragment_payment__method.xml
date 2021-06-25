@@ -13,14 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <View
-        android:layout_width="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_height="5dp"
-        android:layout_marginLeft="160dp"
-        android:backgroundTint="@color/white"
-        android:background="@drawable/rounded"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="5dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/rounded"
+                />
+        </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:padding="7dp"
+        android:padding="18dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/searchbar"
         android:orientation="horizontal">
@@ -45,6 +50,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
             android:src="@drawable/cardpic"
             android:id="@+id/cardpic"></ImageView>
         <EditText
@@ -52,6 +58,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/dm_sans_regular"
             android:textSize="14sp"
+            android:layout_centerVertical="true"
             android:layout_marginStart="5dp"
             android:textCursorDrawable="@drawable/style_cursur"
             android:padding="5dp"
@@ -65,6 +72,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="5dp"
@@ -78,28 +86,36 @@
             android:layout_marginTop="10dp">
 
             <EditText
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@id/view"
                 android:background="@drawable/searchbar"
                 android:textCursorDrawable="@drawable/style_cursur"
                 android:fontFamily="@font/dm_sans_regular"
                 android:hint="MM/YY"
-                android:padding="15dp"
+                android:padding="18dp"
                 android:textSize="14sp"></EditText>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:id="@+id/view"
+                android:layout_centerHorizontal="true"></View>
 
             <EditText
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/view"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/searchbar"
                 android:textCursorDrawable="@drawable/style_cursur"
                 android:fontFamily="@font/dm_sans_regular"
                 android:hint="CVC"
-                android:padding="15dp"
+                android:padding="18dp"
                 android:textSize="14sp"></EditText>
         </RelativeLayout>
 
@@ -111,6 +127,7 @@
         android:layout_margin="20dp"
         android:textColor="@color/white"
         android:text="Add Card"
+            android:padding="18dp"
         android:id="@+id/addcard"
         android:fontFamily="@font/dm_sans_bold"
         android:textSize="14sp">
@@ -121,6 +138,7 @@
     android:background="@drawable/rounded"
     android:backgroundTint="@color/white"
     android:layout_marginStart="20dp"
+       android:padding="18dp"
        android:layout_marginEnd="20dp"
     android:textColor="@color/Back_color"
     android:text="Scan Card"
