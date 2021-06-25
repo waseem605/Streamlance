@@ -9,15 +9,20 @@
     app:behavior_hideable="true"
     app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
     >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <View
-        android:layout_width="80dp"
-        android:layout_marginTop="20dp"
-        android:layout_height="3dp"
-        android:layout_marginLeft="140dp"
-        android:backgroundTint="@color/white"
-        android:background="@drawable/rounded"
-        />
+        <View
+            android:layout_width="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="4dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/rounded"
+            />
+    </RelativeLayout>
+
 
     <TextView
         android:layout_width="match_parent"
