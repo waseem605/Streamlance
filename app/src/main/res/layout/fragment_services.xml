@@ -58,7 +58,7 @@
                 android:layout_marginStart="30dp"
                 android:textColor="@color/white"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
-                android:padding="10dp"
+                android:padding="18dp"
                 ></Button>
         </LinearLayout>
     </LinearLayout>

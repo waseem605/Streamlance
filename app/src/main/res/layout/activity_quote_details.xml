@@ -223,7 +223,8 @@
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/hk_grotesk_regular"
                             android:textColor="@color/black"
-                            android:text="Oil and Filter Service"
+                            android:text="Oil and Filter service -\n
+ Synthetic Engine"
                             android:textSize="13sp"></TextView>
 
                         <TextView
@@ -269,7 +270,7 @@
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/hk_grotesk_regular"
                             android:textColor="@color/black"
-                            android:text="Oil and Filter Service"
+                            android:text="Brake Service"
                             android:textSize="13sp"></TextView>
 
                         <TextView
@@ -362,7 +363,7 @@
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/hk_grotesk_regular"
                             android:textColor="@color/black"
-                            android:text="Oil and Filter Service"
+                            android:text="sub total"
                             android:textSize="13sp"></TextView>
 
                         <TextView

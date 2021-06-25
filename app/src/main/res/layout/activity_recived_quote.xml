@@ -22,7 +22,9 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:layout_margin="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
                     android:src="@drawable/left_arrow"></ImageView>
 
                 <TextView
@@ -30,6 +32,8 @@
                     android:layout_height="wrap_content"
                     android:text="Quote Summary"
                     android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:textColor="@color/black"
                     android:fontFamily="@font/hk_grotesk_bold"
                     android:layout_marginTop="5dp"
@@ -73,26 +77,28 @@
 
 
         </LinearLayout>
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:orientation="horizontal">
+            android:layout_marginStart="10dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Service Requested"
+                android:layout_alignParentStart="true"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:textSize="14sp"></TextView>
 
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="34dp"
+                android:layout_toLeftOf="@id/parts"
+                android:layout_marginEnd="30dp"
                 android:layout_marginLeft="70dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="10dp"
@@ -100,168 +106,200 @@
                 android:text="Labors"
                 android:textSize="14sp"></TextView>
             <TextView
+                android:id="@+id/parts"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="Parts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="35dp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="30dp"
                 android:textSize="14sp"></TextView>
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
+            android:text="Oil and Filter service -\n
+ Synthetic Engine"
+            android:textSize="13sp"></TextView>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:text="$141.0"
+            android:layout_toLeftOf="@id/parts1"
+            android:textSize="13sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/parts1"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
+            android:text="$141.0"
+            android:textSize="13sp"></TextView>
+
+    </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="@color/white"
-            android:padding="5dp"
-            android:orientation="horizontal">
+            android:padding="5dp">
 
             <TextView
-                android:layout_width="133dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textColor="@color/black"
-                android:text="Oil and Filter service -
- Synthetic Engine Oil"
-                android:textSize="13sp"></TextView>
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
-                android:layout_marginTop="5dp"
-                android:text="$141.0"
-                android:textSize="13sp"></TextView>
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
-                android:text="$141.0"
-                android:textSize="13sp"></TextView>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:layout_marginRight="10dp"
-            android:padding="5dp"
-            android:layout_marginLeft="10dp"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="133dp"
-                android:layout_height="wrap_content"
                 android:text="Brake Service"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
-                android:layout_marginLeft="10dp"
                 android:textSize="13sp"></TextView>
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:text="$141.0"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
                 android:layout_marginLeft="50dp"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:text="$141.0"
+                android:layout_toLeftOf="@id/parts2"
                 android:textSize="13sp"></TextView>
+
             <TextView
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/parts2"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textColor="@color/black"
                 android:text="$141.0"
-                android:layout_marginLeft="20dp"
                 android:textSize="13sp"></TextView>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@color/white"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:padding="5dp"
-            android:orientation="horizontal">
+            android:padding="5dp">
+
             <TextView
-                android:layout_width="133dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
                 android:text="Oil and Filter Service"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
-                android:layout_marginLeft="10dp"
                 android:textSize="13sp"></TextView>
 
             <TextView
                 android:layout_width="50dp"
-                android:layout_height="23dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
                 android:text="$141.0"
-                android:textSize="13sp"></TextView>
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="$141.0"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
-                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/parts3"
                 android:textSize="13sp"></TextView>
 
-        </LinearLayout>
-        <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/parts3"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
+                android:text="$141.0"
+                android:textSize="13sp"></TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:background="@color/white"
-            android:padding="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:orientation="horizontal">
+            android:padding="5dp">
+
             <TextView
-                android:layout_width="133dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sub Total"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
+                android:layout_alignParentStart="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
-                android:textSize="13sp"></TextView>
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="$462.0"
                 android:fontFamily="@font/hk_grotesk_regular"
                 android:textColor="@color/black"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="5dp"
-                android:textSize="13sp"></TextView>
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="$464.0"
-                android:fontFamily="@font/hk_grotesk_regular"
-                android:textColor="@color/black"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
+                android:text="sub total"
                 android:textSize="13sp"></TextView>
 
-        </LinearLayout>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:text="$141.0"
+                android:layout_toLeftOf="@id/parts4"
+                android:textSize="13sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/parts4"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:textColor="@color/black"
+                android:text="$141.0"
+                android:textSize="13sp"></TextView>
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -278,18 +316,17 @@
                 android:layout_marginLeft="10dp"
                 android:background="@color/black"></View>
         </LinearLayout>
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:padding="5dp"
-            android:orientation="horizontal">
+            android:padding="5dp">
             <TextView
                 android:layout_width="133dp"
                 android:layout_height="wrap_content"
                 android:text="Sub Total"
+                android:layout_alignParentStart="true"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
                 android:layout_marginLeft="10dp"
@@ -300,25 +337,26 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="$464.0"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
                 android:layout_marginLeft="117dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
 
-        </LinearLayout>
-        <LinearLayout
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_marginRight="10dp"
-            android:padding="5dp"
             android:layout_marginLeft="10dp"
-            android:orientation="horizontal">
+            android:padding="5dp">
             <TextView
                 android:layout_width="133dp"
                 android:layout_height="wrap_content"
                 android:text="Sub Total"
+                android:layout_alignParentStart="true"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
                 android:layout_marginLeft="10dp"
@@ -329,41 +367,45 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="$464.0"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
                 android:layout_marginLeft="117dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
 
-        </LinearLayout>
-        <LinearLayout
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_marginRight="10dp"
-            android:padding="5dp"
             android:layout_marginLeft="10dp"
-            android:orientation="horizontal">
+            android:padding="5dp">
             <TextView
                 android:layout_width="133dp"
                 android:layout_height="wrap_content"
                 android:text="Sub Total"
+                android:layout_alignParentStart="true"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="$464.0"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
                 android:layout_marginLeft="117dp"
                 android:layout_marginTop="5dp"
                 android:textSize="13sp"></TextView>
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <Button
             android:layout_width="match_parent"
