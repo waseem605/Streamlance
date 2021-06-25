@@ -125,11 +125,12 @@
         android:text="+ Add Vehicle"
         android:id="@+id/bymake_vehicle"
         android:textAllCaps="false"
-        android:textSize="20sp"
+        android:textSize="19sp"
+        android:fontFamily="@font/hk_grotesk_semi_bold"
         android:layout_margin="20dp"
         android:background="@drawable/rounded"
         android:textColor="@color/white"
-        android:padding="12dp" />
+        android:padding="18dp" />
 
 
 

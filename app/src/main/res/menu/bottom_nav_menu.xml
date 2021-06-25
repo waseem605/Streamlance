@@ -14,7 +14,7 @@
         android:icon="@drawable/notification_icon">
     </item>
     <item android:id="@+id/user_nav"
-        android:title="@string/user"
+        android:title="@string/profile"
         android:icon="@drawable/user_icon">
     </item>
 
