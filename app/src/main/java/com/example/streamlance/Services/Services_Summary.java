@@ -25,7 +25,7 @@ import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClic
 
 public class Services_Summary extends Activity {
 
-    private TextView mStartDate, mEndDate;
+    private TextView mStartDate, mEndDate,service,servicetype;
     private ImageView mBackArrow;
     private Spinner spinner;
 
@@ -42,6 +42,10 @@ public class Services_Summary extends Activity {
         getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_services_summary);
+        service=findViewById(R.id.service);
+        service.setVisibility(View.INVISIBLE);
+        servicetype=findViewById(R.id.servicetype);
+        servicetype.setVisibility(View.INVISIBLE);
         mStartDate = (TextView)findViewById(R.id.start_date_tx);
         mBackArrow = (ImageView) findViewById(R.id.back_arrow_ss);
         mViewQuotaBtn = (Button)findViewById(R.id.view_quota_btn);
