@@ -18,6 +18,7 @@
         android:fontFamily="@font/hk_grotesk_regular"
         android:layout_marginTop="10dp"
         android:background="#00000000"
+        android:textAllCaps="false"
         android:text="@string/skip"
         android:textColor="@color/Back_color"
         android:textSize="24sp"
@@ -230,11 +231,11 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="7dp"
         android:layout_marginBottom="20dp"
-        android:padding="5dp"
+        android:padding="18dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rounded"
         android:text="@string/let_s_start"
-        android:textSize="24sp"
+        android:textSize="19sp"
         android:textAllCaps="false"
         android:textColor="@color/white" />
 
