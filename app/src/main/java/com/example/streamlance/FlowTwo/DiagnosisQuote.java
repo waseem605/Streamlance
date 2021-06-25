@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.streamlance.Fragments.Completed;
 import com.example.streamlance.MainPage.MainActivity;
@@ -19,6 +20,7 @@ import com.example.streamlance.Services.Services_Summary;
 public class DiagnosisQuote extends AppCompatActivity {
 
     private Button mRejectService,mAcceptservic,mViewHistory;
+    TextView service,servicetype;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -31,6 +33,10 @@ public class DiagnosisQuote extends AppCompatActivity {
 
         mRejectService = (Button)findViewById(R.id.rejectServices_btn);
         mAcceptservic = (Button)findViewById(R.id.accept_services);
+        service=findViewById(R.id.service);
+        service.setVisibility(View.INVISIBLE);
+        servicetype=findViewById(R.id.servicetype);
+        servicetype.setVisibility(View.INVISIBLE);
 
         mRejectService.setOnClickListener(new View.OnClickListener() {
             @Override

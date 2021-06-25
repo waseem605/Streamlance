@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.streamlance.Fragments.Home;
 import com.example.streamlance.Fragments.Notification;
@@ -32,6 +33,7 @@ public class Diagonosis extends AppCompatActivity {
     private Button mRequestbtn;
     LinearLayout linearLayout,mAddition_service,mLinearSample;
     private ImageView mBackLink;
+    TextView service,servicetype;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -45,6 +47,10 @@ public class Diagonosis extends AppCompatActivity {
         linearLayout = (LinearLayout) findViewById(R.id.diagonos_layout_mini);
         mAddition_service = (LinearLayout) findViewById(R.id.addition_service_lt);
         mBackLink = (ImageView) findViewById(R.id.back_arrow_diag);
+        service=findViewById(R.id.service);
+        service.setVisibility(View.INVISIBLE);
+        servicetype=findViewById(R.id.servicetype);
+        servicetype.setVisibility(View.INVISIBLE);
 
         mLinearSample =(LinearLayout)findViewById(R.id.samplecar);
         mLinearSample.setBackgroundDrawable(getResources().getDrawable(R.drawable.top_round));

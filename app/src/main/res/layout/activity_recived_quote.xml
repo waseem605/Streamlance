@@ -370,6 +370,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnscheduleservice"
             android:layout_margin="20dp"
+            android:padding="18dp"
             android:background="@drawable/rounded"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:text="Schedule Service"

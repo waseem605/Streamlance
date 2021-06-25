@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.streamlance.Payments.Payment_Method;
 import com.example.streamlance.Payments.ReviewAndPay;
@@ -15,6 +16,7 @@ import com.example.streamlance.R;
 
 public class RecivedQuote extends AppCompatActivity {
     Button btnrecieved;
+    TextView service,servicetype;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -24,6 +26,10 @@ public class RecivedQuote extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_recived_quote);
         btnrecieved=findViewById(R.id.btnscheduleservice);
+        service=findViewById(R.id.service);
+        service.setVisibility(View.INVISIBLE);
+        servicetype=findViewById(R.id.servicetype);
+        servicetype.setVisibility(View.INVISIBLE);
 
 
 
