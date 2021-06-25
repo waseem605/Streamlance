@@ -18,6 +18,7 @@
         android:backgroundTint="@color/white"
         android:background="@drawable/rounded"
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +27,8 @@
         android:textSize="28sp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/hk_grotesk_bold"
-        android:textAlignment="center"></TextView>
+        android:textAlignment="center" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +36,7 @@
         android:textColor="@color/white"
         android:fontFamily="@font/hk_grotesk_regular"
         android:textSize="16sp"
-        android:textAlignment="center"></TextView>
+        android:textAlignment="center" />
     <LinearLayout
         android:id="@+id/choose_service"
         android:layout_width="wrap_content"

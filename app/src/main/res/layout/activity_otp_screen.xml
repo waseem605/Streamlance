@@ -14,11 +14,13 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:layout_alignParentStart="true"
-           android:layout_alignParentRight="true"
+           android:background="@drawable/bottomsheet"
+           android:backgroundTint="@color/white"
+           android:layout_alignParentEnd="true"
+           android:paddingBottom="10dp"
            android:layout_alignParentBottom="true"
            android:gravity="center"
-           android:orientation="vertical"
-           android:padding="10dp">
+           android:orientation="vertical">
 
            <TextView
                android:id="@+id/textView"
@@ -27,7 +29,7 @@
                android:fontFamily="@font/hk_grotesk_bold"
                android:text="@string/otp_heading"
                android:textColor="@color/black"
-               android:textSize="28sp"
+               android:textSize="26sp"
                tools:ignore="MissingConstraints" />
 
            <TextView
@@ -35,8 +37,9 @@
                android:layout_width="313dp"
                android:layout_height="wrap_content"
                android:layout_marginStart="30dp"
-               android:layout_marginTop="10dp"
+               android:layout_marginTop="5dp"
                android:layout_marginEnd="30dp"
+               android:layout_marginBottom="10dp"
                android:gravity="center"
                android:fontFamily="@font/hk_grotesk_regular"
                android:padding="5dp"
@@ -53,27 +56,28 @@
            <LinearLayout
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_margin="10dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginBottom="10dp"
                android:background="@drawable/round_border"
                android:orientation="vertical">
 
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:layout_marginLeft="20dp"
-                   android:layout_marginTop="5dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginTop="3dp"
                    android:fontFamily="@font/dm_sans_regular"
-                   android:padding="0dp"
                    android:text="Phone Number"
                    android:textColor="@color/black"
-                   android:textSize="18sp"></TextView>
+                   android:textSize="18sp" />
 
                <LinearLayout
                    android:id="@+id/linear1"
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
                    android:orientation="horizontal"
-                   android:padding="5dp">
+                   android:padding="3dp">
 
                    <com.hbb20.CountryCodePicker
                        android:id="@+id/country_code_picker"
@@ -99,16 +103,16 @@
                android:id="@+id/get_otp_btn"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_below="@id/linear_otp"
-               android:layout_marginRight="10dp"
-               android:layout_marginLeft="10dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:padding="17dp"
                android:layout_marginBottom="10dp"
                android:background="@drawable/rounded"
                android:fontFamily="@font/hk_grotesk_semi_bold"
                android:text="@string/get_otp"
                android:textAllCaps="false"
                android:textColor="@color/white"
-               android:textSize="24sp" />
+               android:textSize="19sp" />
 
        </LinearLayout>
 </RelativeLayout>

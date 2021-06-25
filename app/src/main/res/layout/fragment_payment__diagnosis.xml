@@ -13,14 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <View
-        android:layout_width="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_height="5dp"
-        android:layout_marginLeft="160dp"
-        android:backgroundTint="@color/white"
-        android:background="@drawable/rounded"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="5dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/rounded"
+                />
+        </RelativeLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,13 +40,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:padding="8dp"
+        android:padding="18dp"
         android:layout_marginStart="20dp"
         android:background="@drawable/searchbar"
         android:orientation="horizontal">
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:layout_centerVertical="true"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:src="@drawable/cardpic"
@@ -50,6 +56,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:fontFamily="@font/dm_sans_regular"
             android:textSize="14sp"
             android:layout_marginTop="10dp"
@@ -63,6 +70,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/darktik"
             android:layout_alignParentRight="true"
@@ -72,26 +80,33 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_marginTop="20dp">
         <EditText
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
+            android:padding="18dp"
+            android:layout_toLeftOf="@id/view"
             android:layout_alignParentLeft="true"
             android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
             android:textCursorDrawable="@drawable/style_cursur"
             android:background="@drawable/searchbar"
             android:hint="MM/YY"
             android:textSize="14sp"
             android:fontFamily="@font/dm_sans_regular"
             android:id="@+id/etcvc"></EditText>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:id="@+id/view"
+            android:layout_centerHorizontal="true"></View>
         <EditText
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
+            android:padding="18dp"
+            android:layout_marginStart="10dp"
             android:textCursorDrawable="@drawable/style_cursur"
-            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@id/view"
             android:background="@drawable/searchbar"
             android:hint="CVC"
             android:textSize="14sp"
@@ -106,6 +121,7 @@
         android:background="@drawable/rounded"
         android:backgroundTint="@color/orange"
         android:layout_marginTop="40dp"
+        android:padding="18dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:textColor="@color/white"
