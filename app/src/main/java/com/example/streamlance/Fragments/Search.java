@@ -13,10 +13,11 @@ import android.widget.ImageView;
 
 import com.example.streamlance.GarageFragments.Garage_Info;
 import com.example.streamlance.R;
+import com.example.streamlance.common.Filter_Activity;
 
 
 public class Search extends Fragment {
-    ImageView imageView;
+    ImageView imageView,filter_icon;
 
 
 
@@ -35,10 +36,18 @@ public class Search extends Fragment {
 
         View v= inflater.inflate(R.layout.fragment_search, container, false);
         imageView=(ImageView)v.findViewById(R.id.imageclick);
+        filter_icon=(ImageView)v.findViewById(R.id.filter_icon);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Search.this.getActivity(), Garage_Info.class);
+                startActivity(intent);
+            }
+        });
+        filter_icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Search.this.getActivity(), Filter_Activity.class);
                 startActivity(intent);
             }
         });

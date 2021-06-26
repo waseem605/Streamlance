@@ -21,6 +21,12 @@ allprojects {
         // Warning: this repository is going to shut down soon
     }
 }
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
