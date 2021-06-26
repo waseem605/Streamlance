@@ -24,14 +24,16 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:id="@+id/sort_button_p"
+            android:id="@+id/sort_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
             android:layout_alignParentStart="true"
             android:background="@color/white"
             android:layout_marginStart="15dp"
             android:paddingStart="10dp"
-            android:paddingEnd="15dp">
+            android:paddingEnd="10dp">
 
             <ImageView
                 android:id="@+id/img1"
@@ -55,14 +57,17 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_toEndOf="@id/sort_button_p"
+            android:layout_toEndOf="@id/sort_button"
             android:id="@+id/filter_link"
             android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:paddingStart="15dp"
-            android:layout_marginStart="5dp"
-            android:paddingEnd="15dp">
+            android:layout_toLeftOf="@id/map_link"
+            android:paddingStart="10dp"
+            android:layout_marginStart="2dp"
+            android:paddingEnd="10dp">
 
             <ImageView
                 android:id="@+id/img3"
@@ -88,15 +93,16 @@
 
         <RelativeLayout
             android:layout_toEndOf="@id/filter_link"
-            android:id="@+id/map_link_p"
-            android:layout_width="match_parent"
+            android:id="@+id/map_link"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:background="@color/white"
             android:paddingStart="10dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="10dp"
-            android:paddingEnd="15dp">
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="10dp">
 
             <ImageView
                 android:id="@+id/img2"
@@ -112,6 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerHorizontal="true"
                 android:layout_toEndOf="@id/img2"
                 android:fontFamily="@font/hk_grotesk_semi_bold"

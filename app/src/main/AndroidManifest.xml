@@ -11,7 +11,7 @@
         <activity android:name=".MainPage.Map_Activity"></activity>
         <activity
             android:name=".FlowTwo.Diagnosis_Proivider_Quotes"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".FlowTwo.DiagnosisReport"
             android:screenOrientation="portrait" />
