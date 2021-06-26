@@ -13,13 +13,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="260dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:background="@color/Back_color">
+            android:layout_alignParentEnd="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/Back_color" />
 
             <ImageView
                 android:id="@+id/profile_user_img"
@@ -76,248 +84,248 @@
                 android:textColor="#dbd7d7"
                 android:textSize="16sp" />
 
-        </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:id="@+id/layout_first"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="20dp"
-        android:paddingBottom="20dp"
-        android:background="@drawable/white_round_background"
-        android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:id="@+id/message_RL"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:id="@+id/message"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/about_steamlan" />
-
-            <TextView
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:layout_toEndOf="@id/message"
-                android:fontFamily="@font/hk_grotesk_medium"
-                android:text="@string/message_link"
-                android:layout_marginStart="10dp"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="40dp"
-                android:src="@drawable/next_icon" />
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/profile_user_img">
+
+                <RelativeLayout
+                    android:id="@+id/layout_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="@drawable/white_round_background"
+                    android:paddingBottom="20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/message_RL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/about_steamlan" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="26dp"
+                            android:layout_toEndOf="@id/message"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:text="@string/message_link"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="40dp"
+                            android:src="@drawable/next_icon" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/payment_RL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/message_RL">
+
+                        <ImageView
+                            android:id="@+id/payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/payment_icon" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="26dp"
+                            android:layout_toEndOf="@id/payment"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:text="@string/payment_method"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:src="@drawable/next_icon" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/profile_RL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/payment_RL">
+
+                        <ImageView
+                            android:id="@+id/profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/profile_icon_blue" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="26dp"
+                            android:layout_toEndOf="@id/profile"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:text="@string/profile"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:src="@drawable/next_icon" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bottom_RL"
+                    android:layout_below="@id/layout_first"
+                    android:layout_marginStart="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/white_round_background">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/about_RL"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/about"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/about_steamlan" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:layout_toEndOf="@id/about"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:text="@string/about_streamlan"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="40dp"
+                            android:src="@drawable/next_icon" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/help_RL"
+                        android:layout_below="@id/about_RL"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/help"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/help_icon" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:layout_toEndOf="@id/help"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:text="@string/help_support"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="40dp"
+                            android:src="@drawable/next_icon" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/privacy_RL"
+                        android:layout_below="@id/help_RL"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/privacy"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/privacy_icon" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="22dp"
+                            android:layout_toEndOf="@id/privacy"
+                            android:fontFamily="@font/hk_grotesk_medium"
+                            android:text="@string/privacy_policy"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="40dp"
+                            android:src="@drawable/next_icon" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
         </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:id="@+id/payment_RL"
-            android:layout_below="@id/message_RL"
-            android:layout_height="wrap_content">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:id="@+id/payment"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/payment_icon" />
 
-            <TextView
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:layout_toEndOf="@id/payment"
-                android:fontFamily="@font/hk_grotesk_medium"
-                android:text="@string/payment_method"
-                android:layout_marginStart="10dp"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="40dp"
-                android:src="@drawable/next_icon" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:id="@+id/profile_RL"
-            android:layout_below="@id/payment_RL"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:id="@+id/profile"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/profile_icon_blue" />
-
-            <TextView
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="26dp"
-                android:layout_toEndOf="@id/profile"
-                android:fontFamily="@font/hk_grotesk_medium"
-                android:text="@string/profile"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="40dp"
-                android:src="@drawable/next_icon" />
-        </RelativeLayout>
 
     </RelativeLayout>
-
-
-
-
-
-    </RelativeLayout>
-
-<!--
-
-
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:id="@+id/bottom_RL"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:paddingBottom="20dp"
-            android:layout_marginBottom="65dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/white_round_background"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:id="@+id/about_RL"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:id="@+id/about"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/about_steamlan" />
-
-                <TextView
-                    android:layout_width="140dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:layout_toEndOf="@id/about"
-                    android:fontFamily="@font/hk_grotesk_medium"
-                    android:text="@string/about_streamlan"
-                    android:layout_marginStart="10dp"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="40dp"
-                    android:src="@drawable/next_icon" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:id="@+id/help_RL"
-                android:layout_below="@id/about_RL"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:id="@+id/help"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/help_icon" />
-
-                <TextView
-                    android:layout_width="140dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:layout_toEndOf="@id/help"
-                    android:fontFamily="@font/hk_grotesk_medium"
-                    android:text="@string/help_support"
-                    android:layout_marginStart="10dp"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="40dp"
-                    android:src="@drawable/next_icon" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:id="@+id/privacy_RL"
-                android:layout_below="@id/help_RL"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:id="@+id/privacy"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/privacy_icon" />
-
-                <TextView
-                    android:layout_width="140dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:layout_toEndOf="@id/privacy"
-                    android:fontFamily="@font/hk_grotesk_medium"
-                    android:text="@string/privacy_policy"
-                    android:layout_marginStart="10dp"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="40dp"
-                    android:src="@drawable/next_icon" />
-            </RelativeLayout>
-
-        </RelativeLayout>
--->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
