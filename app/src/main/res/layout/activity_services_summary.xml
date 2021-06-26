@@ -166,6 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -176,7 +177,7 @@
                 android:textColor="@color/black"
                 android:background="@drawable/bottomsheet"
                 android:backgroundTint="@color/white"
-                android:text="@string/note"></TextView>
+                android:text="@string/note" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -185,20 +186,17 @@
                 android:background="@drawable/white_background_b_round">
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="120dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:textCursorDrawable="@drawable/style_cursur"
-                    android:hint="Describe your special requirements"
+                    android:hint="Describe your special requirements "
                     android:paddingBottom="40dp"
                     android:background="@drawable/white_backgroun_with_border">
 
                 </EditText>
 
             </LinearLayout>
-
-
-
 
         </LinearLayout>
 
@@ -209,15 +207,17 @@
             android:paddingStart="20dp"
             android:layout_marginTop="10dp"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="19sp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
+                android:padding="10dp"
                 android:background="@drawable/bottomsheet"
-                android:backgroundTint="@color/white"
-                android:text="@string/preferred_date_range"></TextView>
+                android:backgroundTint="@color/white_contras"
+                android:text="@string/preferred_date_range" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -225,8 +225,8 @@
                 android:orientation="horizontal"
                 android:id="@+id/datePic_layout"
                 android:layout_marginTop="2dp"
-                android:padding="10dp"
-                android:background="@color/white">
+                android:padding="15dp"
+                android:background="@color/white_contras">
 
                 <Button
                     android:layout_width="25dp"
@@ -235,7 +235,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="10dp"
                     android:background="@drawable/date_range_24"
-                    android:padding="5dp"></Button>
+                    android:padding="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -244,7 +244,7 @@
                     android:text="March 21"
                     android:textSize="16sp"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+                    android:fontFamily="@font/hk_grotesk_semi_bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -254,7 +254,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+                    android:fontFamily="@font/hk_grotesk_semi_bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -263,7 +263,7 @@
                     android:text="March 21"
                     android:textSize="16sp"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+                    android:fontFamily="@font/hk_grotesk_semi_bold" />
 
 
             </LinearLayout>
@@ -271,20 +271,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:backgroundTint="@color/white_contras"
                 android:background="@drawable/white_background_b_round">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
-                    android:padding="10dp"
+                    android:padding="12dp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:text="@string/preferred_hours"></TextView>
+                    android:text="@string/preferred_hours" />
                 <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:entries="@array/prefer_hours"
+                    android:padding="10dp"
+                    android:hapticFeedbackEnabled="true"
                     android:dropDownSelector="@color/orange"
                     android:id="@+id/select_hours_range">
 
@@ -306,10 +309,11 @@
             android:text="@string/request_quote"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textSize="20sp"
-            android:textColor="@color/white"></Button>
+            android:textColor="@color/white" />
+
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></TextView>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
