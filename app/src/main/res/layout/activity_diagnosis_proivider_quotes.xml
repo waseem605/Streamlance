@@ -15,149 +15,120 @@
         android:textColor="@color/black"
         android:fontFamily="@font/hk_grotesk_semi_bold"
         app:titleMarginStart="120dp" />
-
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@id/toolbar_dpq"
-        android:id="@+id/tabbar">
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/rlbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <GridLayout
+        <RelativeLayout
+            android:id="@+id/sort_button_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:layout_marginStart="15dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:src="@drawable/msort_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/img1"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:text="Sort"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toEndOf="@id/sort_button_p"
+            android:id="@+id/filter_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="15dp"
+            android:layout_marginStart="5dp"
+            android:paddingEnd="15dp">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:src="@drawable/forma_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/img3"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:text="Filter"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toEndOf="@id/filter_link"
+            android:id="@+id/map_link_p"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentStart="true"
-            android:rowCount="1"
-            android:columnCount="3">
+            android:background="@color/white"
+            android:paddingStart="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="15dp">
 
-            <androidx.cardview.widget.CardView
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:src="@drawable/group_59985" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:background="@color/white"
-                android:layout_marginEnd="1dp"
-                android:layout_column="0">
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/sort_button"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_margin="10dp"
-                        android:id="@+id/img1"
-                        android:padding="3dp"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/msort_icon" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sort"
-                        android:textColor="@color/black"
-                        android:textAllCaps="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toEndOf="@id/img1"
-                        android:textSize="18sp"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"
-                        />
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="1dp"
-                android:layout_row="0"
-                android:layout_column="1">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/map_link"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_margin="10dp"
-                        android:id="@+id/img2"
-                        android:padding="3dp"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="center"
-                        android:src="@drawable/group_59985" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Map"
-                        android:textColor="@color/black"
-                        android:textAllCaps="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toEndOf="@id/img2"
-                        android:textSize="18sp"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"
-                        />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:background="@color/white"
-                android:layout_column="2">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/filter_link"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="15dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_margin="10dp"
-                        android:id="@+id/img3"
-                        android:padding="3dp"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="center"
-                        android:src="@drawable/forma_1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Filter"
-                        android:textColor="@color/black"
-                        android:textAllCaps="true"
-                        android:layout_centerVertical="true"
-                        android:layout_toEndOf="@id/img3"
-                        android:textSize="18sp"
-                        android:fontFamily="@font/hk_grotesk_semi_bold"
-                        />
-                </RelativeLayout>
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@id/img2"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:text="MAP"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
 
 
-
-            </androidx.cardview.widget.CardView>
-
-        </GridLayout>
 
     </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tabbar">
+        android:layout_below="@id/rlbuttons">
 
         <include layout="@layout/sample_provider_quotes" />
     </ScrollView>
