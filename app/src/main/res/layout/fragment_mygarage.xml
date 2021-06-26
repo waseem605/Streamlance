@@ -1,71 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/my_garage"
     tools:context=".Fragments.mygarage">
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="190dp"
-        android:src="@drawable/group_60057" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="65dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:gravity="center"
-        android:textColor="@color/black"
-        android:fontFamily="@font/hk_grotesk_bold"
-        android:text="No Vehicles added"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="232dp"
-        android:layout_height="36dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/hk_grotesk_regular"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:gravity="center"
-        android:text="Please add a Vehicle to get Started"
-        />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:src="@drawable/group_60057" />
 
-    <Button
-        android:id="@+id/add_vehicle"
-        android:background="@drawable/rounded"
-        android:layout_width="200dp"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/hk_grotesk_semi_bold"
-        android:layout_height="wrap_content"
-       android:layout_marginLeft="85dp"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:text="Add Vehicle" />
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/addvehicle"
-        android:background="@drawable/circle_button"
-        android:backgroundTint="@color/Back_color"
-        android:text="+"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="40dp"
-        android:textSize="20sp"
-        android:textColor="@color/white"></Button>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hk_grotesk_bold"
+            android:text="No Vehicles added"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Please add a Vehicle to get\n Started"
+            />
+
+        <Button
+            android:id="@+id/add_vehicle"
+            android:background="@drawable/rounded"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_below="@id/textView3"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/hk_grotesk_semi_bold"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:padding="15dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="Add Vehicle" />
+
+
+        <Button
+            android:id="@+id/addvehicle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/circle_button"
+            android:backgroundTint="@color/Back_color"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

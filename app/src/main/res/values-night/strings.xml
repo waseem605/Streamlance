@@ -63,8 +63,9 @@
     <string name="service_summary">Service Summary</string>
     <string name="bmw_x5">BMW x5</string>
     <string name="_625fedf66a80">625fedf66a80</string>
-    <string name="quota_submitted">Quota Submitted</string>
-    <string name="quota_submitted_desc">Your service quote is submitted successfully! Veiw service quotes from providers</string>
+    <string name="quota_submitted">Quote Submitted</string>
+    <string name="quota_submitted_desc"><br>Your service quote is submitted \n</br>
+        <br>successfully! Veiw service quotes \n</br>from providers</string>
     <string name="view_quotes">View Quotes</string>
     <string name="services_requested">Services Requested</string>
     <string name="oil_and_filter_servicess">Oil and Filter service - Synthetic Engine Oil</string>
@@ -90,11 +91,12 @@
     <string name="business_hours_g">Business Hours</string>
     <string name="sunday">Sunday</string>
     <string name="monday">Monday</string>
+    <string name="account_desc"><br>Join the community of over one\n</br> million people</string>
     <string name="book_services">Book Services</string>
     <string name="let_s_start">Let`s Start</string>
     <string name="start_button">Get Started</string>
-    <string name="request_diagnosis_desc">Your diagnose request is submitted successfully! View quotes from provider</string>
-    <string name="view_diagnosis_quotes">View Diagnosis Quotes</string>
+    <string name="request_diagnosis_desc"><br>Your diagnose request is submitted\n</br><br> successfully! View quotes\n</br> from provider</string>    <string name="view_diagnosis_quotes">View Diagnosis Quotes</string>
     <string name="view_history">View History</string>
-    <string name="view_history_desc">Your service quote has been saved in services history. You can view it again in completed history tab.</string>
+    <string name="view_history_desc"><br>Your service quote has been saved\n</br><br> in services history. You can view it\n</br> again in completed history tab.</string>
+    <string name="your_service_is_scheduled_yo">Your service is scheduled you will \nreceive confirmation email.</string>
 </resources>

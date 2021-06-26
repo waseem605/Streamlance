@@ -29,7 +29,7 @@ public class Services_Summary extends Activity {
     private ImageView mBackArrow;
     private Spinner spinner;
 
-    LinearLayout linearDate;
+    LinearLayout linearDate,llsamplecar;
 
 
     MaterialDatePicker.Builder<Pair<Long, Long>> builder = MaterialDatePicker.Builder.dateRangePicker();
@@ -42,6 +42,8 @@ public class Services_Summary extends Activity {
         getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_services_summary);
+        llsamplecar=findViewById(R.id.samplecar);
+        llsamplecar.setBackgroundDrawable(getResources().getDrawable(R.drawable.rounded_white));
         service=findViewById(R.id.service);
         service.setVisibility(View.INVISIBLE);
         servicetype=findViewById(R.id.servicetype);
@@ -61,12 +63,12 @@ public class Services_Summary extends Activity {
         //spinner.setOnItemClickListener((AdapterView.OnItemClickListener) this);
 
 
-        linearDate.setOnClickListener(new View.OnClickListener() {
+       /* linearDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 materialDatePicker.show(materialDatePicker.getChildFragmentManager(), "date");
             }
-        });
+        });*/
 
 
         mBackArrow.setOnClickListener(new View.OnClickListener() {

@@ -53,13 +53,15 @@
             android:layout_marginStart="20dp"
             android:background="@drawable/searchbar"
             android:orientation="horizontal">
+
             <ImageView
-                android:layout_width="32dp"
-                android:layout_height="30dp"
-                 android:layout_marginTop="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
                 android:id="@+id/searchicon"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/search_icon"></ImageView>
+                android:src="@drawable/search_icon" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -75,11 +77,12 @@
                 ></EditText>
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_marginTop="5dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_centerVertical="true"
                 android:id="@+id/filter_icon"
                 android:src="@drawable/fiilter" />
 

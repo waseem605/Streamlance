@@ -14,7 +14,7 @@ import com.example.streamlance.MainPage.MainActivity;
 import com.example.streamlance.R;
 
 public class ReviewAndPay extends AppCompatActivity {
-LinearLayout linearLayoutReviewAndPay;
+LinearLayout linearLayoutReviewAndPay,llsamplecar;
 TextView service,servicetype;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -24,6 +24,8 @@ TextView service,servicetype;
         getWindow().setStatusBarColor(getResources().getColor(R.color.white));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_review_and_pay);
+        llsamplecar=findViewById(R.id.samplecar);
+        llsamplecar.setBackgroundDrawable(getResources().getDrawable(R.drawable.rounded_white));
         service=findViewById(R.id.service);
         service.setVisibility(View.INVISIBLE);
         servicetype=findViewById(R.id.servicetype);

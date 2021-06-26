@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.streamlance.MainPage.ChatActivity;
 import com.example.streamlance.MainPage.Map_Activity;
@@ -20,9 +21,9 @@ import com.example.streamlance.Services.BookNowSummary;
 
 public class Diagnosis_Proivider_Quotes extends AppCompatActivity {
 
-    private Button mViewquotes,mSort,mChatButton;
+    private Button mViewquotes,mChatButton;
+    private RelativeLayout mSort,mMapLink;
 
-    LinearLayout mMapLink;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,10 +31,12 @@ public class Diagnosis_Proivider_Quotes extends AppCompatActivity {
         getWindow().setStatusBarColor(getResources().getColor(R.color.white));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_diagnosis_proivider_quotes);
+
         mViewquotes = (Button)findViewById(R.id.viewquotes);
         mChatButton = (Button)findViewById(R.id.chat_btn);
-        mSort = (Button)findViewById(R.id.sort_button);
-        mMapLink = (LinearLayout)findViewById(R.id.map_link);
+
+        mSort = (RelativeLayout)findViewById(R.id.sort_button);
+        mMapLink = (RelativeLayout) findViewById(R.id.map_link);
 
 
         callIntents();

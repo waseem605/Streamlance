@@ -35,9 +35,9 @@
                 android:padding="10dp"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/pin"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/location_map"
                     app:tint="@color/orange" />
                 <TextView
                     android:layout_width="match_parent"
@@ -470,48 +470,53 @@
                     android:textSize="13sp"></TextView>
 
             </LinearLayout>
+
+
+
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_marginBottom="10dp"
-                >
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/viewPq2"
+                    android:layout_centerHorizontal="true"/>
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/accept_services"
                     android:background="@drawable/rounded"
                     android:text="Accept Service"
-                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@id/viewPq2"
                     android:layout_marginLeft="10dp"
                     android:textSize="19sp"
-                    android:layout_toLeftOf="@id/view"
-                    android:padding="18dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
                     android:textAllCaps="false"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
-                    android:textColor="@color/white"
-                    ></Button>
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="0dp"
-                    android:id="@+id/view"
-                    android:layout_centerHorizontal="true"></View>
+                    android:textColor="@color/white" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_toRightOf="@id/view"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/viewPq2"
                     android:background="@drawable/rounded"
-                    android:padding="18dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
                     android:text="Reject Service"
                     android:fontFamily="@font/hk_grotesk_semi_bold"
                     android:id="@+id/rejectServices_btn"
                     android:textAllCaps="false"
                     android:textSize="19sp"
-                    android:textColor="@color/white"
-                    ></Button>
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white" />
             </RelativeLayout>
 
         </LinearLayout>

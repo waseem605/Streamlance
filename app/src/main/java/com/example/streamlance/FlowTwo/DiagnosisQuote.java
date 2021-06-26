@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.streamlance.Fragments.Completed;
+import com.example.streamlance.GarageFragments.Quote_Details;
 import com.example.streamlance.MainPage.MainActivity;
 import com.example.streamlance.R;
 import com.example.streamlance.Services.Services_Summary;
@@ -50,7 +51,10 @@ public class DiagnosisQuote extends AppCompatActivity {
                 mViewHistory.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        startActivity(new Intent(DiagnosisQuote.this, MainActivity.class));
+                        Intent intent =new Intent(DiagnosisQuote.this,MainActivity.class);
+                        intent.putExtra("ide",2);
+                        startActivity(intent);
+                        finish();
                     }
                 });
             }
@@ -59,8 +63,10 @@ public class DiagnosisQuote extends AppCompatActivity {
         mAcceptservic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Diagnosis_Review_Pay dialog_pay=new Diagnosis_Review_Pay();
-                dialog_pay.show(getSupportFragmentManager(),dialog_pay.getTag());
+                Intent intent =new Intent(DiagnosisQuote.this,MainActivity.class);
+                intent.putExtra("ide",1);
+                startActivity(intent);
+                finish();
             }
         });
 

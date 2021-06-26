@@ -25,15 +25,17 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/hk_grotesk_bold"
             android:gravity="center"
+            android:textColor="@color/black"
             android:text="Request Submitted"
             android:textSize="26sp" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
             android:fontFamily="@font/hk_grotesk_regular"
             android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
             android:padding="5dp"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
@@ -51,8 +53,9 @@
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:text="@string/view_diagnosis_quotes"
             android:textAllCaps="false"
+            android:padding="18dp"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="19sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -131,8 +131,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
             android:layout_marginEnd="10dp"
             android:background="@color/white"
             android:padding="5dp">
@@ -177,7 +177,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="@color/white"
@@ -224,7 +223,6 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="@color/white"
@@ -270,10 +268,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:background="@color/white"
+            android:background="@drawable/white_background_b_round"
             android:padding="5dp">
 
             <TextView
@@ -315,21 +312,6 @@
         </RelativeLayout>
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:orientation="horizontal">
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                android:background="@color/black"></View>
-        </LinearLayout>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -381,7 +363,7 @@
             <TextView
                 android:layout_width="133dp"
                 android:layout_height="wrap_content"
-                android:text="Sub Total"
+                android:text="VAT (10%)"
                 android:layout_alignParentStart="true"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
@@ -411,7 +393,7 @@
             <TextView
                 android:layout_width="133dp"
                 android:layout_height="wrap_content"
-                android:text="Sub Total"
+                android:text="Grand Total"
                 android:layout_alignParentStart="true"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/black"
@@ -442,7 +424,8 @@
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:text="Schedule Service"
             android:textAllCaps="false"
-            android:padding="10dp"
+            android:padding="15dp"
+            android:layout_marginBottom="30dp"
             android:textColor="@color/white"
             android:textSize="19sp" />
 

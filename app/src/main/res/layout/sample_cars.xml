@@ -46,7 +46,7 @@
         android:layout_below="@id/carname"
         android:layout_marginLeft="5dp"
         android:paddingTop="5dp"
-        android:paddingBottom="5dp"
+        android:paddingBottom="15dp"
         android:fontFamily="@font/hk_grotesk_regular"
         android:textSize="12sp"
         android:text="67jhgfb57ndf " />

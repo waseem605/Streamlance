@@ -46,7 +46,12 @@ public class ByMake extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(ByMake.this,MainActivity.class);
+
+                //no useable
+                //fragmentMethod();
                 startActivity(intent);
+
+
             }
         });
 
@@ -86,6 +91,20 @@ public class ByMake extends AppCompatActivity {
                 startActivity(new Intent(ByMake.this,MainActivity.class));
             }
         });
+    }
+
+    public void  fragmentMethod()
+    {
+        Garage garage =new Garage();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+        // Replace whatever is in the fragment_container view with this fragment,
+        // and add the transaction to the back stack
+        transaction.replace(R.id.frame_id, garage);
+        transaction.addToBackStack(null);
+
+        // Commit the transaction
+        transaction.commit();
     }
 
 

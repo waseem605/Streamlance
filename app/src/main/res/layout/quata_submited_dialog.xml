@@ -26,10 +26,10 @@
             android:fontFamily="@font/hk_grotesk_bold"
             android:gravity="center"
             android:text="@string/quota_submitted"
-            android:textSize="26sp"></TextView>
+            android:textSize="26sp" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="@string/quota_submitted_desc"
             android:gravity="center"
@@ -39,7 +39,7 @@
             android:fontFamily="@font/hk_grotesk_regular"
             android:paddingStart="40dp"
             android:layout_margin="20dp"
-            android:paddingEnd="40dp"></TextView>
+            android:paddingEnd="40dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -51,6 +51,7 @@
             android:layout_marginBottom="20dp"
             android:textAllCaps="false"
             android:text="@string/view_quotes"
+            android:padding="17dp"
             android:fontFamily="@font/hk_grotesk_semi_bold"
             android:textColor="@color/white"
             android:textSize="20sp"></Button>

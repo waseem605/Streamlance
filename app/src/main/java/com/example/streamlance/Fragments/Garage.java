@@ -23,7 +23,7 @@ public class Garage extends Fragment {
    Button mbtnadd;
    TextView service,servicetype;
 
-   private LinearLayout carlinearLayout,btnlinearLayout;
+   private LinearLayout carlinearLayout,btnlinearLayout,llsamplecar;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,8 @@ public class Garage extends Fragment {
         carlinearLayout=(LinearLayout)v.findViewById(R.id.samplecar);
         btnlinearLayout=(LinearLayout)v.findViewById(R.id.addmorevehicle);
         mbtnadd = (Button) v.findViewById(R.id.addvehicle);
+        llsamplecar=v.findViewById(R.id.samplecar);
+        llsamplecar.setBackgroundDrawable(getResources().getDrawable(R.drawable.rounded_white));
         service=v.findViewById(R.id.service);
         servicetype=v.findViewById(R.id.servicetype);
         service.setVisibility(View.INVISIBLE);

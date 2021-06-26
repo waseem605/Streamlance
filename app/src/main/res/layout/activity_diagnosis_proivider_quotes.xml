@@ -1,90 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".FlowTwo.Diagnosis_Proivider_Quotes">
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/toolbar_dpq"
         app:title="Provider Quotes"
         android:textColor="@color/black"
         android:fontFamily="@font/hk_grotesk_semi_bold"
-        app:titleMarginStart="120dp"></androidx.appcompat.widget.Toolbar>
-    <LinearLayout
+        app:titleMarginStart="120dp" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/silver">
-        <Button
-            android:layout_width="110dp"
-            android:layout_height="45dp"
-            android:textColor="@color/black"
-            android:id="@+id/sort_button"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="9dp"
-            android:onClick="callSortdata"
-            android:fontFamily="@font/hk_grotesk_semi_bold"
-            android:background="@color/white"
-            android:text="SORT"></Button>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar_dpq"
+        android:id="@+id/tabbar">
 
-        <LinearLayout
-            android:layout_width="110dp"
+        <GridLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="2dp"
-            android:background="@color/white">
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:rowCount="1"
+            android:columnCount="3">
 
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/forma_1"></ImageView>
-            <TextView
+            <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:layout_row="0"
                 android:background="@color/white"
-                android:text="Filters"></TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="2dp"
-            android:id="@+id/map_link"
-            android:layout_marginLeft="2dp"
-            android:background="@color/white">
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/group_59985"
-                android:layout_margin="10dp"></ImageView>
-            <TextView
+                android:layout_marginEnd="1dp"
+                android:layout_column="0">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sort_button"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/img1"
+                        android:padding="3dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/msort_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sort"
+                        android:textColor="@color/black"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/img1"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="2dp"
-                android:fontFamily="@font/hk_grotesk_semi_bold"
-                android:background="@color/white"
-                android:text="Map"></TextView>
-        </LinearLayout>
+                android:layout_marginEnd="1dp"
+                android:layout_row="0"
+                android:layout_column="1">
 
-    </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/map_link"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/img2"
+                        android:padding="3dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/group_59985" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Map"
+                        android:textColor="@color/black"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/img2"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:background="@color/white"
+                android:layout_column="2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/filter_link"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/img3"
+                        android:padding="3dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/forma_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filter"
+                        android:textColor="@color/black"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/img3"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/hk_grotesk_semi_bold"
+                        />
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabbar">
 
         <include layout="@layout/sample_provider_quotes" />
     </ScrollView>
 
-
-</LinearLayout>
+</RelativeLayout>

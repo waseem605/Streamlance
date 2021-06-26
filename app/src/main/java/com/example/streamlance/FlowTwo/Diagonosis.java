@@ -31,7 +31,7 @@ import org.jetbrains.annotations.NotNull;
 public class Diagonosis extends AppCompatActivity {
 
     private Button mRequestbtn;
-    LinearLayout linearLayout,mAddition_service,mLinearSample;
+    LinearLayout linearLayout,mAddition_service,mLinearSample,llsamplecar;
     private ImageView mBackLink;
     TextView service,servicetype;
 
@@ -42,6 +42,8 @@ public class Diagonosis extends AppCompatActivity {
         getWindow().setStatusBarColor(getResources().getColor(R.color.white));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_diagonosis);
+        llsamplecar=findViewById(R.id.samplecar);
+        llsamplecar.setBackgroundDrawable(getResources().getDrawable(R.drawable.rounded_white));
 
         mRequestbtn = (Button)findViewById(R.id.request_btn_D);
         linearLayout = (LinearLayout) findViewById(R.id.diagonos_layout_mini);

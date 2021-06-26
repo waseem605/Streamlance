@@ -20,7 +20,7 @@ public class Quote_Details extends AppCompatActivity {
 
 
     private ImageView mBacklink;
-    private TextView mCancel;
+    private TextView mCancel, mService,mServiceType;
     private LinearLayout mLinearSample;
     private Button mCompleteBtn,mMessageSend;
 
@@ -34,6 +34,11 @@ public class Quote_Details extends AppCompatActivity {
         setContentView(R.layout.activity_quote_details);
 
         mBacklink =(ImageView)findViewById(R.id.back_arrow_Qdiag);
+        mService =(TextView) findViewById(R.id.service);
+        mServiceType =(TextView) findViewById(R.id.servicetype);
+
+        mServiceType.setVisibility(View.INVISIBLE);
+        mService.setVisibility(View.INVISIBLE);
         mCancel =(TextView)findViewById(R.id.cancel_Text);
         mLinearSample =(LinearLayout)findViewById(R.id.samplecar);
         mLinearSample.setBackgroundDrawable(getResources().getDrawable(R.drawable.top_round));

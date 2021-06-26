@@ -24,6 +24,7 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:id="@+id/samplecar"
+       android:layout_margin="10dp"
        android:layout_below="@id/myvehicl"></include>
 
     <LinearLayout
@@ -57,6 +58,7 @@
         android:id="@+id/addvehicle"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:elevation="8dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="31dp"

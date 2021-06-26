@@ -439,16 +439,17 @@
                         android:layout_marginRight="10dp"
                         android:layout_marginLeft="10dp"
                         android:padding="5dp">
+
                         <TextView
                             android:layout_width="133dp"
                             android:layout_height="wrap_content"
-                            android:text="Sub Total"
+                            android:text="VAT (10%)"
                             android:layout_alignParentStart="true"
                             android:fontFamily="@font/hk_grotesk_semi_bold"
                             android:textColor="@color/black"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="5dp"
-                            android:textSize="13sp"></TextView>
+                            android:textSize="13sp" />
 
                         <TextView
                             android:layout_width="50dp"
@@ -460,7 +461,7 @@
                             android:textColor="@color/black"
                             android:layout_marginLeft="117dp"
                             android:layout_marginTop="5dp"
-                            android:textSize="13sp"></TextView>
+                            android:textSize="13sp" />
 
                     </RelativeLayout>
                     <RelativeLayout
@@ -472,7 +473,7 @@
                         <TextView
                             android:layout_width="133dp"
                             android:layout_height="wrap_content"
-                            android:text="Sub Total"
+                            android:text="Grand Total"
                             android:layout_alignParentStart="true"
                             android:fontFamily="@font/hk_grotesk_semi_bold"
                             android:textColor="@color/black"

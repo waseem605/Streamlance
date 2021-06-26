@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.streamlance.FlowTwo.Diagnosis_Proivider_Quotes;
 import com.example.streamlance.GarageFragments.Garage_Info;
@@ -21,8 +22,8 @@ import com.example.streamlance.Services.RecivedQuote;
 import com.example.streamlance.Services.Services_Summary;
 
 public class ProvidersQuotes extends AppCompatActivity {
-    Button mbtn, mSortBtn,mChatButton;
-    LinearLayout map;
+    Button mbtn,mChatButton;
+    RelativeLayout map,mSortBtn;
 
     private ImageView mPicture_pq;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -33,10 +34,10 @@ public class ProvidersQuotes extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_providers_quotes);
 
-        mSortBtn = (Button)findViewById(R.id.sort_button);
+        mSortBtn = (RelativeLayout)findViewById(R.id.sort_button_p);
         mChatButton = (Button)findViewById(R.id.chat_btn);
         mPicture_pq = (ImageView)findViewById(R.id.picture_pq);
-        map=(LinearLayout)findViewById(R.id.linearmap);
+        map=(RelativeLayout) findViewById(R.id.map_link_p);
 
         callSortData();
         map.setOnClickListener(new View.OnClickListener() {
