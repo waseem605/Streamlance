@@ -56,7 +56,7 @@ public class HomeAdapter extends FragmentPagerAdapter {
         }
         if(position==1)
         {
-            title="MY BOOKINGS";
+            title="my bookings";
         }
         if(position==2)
         {
