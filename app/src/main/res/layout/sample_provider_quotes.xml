@@ -11,12 +11,13 @@
         android:layout_margin="10dp"
         android:background="@drawable/rounded_white"
         android:orientation="vertical">
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="190dp"
             android:layout_marginTop="10dp"
             android:id="@+id/picture_pq"
-            android:src="@drawable/__import_image"></ImageView>
+            android:src="@drawable/__import_image" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,12 +92,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="1dp"
+                    android:layout_marginStart="1dp"
                     android:layout_marginTop="3dp"
+                    android:layout_marginEnd="10dp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/hk_grotesk_medium"
                     android:text="$776.61"
-                    android:textSize="20sp"></TextView>
+                    android:textSize="20sp" />
             </LinearLayout>
         </RelativeLayout>
 
@@ -171,7 +173,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_centerHorizontal="true"
                     android:layout_toLeftOf="@id/tvShuttle"
-                    android:src="@drawable/tow_truck"
+                    android:src="@drawable/truck"
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="30dp"></ImageView>
                 <TextView
@@ -198,15 +200,17 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_alignParentStart="true"
                     android:id="@+id/pickup"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/carr"
+                    android:src="@drawable/tow_truck"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"></ImageView>
+                    android:layout_marginTop="5dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -216,16 +220,17 @@
                     android:textColor="@color/black"
                     android:layout_marginTop="5dp"
                     android:textSize="13sp"
-                    android:fontFamily="@font/hk_grotesk_semi_bold"></TextView>
+                    android:fontFamily="@font/hk_grotesk_semi_bold" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_centerHorizontal="true"
                     android:layout_toLeftOf="@id/mecahnic"
                     android:layout_marginEnd="10dp"
-                    android:src="@drawable/tow_truck"
+                    android:src="@drawable/delivery_truck"
                     android:layout_marginTop="5dp"
-                    android:layout_marginLeft="30dp"></ImageView>
+                    android:layout_marginLeft="30dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

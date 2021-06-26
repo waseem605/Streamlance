@@ -14,8 +14,12 @@
         <item name="android:fontFamily">@font/hk_grotesk_semi_bold</item>
     </style>
     <style name="CustomTabTextnotification" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">@font/hkgbold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+
     </style>
 
     <style name="AppBottomSheetDialogTheme"

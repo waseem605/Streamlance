@@ -13,7 +13,7 @@
     android:layout_marginTop="10dp"
     android:layout_height="wrap_content">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -21,25 +21,29 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginTop="28dp"
+            android:id="@+id/review_pic"
+            android:layout_marginTop="20dp"
             android:src="@drawable/oval_review_sample" />
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/review_pic"
             android:layout_marginStart="10dp"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textSize="14sp"
                 android:textColor="@color/black"
-                android:text="Garnet Bins"></TextView>
+                android:text="Garnet Bins" />
             <!-- linear layout for stars -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal">
                 <Button
                     android:layout_width="18dp"
@@ -61,30 +65,32 @@
                     android:layout_height="18dp"
                     android:background="@drawable/star_rate_24"
                     ></Button>
+
                 <Button
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:background="@drawable/star_rate_24"
-                    ></Button>
+                    android:background="@drawable/star_rate_24" />
             </LinearLayout>
 
         </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="03/10/2020 12:11"
+            android:layout_alignParentEnd="true"
             android:textColor="@color/black"
-            android:layout_marginTop="30dp"></TextView>
-    </LinearLayout>
+            android:layout_marginTop="30dp" />
+    </RelativeLayout>
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/review_desc"
-    android:textColor="@color/black"
-    android:textSize="16sp"
-    android:padding="5dp"
-    android:fontFamily="@font/hk_grotesk_regular"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/review_desc"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:fontFamily="@font/hk_grotesk_regular" />
 
 
 </LinearLayout>

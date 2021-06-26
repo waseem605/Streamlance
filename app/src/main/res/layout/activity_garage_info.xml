@@ -32,6 +32,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginStart="10dp"
             android:src="@drawable/left_arrow" />
+
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -40,7 +41,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
-            android:src="@drawable/share_icon"></ImageView>
+            android:src="@drawable/share_icon" />
     </com.denzcoskun.imageslider.ImageSlider>
 
     <LinearLayout
@@ -50,17 +51,18 @@
         android:id="@+id/lllayout"
         android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="230dp"
+                android:id="@+id/garage_name"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="Gresasy Albo Auto Repair"
+                android:text="Gresasy Albo Auto \nRepair"
                 android:textSize="25sp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/hk_grotesk_semi_bold" />
 
@@ -71,39 +73,54 @@
                 android:backgroundTint="@color/orange"
                 android:text="Chat"
                 android:id="@+id/chat_garage"
+                android:layout_centerVertical="true"
                 android:textAllCaps="false"
+                android:elevation="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp"
                 android:fontFamily="@font/hk_grotesk_semi_bold"
                 android:textColor="@color/white"
                 android:layout_marginStart="40dp" />
 
-        </LinearLayout>
-        <LinearLayout
+        </RelativeLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="10dp">
+
             <ImageView
                 android:layout_width="15dp"
                 android:layout_height="15dp"
+                android:id="@+id/map_icon"
                 android:layout_marginTop="4dp"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/pin"></ImageView>
+                android:src="@drawable/pin" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/garage_address"
+                android:layout_toEndOf="@id/map_icon"
                 android:text="145 valencia st,san Francisco"
                 android:textSize="16sp"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/hk_grotesk_regular"></TextView>
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="80dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/chattt"></ImageView>
+                android:fontFamily="@font/hk_grotesk_regular" />
 
-        </LinearLayout>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="80dp"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
+                android:scaleType="fitXY"
+                android:src="@drawable/chattt" />
+
+        </RelativeLayout>
+
         <TextView
             android:layout_width="80dp"
             android:layout_height="20dp"
@@ -113,7 +130,7 @@
             android:textColor="@color/white"
             android:fontFamily="@font/hk_grotesk_regular"
             android:background="@drawable/rounded"
-            android:backgroundTint="#24B345"></TextView>
+            android:backgroundTint="#24B345" />
 
     </LinearLayout>
 

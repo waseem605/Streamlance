@@ -34,10 +34,10 @@ public class ProvidersQuotes extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_providers_quotes);
 
-        mSortBtn = (RelativeLayout)findViewById(R.id.sort_button_p);
+        mSortBtn = (RelativeLayout)findViewById(R.id.sort_button);
         mChatButton = (Button)findViewById(R.id.chat_btn);
         mPicture_pq = (ImageView)findViewById(R.id.picture_pq);
-        map=(RelativeLayout) findViewById(R.id.map_link_p);
+        map=(RelativeLayout) findViewById(R.id.map_link);
 
         callSortData();
         map.setOnClickListener(new View.OnClickListener() {
