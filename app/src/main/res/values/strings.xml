@@ -138,4 +138,15 @@
     <string name="view_history_desc"><br>Your service quote has been saved\n</br><br> in services history. You can view it\n</br> again in completed history tab.</string>
     <string name="your_service_is_scheduled_yo">Your service is scheduled you will \nreceive confirmation email.</string>
 
+
+    <array name="initial_slider_values">
+        <item>500.0</item>
+        <item>1500.0</item>
+    </array>
+
+    <array name="initial_slider_distance">
+        <item>3.0</item>
+        <item>75.0</item>
+    </array>
+
 </resources>

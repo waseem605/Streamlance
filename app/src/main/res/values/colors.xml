@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="black_light">#1E1E1E</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Filter_track">#E1ECF8</color>
     <color name="white_contras">#FDFDFD</color>
 
 
@@ -20,4 +21,6 @@
     <color name="silver">#F9F9F9</color>
     <color name="green">#1FC857</color>
     <color name="green_text">#31CC64</color>
+    <color name="filter_text">#95A0B6</color>
+    <color name="filter_black_text">#020433</color>
 </resources>

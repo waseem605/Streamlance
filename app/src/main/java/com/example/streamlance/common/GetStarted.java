@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.streamlance.MainPage.MainActivity;
 import com.example.streamlance.R;
 
 public class GetStarted extends AppCompatActivity {
 
     private Button mGetButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -25,7 +27,7 @@ public class GetStarted extends AppCompatActivity {
         mGetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GetStarted.this,OTP_Screen.class));
+                startActivity(new Intent(GetStarted.this, OTP_Screen.class));
                 finish();
             }
         });

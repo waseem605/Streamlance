@@ -29,4 +29,29 @@
         parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/bottom_sheet_custom</item>
     </style>
+
+<!-- RangeSlider Style-->
+    <style name="Myslider" parent="@style/Theme.MaterialComponents.NoActionBar">
+        <item name="labelStyle">@style/My_Tooltip</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Slider</item>
+    </style>
+
+    <style name="My_Tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <!-- background color of the Tooltip -->
+        <item name="backgroundTint">@color/teal_200</item>
+    </style>
+
+    <style name="ThemeOverlay.Slider" parent="Widget.MaterialComponents.Slider">
+        <!-- color used by the text in the Tooltip -->
+        <item name="colorOnPrimary">@color/Back_color</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="android:progressDrawable">@drawable/unfilled_stars</item>
+
+    </style>
+
+
+
+
 </resources>

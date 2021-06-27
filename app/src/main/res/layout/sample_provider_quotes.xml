@@ -120,7 +120,7 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
-                android:background="@drawable/___color"></Button>
+                android:background="@drawable/sheild"></Button>
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"

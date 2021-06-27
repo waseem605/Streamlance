@@ -20,10 +20,11 @@ import com.example.streamlance.R;
 import com.example.streamlance.Services.BookNowSummary;
 import com.example.streamlance.Services.RecivedQuote;
 import com.example.streamlance.Services.Services_Summary;
+import com.example.streamlance.common.Filter_Activity;
 
 public class ProvidersQuotes extends AppCompatActivity {
     Button mbtn,mChatButton;
-    RelativeLayout map,mSortBtn;
+    RelativeLayout map,mSortBtn,mFilterLink;
 
     private ImageView mPicture_pq;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -35,6 +36,7 @@ public class ProvidersQuotes extends AppCompatActivity {
         setContentView(R.layout.activity_providers_quotes);
 
         mSortBtn = (RelativeLayout)findViewById(R.id.sort_button);
+        mFilterLink = (RelativeLayout)findViewById(R.id.filter_link);
         mChatButton = (Button)findViewById(R.id.chat_btn);
         mPicture_pq = (ImageView)findViewById(R.id.picture_pq);
         map=(RelativeLayout) findViewById(R.id.map_link);
@@ -62,6 +64,14 @@ public class ProvidersQuotes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProvidersQuotes.this,Garage_Info.class));
+            }
+        });
+
+
+        mFilterLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProvidersQuotes.this, Filter_Activity.class));
             }
         });
 

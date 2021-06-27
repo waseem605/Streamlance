@@ -113,7 +113,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
-                android:background="@drawable/___color"></Button>
+                android:background="@drawable/sheild"></Button>
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
@@ -158,7 +158,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/tow_truck"
+                android:src="@drawable/truck"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"></ImageView>
             <TextView
@@ -180,7 +180,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/carr"
+                android:src="@drawable/tow_truck"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"></ImageView>
             <TextView
@@ -195,7 +195,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/tow_truck"
+                android:src="@drawable/delivery_truck"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"></ImageView>
             <TextView

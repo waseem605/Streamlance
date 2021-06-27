@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +7,319 @@
     android:orientation="vertical"
     tools:context=".common.Filter_Activity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter_toolbar"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/cross_icon_f"
+                android:src="@drawable/x_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/hk_grotesk_semi_bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                android:id="@+id/reset_tx"
+                android:fontFamily="@font/hk_grotesk_regular"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="2dp"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_filter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/filter_toolbar"
+        android:background="@color/silver">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price Range"
+            android:id="@+id/price_range_tx"
+            android:textColor="@color/filter_black_text"
+            android:textSize="20sp"
+            android:fontFamily="@font/hk_grotesk_medium"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/low_range"
+                android:text="$35.00"
+                android:textColor="@color/filter_black_text"
+                android:textSize="14sp"
+                android:fontFamily="@font/hk_grotesk_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dash_range"
+                android:text=" - "
+                android:textColor="@color/filter_black_text"
+                android:textSize="14sp"
+                android:layout_toEndOf="@id/low_range"
+                android:fontFamily="@font/hk_grotesk_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/high_range"
+                android:text="$120.00"
+                android:layout_toEndOf="@id/dash_range"
+                android:textColor="@color/filter_black_text"
+                android:textSize="14sp"
+                android:fontFamily="@font/hk_grotesk_bold"/>
+        </RelativeLayout>
+
+        <com.google.android.material.slider.RangeSlider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/price_range_tx"
+            android:layout_margin="20dp"
+            android:id="@+id/range"
+            android:valueFrom="0.0"
+            android:valueTo="5000.0"
+            app:values="@array/initial_slider_values"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:id="@+id/start_range_tx"
+            android:layout_below="@id/range"
+            android:textColor="@color/filter_text"
+            android:textSize="13sp"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$5000"
+            android:id="@+id/ending_range_tx"
+            android:layout_below="@id/range"
+            android:textColor="@color/filter_text"
+            android:textSize="13sp"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/line1"
+        android:background="@color/gray"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/top_filter"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/silver"
+        android:id="@+id/star_rl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:id="@+id/rating_tx"
+            android:textColor="@color/filter_black_text"
+            android:textSize="18sp"
+            android:fontFamily="@font/hk_grotesk_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rating_tx"
+        >
+<RatingBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:numStars="5"
+    android:layout_marginStart="5dp"></RatingBar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.0"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            android:fontFamily="@font/hk_grotesk_regular"></TextView>
+</RelativeLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/line2"
+        android:background="@color/gray"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/star_rl"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_filter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/line2"
+        android:background="@color/silver">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance"
+            android:id="@+id/distance_tx"
+            android:textColor="@color/filter_black_text"
+            android:textSize="18sp"
+            android:fontFamily="@font/hk_grotesk_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/low_dis"
+                android:text="3 Km"
+                android:textColor="@color/filter_black_text"
+                android:textSize="14sp"
+                android:fontFamily="@font/hk_grotesk_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dash_dis"
+                android:text=" - "
+                android:textColor="@color/filter_black_text"
+                android:textSize="14sp"
+                android:layout_toEndOf="@id/low_dis"
+                android:fontFamily="@font/hk_grotesk_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/high_dis"
+                android:text="25 Km"
+                android:layout_toEndOf="@id/dash_dis"
+                android:textColor="@color/filter_black_text"
+                android:textSize="14sp"
+                android:fontFamily="@font/hk_grotesk_bold"/>
+        </RelativeLayout>
+
+        <com.google.android.material.slider.RangeSlider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance_tx"
+            android:layout_margin="20dp"
+            android:id="@+id/distance_range"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"
+            app:values="@array/initial_slider_distance"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Km"
+            android:id="@+id/start_distance_tx"
+            android:layout_below="@id/distance_range"
+            android:textColor="@color/filter_text"
+            android:textSize="13sp"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/hk_grotesk_regular"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/line3"
+            android:background="@color/gray"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/start_distance_tx"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnshowrslt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottom_filter"
+        android:padding="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded"
+        android:text="Show Result"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:fontFamily="@font/hk_grotesk_semi_bold" />
 
 
 
-</LinearLayout>
+</RelativeLayout>

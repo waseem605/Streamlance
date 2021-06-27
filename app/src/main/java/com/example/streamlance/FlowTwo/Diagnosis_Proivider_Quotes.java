@@ -14,15 +14,17 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.example.streamlance.MainPage.ChatActivity;
+import com.example.streamlance.MainPage.MainActivity;
 import com.example.streamlance.MainPage.Map_Activity;
 import com.example.streamlance.MainPage.ProvidersQuotes;
 import com.example.streamlance.R;
 import com.example.streamlance.Services.BookNowSummary;
+import com.example.streamlance.common.Filter_Activity;
 
 public class Diagnosis_Proivider_Quotes extends AppCompatActivity {
 
     private Button mViewquotes,mChatButton;
-    private RelativeLayout mSort,mMapLink;
+    private RelativeLayout mSort,mMapLink,mFilterLink;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -36,6 +38,7 @@ public class Diagnosis_Proivider_Quotes extends AppCompatActivity {
         mChatButton = (Button)findViewById(R.id.chat_btn);
 
         mSort = (RelativeLayout)findViewById(R.id.sort_button);
+        mFilterLink = (RelativeLayout)findViewById(R.id.filter_link);
         mMapLink = (RelativeLayout) findViewById(R.id.map_link);
 
 
@@ -67,6 +70,14 @@ public class Diagnosis_Proivider_Quotes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Diagnosis_Proivider_Quotes.this, ChatActivity.class));
+            }
+        });
+
+
+        mFilterLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Diagnosis_Proivider_Quotes.this, Filter_Activity.class));
             }
         });
 

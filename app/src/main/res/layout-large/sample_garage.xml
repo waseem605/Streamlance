@@ -36,7 +36,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
-                android:background="@drawable/___color"></Button>
+                android:background="@drawable/sheild"></Button>
         </LinearLayout>
 
         <TextView
