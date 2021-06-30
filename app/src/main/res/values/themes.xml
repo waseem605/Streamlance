@@ -30,6 +30,8 @@
         <item name="android:background">@drawable/bottom_sheet_custom</item>
     </style>
 
+
+
 <!-- RangeSlider Style-->
     <style name="Myslider" parent="@style/Theme.MaterialComponents.NoActionBar">
         <item name="labelStyle">@style/My_Tooltip</item>

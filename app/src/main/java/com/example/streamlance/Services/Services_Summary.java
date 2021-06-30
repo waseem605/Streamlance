@@ -1,8 +1,5 @@
 package com.example.streamlance.Services;
 
-import androidx.annotation.RequiresApi;
-import androidx.core.util.Pair;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
@@ -16,8 +13,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.support.v4.app.*;
 
-import com.example.streamlance.FlowTwo.Diagonosis;
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.*;
+
 import com.example.streamlance.MainPage.ProvidersQuotes;
 import com.example.streamlance.R;
 import com.google.android.material.datepicker.MaterialDatePicker;
@@ -29,12 +31,12 @@ public class Services_Summary extends Activity {
     private ImageView mBackArrow;
     private Spinner spinner;
 
+    private Button mDatePickerBtn;
+    private Button mViewQuotaBtn;
     LinearLayout linearDate,llsamplecar;
 
 
-    MaterialDatePicker.Builder<Pair<Long, Long>> builder = MaterialDatePicker.Builder.dateRangePicker();
-    final MaterialDatePicker materialDatePicker = builder.build();
-    private Button mViewQuotaBtn;
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,8 @@ public class Services_Summary extends Activity {
         getWindow().setStatusBarColor(getResources().getColor(R.color.silver));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_services_summary);
+
+        mDatePickerBtn = (Button)findViewById(R.id.date_picker_btn);
         llsamplecar=findViewById(R.id.samplecar);
         llsamplecar.setBackgroundDrawable(getResources().getDrawable(R.drawable.rounded_white));
         service=findViewById(R.id.service);
@@ -63,12 +67,26 @@ public class Services_Summary extends Activity {
         //spinner.setOnItemClickListener((AdapterView.OnItemClickListener) this);
 
 
-       /* linearDate.setOnClickListener(new View.OnClickListener() {
+        MaterialDatePicker.Builder builder = MaterialDatePicker.Builder.dateRangePicker();
+        builder.setTitleText("Select date");
+        MaterialDatePicker materialDatePicker = builder.build();
+
+        mDatePickerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                materialDatePicker.show(materialDatePicker.getChildFragmentManager(), "date");
+
+                //materialDatePicker.show(getSupportFragmentManager(),"date");
             }
-        });*/
+        });
+
+
+
+        materialDatePicker.addOnPositiveButtonClickListener(new MaterialPickerOnPositiveButtonClickListener() {
+            @Override
+            public void onPositiveButtonClick(Object selection) {
+                mStartDate.setText(materialDatePicker.getHeaderText());
+            }
+        });
 
 
         mBackArrow.setOnClickListener(new View.OnClickListener() {

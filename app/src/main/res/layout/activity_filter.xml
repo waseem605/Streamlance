@@ -182,23 +182,33 @@
         android:orientation="horizontal"
         android:layout_below="@id/rating_tx"
         >
-<RatingBar
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:numStars="5"
-    android:layout_marginStart="5dp"></RatingBar>
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:minHeight="30dp"
+            android:minWidth="30dp"
+            app:srb_rating="4"
+            app:srb_stepSize="0.5"
+            app:srb_borderColor="@color/orange"
+            android:id="@+id/ratingbar"
+            android:layout_marginStart="10dp"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4.0"
-            android:layout_marginEnd="10dp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"
-            android:textSize="16sp"
-            android:fontFamily="@font/hk_grotesk_regular"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.0"
+                android:id="@+id/star_id"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black_light"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentEnd="true"
+                android:textSize="16sp"
+                android:fontFamily="@font/hk_grotesk_regular" />
 </RelativeLayout>
     </LinearLayout>
 

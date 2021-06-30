@@ -4,7 +4,15 @@
     <item>
         <shape android:shape="oval"/>
     </item>
-
+    <item android:state_pressed="true"
+        android:state_window_focused="true"
+        android:drawable="@drawable/filled_stars"/>
+    <item android:state_focused="true"
+        android:state_window_focused="true"
+        android:drawable="@drawable/filled_stars"/>
+    <item android:state_selected="true"
+        android:state_window_focused="true"
+        android:drawable="@drawable/filled_stars"/>
     <item
         android:drawable="@drawable/filled_stars" />
     <size
