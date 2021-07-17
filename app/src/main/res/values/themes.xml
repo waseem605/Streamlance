@@ -1,8 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Streamlance" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Primary brand color. -->
+    <style name="Theme.Streamlance" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
 
+        <!-- Primary brand color. -->
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
         <!-- Customize your theme here. -->
 
         <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
@@ -51,6 +54,36 @@
     <style name="RatingBar" parent="Theme.AppCompat">
         <item name="android:progressDrawable">@drawable/unfilled_stars</item>
 
+    </style>
+
+    <style name="MaterialCalendarTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- Header panel -->
+        <item name="materialCalendarHeaderLayout">@style/MaterialCalendar.HeaderLayout1</item>
+        <!-- selected-->
+        <item name="materialCalendarMonth">@style/MaterialComponents.day</item>
+        <!-- Buttons -->
+        <item name="buttonBarPositiveButtonStyle">@style/TextButton.Dialog1</item>
+        <item name="buttonBarNegativeButtonStyle">@style/TextButton.Dialog1</item>
+    </style>
+    <style name="MaterialCalendar.HeaderLayout1" parent="Widget.MaterialComponents.MaterialCalendar.HeaderLayout">
+        <!--<item name="android:background">?attr/colorPrimary</item>-->
+        <item name="android:background">@color/Back_color</item>
+    </style>
+    <style name="MaterialComponents.day" parent="Widget.MaterialComponents.MaterialCalendar.Day">
+        <item name="android:elegantTextHeight" tools:ignore="NewApi">@color/Back_color</item>
+        <item name="android:textColorHighlight">@color/orange</item>
+        <item name="android:calendarTextColor" tools:ignore="NewApi">@color/Back_color</item>
+        <item name="activeColor">@color/Back_color</item>
+        <item name="android:selectableItemBackground">@color/Back_color</item>
+        <item name="strokeColor">@color/Back_color</item>
+        <item name="android:colorBackground">@color/Back_color</item>
+        <item name="android:color">@color/Back_color</item>
+        <item name="tabIndicatorColor">@color/Back_color</item>
+
+    </style>
+    <style name="TextButton.Dialog1" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/Back_color</item>
+        <item name="backgroundTint">@color/Blue</item>
     </style>
 
 
